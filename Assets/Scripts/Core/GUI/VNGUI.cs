@@ -18,7 +18,6 @@ public class VNGUI : MonoBehaviour
 
     [Header("Buttons")]
     [SerializeField] private Button[] buttonsRequiringSaveReady;
-    [SerializeField] private Button loadButton;
 
     [Header("Pause")]
     [SerializeField] private PauseMenu pauseMenu;
@@ -133,29 +132,6 @@ public class VNGUI : MonoBehaviour
         fadeFg.ForceAlphaTo(alpha);
     }
 
-
-    /// <summary>
-    /// Click event for saving
-    /// </summary>
-    public void Save()
-    {
-        if (!NovelController.instance.isReadyForSaving) return;
-
-        NovelController.instance.SaveGameFile("save");
-    }
-
-    /// <summary>
-    /// Click event for loading
-    /// </summary>
-    public void Load()
-    {
-        if (GameManager.GetSaveManager().SaveFileExists("save"))
-        {
-            ResetCursor();
-            NovelController.instance.LoadGameFile();
-        }
-    }
-
     /// <summary>
     /// Resets the cursor
     /// </summary>
@@ -236,7 +212,6 @@ public class VNGUI : MonoBehaviour
         {
             button.interactable = NovelController.instance.isReadyForSaving;
         }
-        loadButton.interactable = loadButton.interactable && GameManager.GetSaveManager().SaveFileExists("save");
 
         if (NovelController.instance.isReadyForSaving && Input.GetKeyDown(KeyCode.Escape))
         {
