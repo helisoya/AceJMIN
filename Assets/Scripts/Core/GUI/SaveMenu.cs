@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Represents the save menu
@@ -12,6 +13,7 @@ public class SaveMenu : MonoBehaviour
     [SerializeField] private LocalizedText titleText;
     [SerializeField] private SaveButton[] buttons;
     [SerializeField] private bool isInGame = true;
+    [SerializeField] private Scrollbar scrollbar;
 
     [Header("Confirm choice")]
     [SerializeField] private GameObject confirmRoot;
@@ -54,6 +56,11 @@ public class SaveMenu : MonoBehaviour
         {
             buttons[i].Init(infos[i], i, this);
         }
+    }
+
+    void Update()
+    {
+        scrollbar.size = 0.01f;
     }
 
     /// <summary>

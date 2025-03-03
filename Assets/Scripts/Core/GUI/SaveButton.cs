@@ -2,15 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Represents a button linked to a save file
 /// </summary>
 public class SaveButton : MonoBehaviour
 {
+    [Header("General")]
     [SerializeField] private LocalizedText caseNameText;
     [SerializeField] private LocalizedText caseDescText;
     [SerializeField] private TextMeshProUGUI slotText;
+
+    [Header("Sprite")]
+    [SerializeField] private Sprite normalSprite;
+    [SerializeField] private Sprite noFileSprite;
+    [SerializeField] private Image backgroundImg;
 
     private SaveMenu parent;
     private SaveManager.SaveInfo linkedInfo;
@@ -31,6 +38,9 @@ public class SaveButton : MonoBehaviour
         slotText.text = linkedInfo != null ? linkedInfo.saveName : "";
         caseNameText.SetNewKey(linkedInfo != null ? linkedInfo.caseName : null);
         caseDescText.SetNewKey(linkedInfo != null ? linkedInfo.caseDesc : "saves_none");
+        caseDescText.SetColor(linkedInfo != null ? Color.black : Color.white);
+
+        backgroundImg.sprite = linkedInfo != null ? normalSprite : noFileSprite;
     }
 
     /// <summary>

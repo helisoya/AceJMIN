@@ -44,6 +44,15 @@ public class LocalizedText : MonoBehaviour
         return text;
     }
 
+    /// <summary>
+    /// Changes the text's color
+    /// </summary>
+    /// <param name="color">The new color</param>
+    public void SetColor(Color color)
+    {
+        text.color = color;
+    }
+
     public string key { get { return localKey; } }
 }
 

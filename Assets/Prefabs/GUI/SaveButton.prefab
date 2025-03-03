@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 29.1522, y: -15.3459}
+  m_AnchoredPosition: {x: 29.15, y: -12.7}
   m_SizeDelta: {x: 193.6077, y: 20.6917}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5030746018366088260
@@ -186,7 +186,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 34.518204, y: -15.3459}
+  m_AnchoredPosition: {x: 31.8, y: -12.7}
   m_SizeDelta: {x: 52.436295, y: 20.6917}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5030746018608812993
@@ -323,7 +323,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.9686, y: -43.3}
+  m_AnchoredPosition: {x: -0.96884, y: -36.1}
   m_SizeDelta: {x: 253.8454, y: 20.6917}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5030746019180794044
@@ -364,8 +364,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -502,14 +502,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 997003659, guid: 0dc6a88921c6d674dac5237e5dfcc9b4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -534,6 +534,9 @@ MonoBehaviour:
   caseNameText: {fileID: 5030746018366088282}
   caseDescText: {fileID: 5030746019180794034}
   slotText: {fileID: 5030746018608812998}
+  normalSprite: {fileID: 997003659, guid: 0dc6a88921c6d674dac5237e5dfcc9b4, type: 3}
+  noFileSprite: {fileID: 1137259200, guid: 0dc6a88921c6d674dac5237e5dfcc9b4, type: 3}
+  backgroundImg: {fileID: 5030746019193404522}
 --- !u!114 &5030746019193404520
 MonoBehaviour:
   m_ObjectHideFlags: 0
