@@ -1,0 +1,65 @@
+# Add Characters
+addCharacter(Judge;false)
+setCharacterPosition(Judge;Judge)
+
+addCharacter(Felix;false)
+setCharacterPosition(Felix;Defense)
+
+addCharacter(Buendia;false)
+setCharacterPosition(Buendia;Prosecution)
+
+addCharacter(UwU;false)
+setCharacterPosition(UwU;Witness)
+
+setBackground(0;TEST)
+
+setCaseName(CASENAME_1)
+setCaseDesc(CASEDESC_1_1)
+
+
+# Judge talks
+cameraPosition(Judge;true;false)
+
+autosave()
+
+dialog(Judge;_;false;Test_1)
+dialog(Judge;_;false;Test_2)
+dialog(Judge;_;false;Test_3)
+
+# Switch to Felix
+cameraPosition(Defense;true;false)
+
+dialog(Felix;_;false;Test_4)
+
+# Switch to UwU
+hideDialog()
+cameraPosition(Witness;false;true)
+
+dialog(UWU;_;false;Test_5)
+
+# Switch to Judge
+cameraPosition(Judge;true;false)
+
+dialog(Judge;_;false;Test_6)
+
+# Switch to Felix
+cameraPosition(Defense;true;false)
+
+dialog(Felix;_;false;Test_7)
+
+# Buendia Objects
+hideDialog()
+speechBubble(Wouhoo;Wouhoo_Buendia)
+
+cameraPosition(Prosecution;false;true)
+
+dialog(Buendia;_;false;Test_8)
+dialog(Buendia;_;false;Test_9)
+dialog(Buendia;_;false;Test_10)
+
+# Felix RagesQuit
+hideDialog()
+cameraPosition(Defense;false;true)
+
+dialog(Felix;_;false;Test_11)
+

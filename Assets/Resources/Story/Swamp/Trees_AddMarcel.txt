@@ -1,0 +1,6 @@
+addCharacter(Marcel;false)
+setCharacterPosition(Marcel;MarcelSpot)
+setCharacterRotation(Marcel;MarcelSpot)
+setInteractionChapter(Marcel;Swamp/Marcel_ArcherQuest3)
+
+load(Swamp/Trees)

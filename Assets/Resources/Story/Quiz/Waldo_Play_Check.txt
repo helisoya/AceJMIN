@@ -1,0 +1,5 @@
+if(waldoQuizQuest = 0) Quiz/Waldo_Play
+
+dialog(Waldo;Waldo;false;Quiz_Waldo_Done_1)
+
+load(Quiz/Waldo_Default)

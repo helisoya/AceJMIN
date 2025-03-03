@@ -1,0 +1,5 @@
+choice Choice_Chat
+	Choice_Ideas ChezHarold/Harold_MainQuest_Check
+	Choice_LastYear ChezHarold/Harold_LastYear
+	Choice_Grimoire ChezHarold/Harold_Grimoire
+	Choice_Nothing ChezHarold/Harold_Exit

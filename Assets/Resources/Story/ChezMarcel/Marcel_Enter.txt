@@ -1,0 +1,11 @@
+setCharacterAlpha(Marcel;0;true)
+
+setCharacterPosition(Marcel;Front)
+setCharacterRotation(Marcel;Front)
+
+setCharacterAlpha(Marcel;1;false)
+
+dialog(Marcel;Marcel;false;ChezMarcel_Marcel_Default_1)
+
+
+load(ChezMarcel/Marcel_Default)

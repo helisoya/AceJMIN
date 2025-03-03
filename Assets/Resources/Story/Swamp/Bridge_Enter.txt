@@ -1,0 +1,12 @@
+fadeBg(1;true)
+
+playMusic(Exploration_2)
+removeAllCharacters()
+setBackground(SwampBridge;false)
+
+if(archerQuest = 1) Swamp/Bridge_ArcherQuest1
+if(archerQuest = 4) Swamp/Bridge_ArcherQuest4
+
+fadeBg(0;false)
+
+load(Swamp/Bridge)

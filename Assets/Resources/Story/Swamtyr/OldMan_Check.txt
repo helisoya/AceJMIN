@@ -1,0 +1,11 @@
+setCharacterAlpha(OldMan;0;true)
+
+setCharacterPosition(OldMan;Front)
+setCharacterRotation(OldMan;Front)
+
+setCharacterAlpha(OldMan;1;false)
+
+if(archerQuest = 0) Swamtyr/OldMan_ArcherQuest0
+if(rickeyQuest = 100) Swamtyr/OldMan_ArcherGone
+
+load(Swamtyr/OldMan_Default)

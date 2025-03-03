@@ -1,0 +1,7 @@
+if(mainQuest > 1) load(ChezMarcel/Marcel_Later)
+
+choice Choice_Chat
+	Choice_AboutYou ChezMarcel/Marcel_AboutYou
+	Choice_AboutLastNight ChezMarcel/Marcel_AboutLastNight
+	Choice_AboutRickeyLand ChezMarcel/Marcel_MainQuest1
+	Choice_Nothing ChezMarcel/Marcel_Exit

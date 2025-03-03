@@ -1,0 +1,6 @@
+dialog(Marcel;Marcel;false;ChezMarcel_Marcel_LastNight_1)
+dialog(Marcel;Marcel;false;ChezMarcel_Marcel_LastNight_2)
+dialog(Marcel;Marcel;false;ChezMarcel_Marcel_LastNight_3)
+dialog(Marcel;Marcel;false;ChezMarcel_Marcel_LastNight_4)
+
+load(ChezMarcel/Marcel_Default)

@@ -1,0 +1,5 @@
+setInteractionChapter(Exit;Swamp/River_Exit)
+setInteractionChapter(Left;Swamp/Bridge_Enter)
+setInteractionChapter(Right;Swamp/Trees_Enter)
+
+interact

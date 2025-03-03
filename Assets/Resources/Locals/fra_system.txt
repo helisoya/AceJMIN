@@ -1,0 +1,84 @@
+# ------------------------------------------------------------------------
+# -------------------- Title Screen & Settings ---------------------------
+# ------------------------------------------------------------------------
+
+
+title_preMenu = Cliquez pour jouer
+title_newGame = Nouvelle partie
+title_continue = Continuer
+title_quit = Quitter
+title_settings = Paramètres
+settings_audio = Audio
+settings_bgm = BGM
+settings_sfx = SFX
+settings_voice = Voix
+settings_screen = Ecran
+settings_fullscreen = Plein Ecran
+settings_save = Sauvegarder
+settings_load = Charger
+title_enterText = Entrez votre nom...
+title_finishText = Continuer
+title_descName = Entrez votre nom
+end_thanks = Merci d'avoir joué !
+saves_title_save = Choisissez un slot de sauvegarde
+saves_title_load = Choisissez quel slot charger
+saves_none = Pas de données
+saves_confirmDesc = Utiliser ce slot ?
+saves_confirm = Confirmer
+saves_back = Retour
+
+
+# ------------------------------------------------------------------------
+# ----------------------------- Map --------------------------------------
+# ------------------------------------------------------------------------
+
+ChezHarold = Maison d'Harold
+Intersection = Intersection
+RickeyLand = RickeyLand
+Swamp = Marais
+Swamtyr = Swamtyr
+BraiseFortress = Forteresse Braise
+Mountains = Montagnes
+Mines = Mines
+Vlatyr = Vlatyr
+ChezMarcel = Maison du chasseur
+
+Gate = Entrée
+Plaza = Place centrale
+Quiz = Quiz de Waldo
+Horse = Course de chevaux
+HauntedHouse = Maison hantée
+Palace = Palais de Rickey
+Salesman = Tir sur marchand
+SouvenirShop = Boutique de souvenir
+
+# ------------------------------------------------------------------------
+# -------------------------- Quests --------------------------------------
+# ------------------------------------------------------------------------
+
+mainQuest = Le grimoire et le PDG
+mainQuest_0 = Entrer à RickeyLand
+mainQuest_1 = Trouver un pass
+mainQuest_2 = Entrer à RickeyLand
+mainQuest_3 = Finir les 4 attractions
+mainQuest_4 = Entrer dans le palace de Rickey
+mainQuest_5 = Reprendre le grimoire à Rickey
+mainQuest_6 = Retourner voir Harold
+
+
+hauntedHouseQuest = La maison hantée
+hauntedHouseQuest_0 = Finir l'attraction "Maison hantée"
+
+waldoQuizQuest = Le quiz
+waldoQuizQuest_0 = Finir "le quiz de Waldo"
+
+horseRaceQuest = La course
+horseRaceQuest_0 = Finir la "course de chevaux"
+
+shootSalesmanQuest = L'attraction questionable
+shootSalesmanQuest_0 = Finir l'attraction "Tir sur marchand"
+
+shopQuest = La boutique de souvenir
+shopQuest_0 = Aller voir la boutique de souvenir
+
+guardQuest = Un viel ami de retour

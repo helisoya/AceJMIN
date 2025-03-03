@@ -1,0 +1,8 @@
+fadeBg(1;true)
+
+removeAllCharacters()
+setBackground(SwampEntrance;false)
+
+fadeBg(0;false)
+
+load(Swamp/Arrive)

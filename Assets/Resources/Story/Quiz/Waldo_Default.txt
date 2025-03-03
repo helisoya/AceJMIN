@@ -1,0 +1,4 @@
+choice Choice_Chat
+	Choice_Play Quiz/Waldo_Play_Check
+	Choice_Rules Quiz/Waldo_Rules
+	Choice_Nothing Quiz/Waldo_Exit

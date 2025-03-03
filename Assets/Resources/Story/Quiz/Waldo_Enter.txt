@@ -1,0 +1,11 @@
+setCharacterAlpha(Waldo;0;true)
+
+setCharacterPosition(Waldo;FrontWaldo)
+setCharacterRotation(Waldo;FrontWaldo)
+
+setCharacterAlpha(Waldo;1;false)
+
+dialog(Waldo;Waldo;false;Quiz_Waldo_Default_1)
+
+
+load(Quiz/Waldo_Default)

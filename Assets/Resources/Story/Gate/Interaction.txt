@@ -1,0 +1,4 @@
+setInteractionChapter(Door;Gate/ExitPark)
+setInteractionChapter(Exit;MAP-RickeyLand-Gate)
+
+interact

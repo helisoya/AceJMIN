@@ -1,0 +1,13 @@
+addCharacter(RickeyLandGuard;true)
+setCharacterPosition(RickeyLandGuard;Front)
+setCharacterRotation(RickeyLandGuard;Front)
+setCharacterAlpha(RickeyLandGuard;1;false)
+
+dialog(Security;RickeyLandGuard;false;RickeyLandEntrance_MainQuest1_1)
+
+
+setCharacterAlpha(RickeyLandGuard;0;true)
+
+removeCharacter(RickeyLandGuard)
+
+load(RickeyLandEntrance/Interaction)

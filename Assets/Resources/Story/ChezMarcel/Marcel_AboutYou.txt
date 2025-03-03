@@ -1,0 +1,6 @@
+dialog(Marcel;Marcel;false;ChezMarcel_Marcel_AboutYou_1)
+dialog(Marcel;Marcel;false;ChezMarcel_Marcel_AboutYou_2)
+dialog(Marcel;Marcel;false;ChezMarcel_Marcel_AboutYou_3)
+dialog(Marcel;Marcel;false;ChezMarcel_Marcel_AboutYou_4)
+
+load(ChezMarcel/Marcel_Default)

@@ -1,0 +1,7 @@
+playMusic(Exploration_Rickey)
+removeAllCharacters()
+setBackground(RickeyLandGate)
+
+if(rain = 1) changeSkybox(Rain)
+
+load(Gate/Interaction)

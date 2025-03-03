@@ -1,0 +1,4 @@
+dialog(Waldo;Waldo;false;Quiz_Waldo_Play_1)
+
+# TO DO
+# Open Minigame

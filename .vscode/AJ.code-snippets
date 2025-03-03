@@ -1,0 +1,321 @@
+{
+	// Place your HQ2Remake workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Change the current music": {
+		"scope": "ansl",
+		"prefix": "playMusic",
+		"body": [
+			"playMusic(MUSIC)"
+		],
+		"description": "Changes the current music"
+	},
+	"Dialog": {
+		"scope": "ansl",
+		"prefix": "dialog",
+		"body": [
+			"dialog(SPEAKER_ID;CHARACTER_ID;ADDITIVE;TEXT_ID)"
+		],
+		"description": "Shows a dialog"
+	},
+	"Change the background": {
+		"scope": "ansl",
+		"prefix": "setBackground",
+		"body": [
+			"setBackground(SLOT;BACKGROUND)"
+		],
+		"description": "Changes the background"
+	},
+	"Play a sound": {
+		"scope": "ansl",
+		"prefix": "playSound",
+		"body": [
+			"playSound(SFX)"
+		],
+		"description": "Plays a sound"
+	},
+	"Remove all characters": {
+		"scope": "ansl",
+		"prefix": "removeAllCharacters",
+		"body": [
+			"removeAllCharacters()"
+		],
+		"description": "Removes all characters from the scene"
+	},
+	"Add a character": {
+		"scope": "ansl",
+		"prefix": "addCharacter",
+		"body": [
+			"addCharacter(CHARACTER_ID;STARTHIDDEN)"
+		],
+		"description": "Adds a character"
+	},
+	"Remove a character": {
+		"scope": "ansl",
+		"prefix": "removeCharacter",
+		"body": [
+			"removeCharacter(CHARACTER_ID)"
+		],
+		"description": "Removes a character"
+	},
+	"Set a character's position": {
+		"scope": "ansl",
+		"prefix": "setCharacterPosition",
+		"body": [
+			"setCharacterPosition(CHARACTER_ID;MARKER_ID)"
+		],
+		"description": "Sets a character's position"
+	},
+	"Set a character's rotation": {
+		"scope": "ansl",
+		"prefix": "setCharacterRotation",
+		"body": [
+			"setCharacterRotation(CHARACTER_ID;MARKER_ID)"
+		],
+		"description": "Sets a character's rotation"
+	},
+	"Set a character's mouth": {
+		"scope": "ansl",
+		"prefix": "setCharacterMouth",
+		"body": [
+			"setCharacterMouth(CHARACTER_ID;MOUTH_ID)"
+		],
+		"description": "Sets a character's mouth"
+	},
+	"Set a character's eye": {
+		"scope": "ansl",
+		"prefix": "setCharacterEye",
+		"body": [
+			"setCharacterEye(CHARACTER_ID;EYE_ID)"
+		],
+		"description": "Sets a character's eye"
+	},
+	"Set a character's body": {
+		"scope": "ansl",
+		"prefix": "setCharacterBody",
+		"body": [
+			"setCharacterBody(CHARACTER_ID;BODY_ID;USE_STARTUPANIM;WAITFORENDOF_STARTUPANIM)"
+		],
+		"description": "Sets a character's body"
+	},
+	"Set the triggered chapter for an interraction": {
+		"scope": "ansl",
+		"prefix": "setInteractionChapter",
+		"body": [
+			"setInteractionChapter(INTERRACTION_ID;NEXTCHAPTER)"
+		],
+		"description": "Sets the triggered chapter for an interraction"
+	},
+	"Set the triggered chapter to be hidden": {
+		"scope": "ansl",
+		"prefix": "setInteractionHidden",
+		"body": [
+			"setInteractionCsetInteractionHiddenhapter(INTERRACTION_ID;HIDDEN)"
+		],
+		"description": "Sets the triggered chapter to be hidden"
+	},
+	"Set a character's alpha": {
+		"scope": "ansl",
+		"prefix": "setCharacterAlpha",
+		"body": [
+			"setCharacterAlpha(CHARACTER_ID;TARGETALPHA;WAITFOREND)"
+		],
+		"description": "Sets a character's alpha"
+	},
+	"Fade the background": {
+		"scope": "ansl",
+		"prefix": "fadeBg",
+		"body": [
+			"fadeBg(ALPHATARGET;WAITFOREND)"
+		],
+		"description": "Fade the background"
+	},
+	"Fade the foreground": {
+		"scope": "ansl",
+		"prefix": "fadeFg",
+		"body": [
+			"fadeFg(ALPHATARGET;WAITFOREND)"
+		],
+		"description": "Fade the foreground"
+	},
+	"Set the camera's position": {
+		"scope": "ansl",
+		"prefix": "cameraPosition",
+		"body": [
+			"cameraPosition(MARKER;IMMEDIATE;WAITFOREND)"
+		],
+		"description": "Sets the camera's position"
+	},
+	"Set the camera's rotation": {
+		"scope": "ansl",
+		"prefix": "cameraRotation",
+		"body": [
+			"cameraRotation(X;Y;Z;IMMEDIATE;WAITFOREND)"
+		],
+		"description": "Sets the camera's rotation"
+	},
+	"Load a new chapter file": {
+		"scope": "ansl",
+		"prefix": "load",
+		"body": [
+			"load(CHAPTER)"
+		],
+		"description": "Loads a new chapter file"
+	},
+	"Go back to the main menu": {
+		"scope": "ansl",
+		"prefix": "mainMenu",
+		"body": [
+			"mainMenu()"
+		],
+		"description": "Goes back to the main menu"
+	},
+	"Load a new scene": {
+		"scope": "ansl",
+		"prefix": "loadScene",
+		"body": [
+			"loadScene(SCENE)"
+		],
+		"description": "Loads a new scene"
+	},
+	"Play a voice clip": {
+		"scope": "ansl",
+		"prefix": "voice",
+		"body": [
+			"voice(VOICE)"
+		],
+		"description": "Plays a voice clip"
+	},
+	"Open the map": {
+		"scope": "ansl",
+		"prefix": "map",
+		"body": [
+			"map(MAPID;CURRENTPOINT)"
+		],
+		"description": "Opens the map"
+	},
+	"Change a variable": {
+		"scope": "ansl",
+		"prefix": "variable",
+		"body": [
+			"variable(VARIABLEID;NEWVALUE)"
+		],
+		"description": "Changes a variable"
+	},
+	"Change the skybox": {
+		"scope": "ansl",
+		"prefix": "changeSkybox",
+		"body": [
+			"changeSkybox(SKYBOX)"
+		],
+		"description": "Changes the skybox"
+	},
+	"Wait": {
+		"scope": "ansl",
+		"prefix": "wait",
+		"body": [
+			"wait(SECONDS)"
+		],
+		"description": "Waits for a set amount of time"
+	},
+	"Shake": {
+		"scope": "ansl",
+		"prefix": "shake",
+		"body": [
+			"shake(SECONDS;WAITFOREND)"
+		],
+		"description": "Shakes the screen for a set amount of time"
+	},
+	"Choice": {
+		"scope": "ansl",
+		"prefix": "choice",
+		"body": [
+			"choice ID_TEXT\n\tID_CHOICE1 NEXTCHAPTER_CHOICE1\n\tID_CHOICE2 NEXTCHAPTER_CHOICE2"
+		],
+		"description": "Starts a choice"
+	},
+	"If": {
+		"scope": "ansl",
+		"prefix": "if",
+		"body": [
+			"if(VARIABLE1 = 0 & VARIABLE2 = 0) NEXTCHAPTER_OR_COMMAND"
+		],
+		"description": "If statement"
+	},
+	"Interact": {
+		"scope": "ansl",
+		"prefix": "interact",
+		"body": [
+			"interact"
+		],
+		"description": "Starts an interaction sequence"
+	},
+	"Flash": {
+		"scope": "ansl",
+		"prefix": "flash",
+		"body": [
+			"flash(SECONDS)"
+		],
+		"description": "Flash the screen for a set amount of time"
+	},
+	"SetBgColor": {
+		"scope": "ansl",
+		"prefix": "setBgColor",
+		"body": [
+			"setBgColor(R;G;B)"
+		],
+		"description": "Changes the Background Fading's color"
+	},
+	"SetFgColor": {
+		"scope": "ansl",
+		"prefix": "setFgColor",
+		"body": [
+			"setFgColor(R;G;B)"
+		],
+		"description": "Changes the Foreground Fading's color"
+	},
+	"SpeechBubble": {
+		"scope": "ansl",
+		"prefix": "speechBubble",
+		"body": [
+			"speechBubble(SPRITE;SFX)"
+		],
+		"description": "Shows a speech bubble"
+	},
+	"HideDialog": {
+		"scope": "ansl",
+		"prefix": "hideDialog",
+		"body": [
+			"hideDialog()"
+		],
+		"description": "Hide the dialog box"
+	},
+	"Set the save's case name": {
+		"scope": "ansl",
+		"prefix": "setCaseName",
+		"body": [
+			"setCaseName(TEXTID)"
+		],
+		"description": "Sets the save's case name"
+	},
+	"Set the save's case description": {
+		"scope": "ansl",
+		"prefix": "setCaseDesc",
+		"body": [
+			"setCaseDesc(TEXTID)"
+		],
+		"description": "Sets the save's case description"
+	},
+	"Autosave": {
+		"scope": "ansl",
+		"prefix": "autosave",
+		"body": [
+			"autosave()"
+		],
+		"description": "Auto save the game"
+	}
+}

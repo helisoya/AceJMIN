@@ -1,0 +1,7 @@
+playMusic(Exploration_Rickey)
+removeAllCharacters()
+setBackground(RickeyLandPlaza)
+
+if(rain = 1) changeSkybox(Rain)
+
+load(Plaza/Interaction)

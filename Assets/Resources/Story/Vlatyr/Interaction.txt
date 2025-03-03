@@ -1,0 +1,4 @@
+setInteractionChapter(Door;Vlatyr/ChezBoyardee_Locked)
+setInteractionChapter(Exit;MAP-Vlatyr-Vlatyr)
+
+interact

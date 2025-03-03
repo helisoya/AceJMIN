@@ -1,0 +1,8 @@
+dialog([MC];_;false;Fortress_MainQuest3_Accept_1)
+dialog(Harold;Harold;false;Fortress_MainQuest3_Accept_2)
+dialog(Harold;Harold;false;Fortress_MainQuest3_Accept_3)
+dialog(Harold;Harold;false;Fortress_MainQuest3_Accept_4)
+
+variable(acceptedToJoinHarold;1)
+
+load(BraiseFortress/MainQuest3_End)

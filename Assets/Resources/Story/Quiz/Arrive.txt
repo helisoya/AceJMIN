@@ -1,0 +1,9 @@
+playMusic(Exploration_Rickey)
+removeAllCharacters()
+setBackground(RickeyLandWaldoQuiz)
+
+addCharacter(Waldo;false)
+setCharacterPosition(Waldo;Desk)
+setCharacterRotation(Waldo;Desk)
+
+load(Quiz/Interaction)

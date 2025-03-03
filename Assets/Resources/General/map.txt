@@ -1,0 +1,30 @@
+# Map setup
+
+# ID that aren't setup will be hidden by default
+
+# [MAP_NAME]
+# ID NextChapter KEY VALUE
+# ID HIDDEN
+# ID NextChapter ALWAYS
+
+[Vlatyr]
+ChezHarold ChezHarold/Arrive ALWAYS
+Vlatyr Vlatyr/Arrive mainQuest 1
+RickeyLand RickeyLandEntrance/Arrive ALWAYS
+Swamtyr HIDDEN
+ChezMarcel ChezMarcel/Arrive mainQuest 1
+Swamp HIDDEN
+BraiseFortress HIDDEN
+Mines HIDDEN
+Mountains HIDDEN
+
+
+[RickeyLand]
+Gate Gate/Arrive ALWAYS
+Plaza Plaza/Arrive ALWAYS
+Quiz Quiz/Arrive ALWAYS
+Horse Horse/Arrive ALWAYS
+HauntedHouse HauntedHouse/Arrive ALWAYS
+Palace Palace/Arrive ALWAYS
+Salesman Salesman/Arrive ALWAYS
+SouvenirShop SouvenirShop/Arrive shopQuest 0

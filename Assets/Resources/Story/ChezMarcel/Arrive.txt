@@ -1,0 +1,13 @@
+playMusic(Exploration_1)
+removeAllCharacters()
+setBackground(MarcelHouse)
+
+if(rain = 1) changeSkybox(Rain)
+
+addCharacter(Marcel;false)
+setCharacterPosition(Marcel;MarcelSpot)
+setCharacterRotation(Marcel;MarcelSpot)
+
+setInteractionChapter(Marcel;ChezMarcel/Marcel_Enter)
+
+load(ChezMarcel/Interaction)

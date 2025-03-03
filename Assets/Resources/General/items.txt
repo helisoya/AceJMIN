@@ -1,0 +1,9 @@
+# Game Items
+# KEY DEFAULT_VALUE
+
+playerName Felix
+progress 0
+Evidence_1 -1
+Evidence_2 -1
+Profile_1 -1
+Profile_2 -1

@@ -1,0 +1,11 @@
+setCharacterAlpha(Harold;0;true)
+
+setCharacterBody(Harold;Couch;true)
+setCharacterPosition(Harold;Couch)
+setCharacterRotation(Harold;Couch)
+
+setCharacterAlpha(Harold;1;false)
+
+playMusic(Exploration_1)
+
+load(ChezHarold/Salon)

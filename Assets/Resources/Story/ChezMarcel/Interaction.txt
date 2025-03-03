@@ -1,0 +1,3 @@
+setInteractionChapter(Exit;MAP-Vlatyr-ChezMarcel)
+
+interact

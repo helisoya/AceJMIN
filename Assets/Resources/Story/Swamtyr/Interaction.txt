@@ -1,0 +1,6 @@
+setInteractionHidden(Path;true)
+setInteractionChapter(Car;Swamtyr/Car)
+setInteractionChapter(Exit;MAP-Vlatyr-Swamtyr)
+setInteractionChapter(OldMan;Swamtyr/OldMan_Check)
+
+interact

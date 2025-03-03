@@ -1,0 +1,17 @@
+fadeBg(1;true)
+
+setBackground(MinesOutside)
+changeSkybox(NightRain)
+
+dialog(narrator;_;false;Mines_MainQuest3_8)
+dialog(narrator;_;false;Mines_MainQuest3_9)
+dialog([MC];_;false;Mines_MainQuest3_10)
+
+fadeBg(0;false)
+
+dialog(narrator;_;false;Mines_MainQuest3_11)
+dialog([MC];_;false;Mines_MainQuest3_12)
+
+variable(mainQuest;4)
+
+load(Mines/Arrive)

@@ -1,0 +1,4 @@
+choice Choice_Chat
+	Choice_AboutYou ChezMarcel/Marcel_AboutYou
+	Choice_AboutLastNight ChezMarcel/Marcel_AboutLastNight
+	Choice_Nothing ChezMarcel/Marcel_Exit

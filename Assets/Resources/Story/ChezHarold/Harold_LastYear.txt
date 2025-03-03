@@ -1,0 +1,12 @@
+dialog(Harold;Harold;false;ChezHarold_Harold_LastTime_1)
+dialog(Harold;Harold;false;ChezHarold_Harold_LastTime_2)
+dialog(Harold;Harold;false;ChezHarold_Harold_LastTime_3)
+dialog(Harold;Harold;false;ChezHarold_Harold_LastTime_4)
+dialog(Harold;Harold;false;ChezHarold_Harold_LastTime_5)
+dialog(Harold;Harold;false;ChezHarold_Harold_LastTime_6)
+dialog(Harold;Harold;false;ChezHarold_Harold_LastTime_7)
+dialog(Harold;Harold;false;ChezHarold_Harold_LastTime_8)
+dialog(Harold;Harold;false;ChezHarold_Harold_LastTime_9)
+dialog(Harold;Harold;false;ChezHarold_Harold_LastTime_10)
+
+load(ChezHarold/Harold_Default)

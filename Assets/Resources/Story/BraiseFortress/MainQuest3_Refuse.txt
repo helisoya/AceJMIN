@@ -1,0 +1,10 @@
+dialog([MC];_;false;Fortress_MainQuest3_Refuse_1)
+dialog([MC];_;false;Fortress_MainQuest3_Refuse_2)
+dialog([MC];_;false;Fortress_MainQuest3_Refuse_3)
+dialog(Harold;Harold;false;Fortress_MainQuest3_Refuse_4)
+dialog(Harold;Harold;false;Fortress_MainQuest3_Refuse_5)
+dialog(Harold;Harold;false;Fortress_MainQuest3_Refuse_6)
+
+variable(acceptedToJoinHarold;0)
+
+load(BraiseFortress/MainQuest3_End)

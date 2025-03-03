@@ -1,0 +1,7 @@
+if(mainQuest = 0) RickeyLandEntrance/Door_MainQuest0
+if(mainQuest = 1) RickeyLandEntrance/Door_MainQuest1
+if(mainQuest = 2) RickeyLandEntrance/Door_MainQuest2
+
+fadeBg(1;true)
+fadeBg(0;false)
+load(Gate/Arrive)

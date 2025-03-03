@@ -1,0 +1,11 @@
+fadeBg(1;true)
+
+playMusic(Exploration_2)
+removeAllCharacters()
+setBackground(SwampTrees;false)
+
+fadeBg(0;false)
+
+if(archerQuest = 3) Swamp/Trees_AddMarcel
+
+load(Swamp/Trees)

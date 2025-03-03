@@ -1,0 +1,5 @@
+dialog(Waldo;Waldo;false;Quiz_Waldo_Rules_1)
+dialog(Waldo;Waldo;false;Quiz_Waldo_Rules_2)
+dialog(Waldo;Waldo;false;Quiz_Waldo_Rules_3)
+
+load(QUIZ/WALDO_DEFAULT)

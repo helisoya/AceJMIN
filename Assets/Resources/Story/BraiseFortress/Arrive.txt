@@ -1,0 +1,13 @@
+playMusic(Exploration_2)
+removeAllCharacters()
+
+setBackground(BraiseBridge)
+
+if(mainQuest > 2 & mainQuest < 6) setBackground(BraiseBridgeBarrier)
+
+if(rain = 1) changeSkybox(FortressRain)
+
+if(mainQuest = 2 & rickeyQuest = 100) BraiseFortress/MainQuest2_Archer
+if(mainQuest = 2 & archerQuest = 100) BraiseFortress/MainQuest2_Rickey
+
+load(BraiseFortress/Interaction)

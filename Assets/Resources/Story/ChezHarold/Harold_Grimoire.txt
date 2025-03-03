@@ -1,0 +1,7 @@
+dialog(Harold;Harold;false;ChezHarold_Harold_Grimoire_1)
+dialog(Harold;Harold;false;ChezHarold_Harold_Grimoire_2)
+dialog(Harold;Harold;false;ChezHarold_Harold_Grimoire_3)
+dialog(Harold;Harold;false;ChezHarold_Harold_Grimoire_4)
+dialog(Harold;Harold;false;ChezHarold_Harold_Grimoire_5)
+
+load(ChezHarold/Harold_Default)

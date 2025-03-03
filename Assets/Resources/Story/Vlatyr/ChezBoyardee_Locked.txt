@@ -1,0 +1,3 @@
+dialog(narrator;_;false;Vlatyr_ChezBoyardee_Done_1)
+
+load(Vlatyr/Arrive)
