@@ -14,22 +14,22 @@ public class PauseMenu : MonoBehaviour
     [Header("Pause Menu")]
     [SerializeField] private bool isInGame = true;
     [SerializeField] private GameObject root;
+
+    [Header("Data")]
     [SerializeField] private Slider sliderBGM;
     [SerializeField] private Slider sliderSFX;
-    [SerializeField] private Resolution[] resolutions;
-    [SerializeField] private TMP_Dropdown resolutionDropdown;
+    [SerializeField] private TextMeshProUGUI resolutionText;
     [SerializeField] private Toggle fullscreenToggle;
+    [SerializeField] private LocalizedText descriptionText;
     public bool open { get { return root.activeInHierarchy; } }
 
-    [Header("Event System")]
+    [Header("Control")]
     [SerializeField] private GameObject saveObj;
     [SerializeField] private GameObject loadObj;
-    [SerializeField] private LocalizedText descriptionText;
-    [SerializeField] private string[] descriptions;
-    [SerializeField] private Image[] highlighters;
-    [SerializeField] private Sprite defaultSprite;
-    [SerializeField] private Sprite highlightedSprite;
+    [SerializeField] private PauseMenuRow[] rows;
+    private Resolution[] resolutions;
     private int currentIdx;
+    private int currentRes;
 
 
     /// <summary>
@@ -44,25 +44,28 @@ public class PauseMenu : MonoBehaviour
 
 
         resolutions = Screen.resolutions;
-
-        List<string> list = new List<string>();
-
-        int currentRes = 0;
+        currentRes = 0;
 
         Resolution res;
         Resolution reference = Screen.currentResolution;
         for (int i = 0; i < resolutions.Length; i++)
         {
             res = resolutions[i];
-            list.Add(res.width + "x" + res.height);
             if (currentRes == 0 && res.width == reference.width && res.height == reference.height && res.refreshRate == reference.refreshRate)
             {
                 currentRes = i;
+                UpdateResolutionText(res);
             }
         }
-        resolutionDropdown.ClearOptions();
-        resolutionDropdown.AddOptions(list);
-        resolutionDropdown.SetValueWithoutNotify(currentRes);
+    }
+
+    /// <summary>
+    /// Update the resolution text
+    /// </summary>
+    /// <param name="resolution">The new resolution to display</param>
+    private void UpdateResolutionText(Resolution resolution)
+    {
+        resolutionText.text = resolution.width + "x" + resolution.height + "(" + resolution.refreshRate + ")";
     }
 
     /// <summary>
@@ -73,10 +76,10 @@ public class PauseMenu : MonoBehaviour
     {
         if (currentIdx != rowIdx)
         {
-            if (currentIdx != -1) highlighters[currentIdx].sprite = defaultSprite;
+            if (currentIdx != -1) rows[currentIdx].Normal();
             currentIdx = rowIdx;
-            highlighters[currentIdx].sprite = highlightedSprite;
-            descriptionText.SetNewKey(descriptions[currentIdx]);
+            rows[currentIdx].Highlight();
+            descriptionText.SetNewKey(rows[currentIdx].GetDescriptionID());
         }
     }
 
@@ -111,11 +114,22 @@ public class PauseMenu : MonoBehaviour
     /// <summary>
     /// Changes the game's resolution
     /// </summary>
-    /// <param name="value">The resolution's index</param>
-    public void ChangeResolution(int value)
+    /// <param name="idx">The resolution's index</param>
+    private void ChangeResolution(int idx)
     {
-        Resolution newRes = resolutions[value];
+        Resolution newRes = resolutions[idx];
         Settings.SetResolution(newRes.width, newRes.height, newRes.refreshRate);
+        UpdateResolutionText(newRes);
+    }
+
+    /// <summary>
+    /// Increment the resolution
+    /// </summary>
+    /// <param name="side">The side of the incrementation</param>
+    public void IncrementResolution(int side)
+    {
+        currentRes = (currentRes + side + resolutions.Length) % resolutions.Length;
+        ChangeResolution(currentRes);
     }
 
 
@@ -182,6 +196,16 @@ public class PauseMenu : MonoBehaviour
         if (AJInput.Instance.GetReturnToTitleDown())
         {
             ReturnToMainMenu();
+        }
+
+        if (currentIdx == 3)
+        {
+            // Change Resolution
+            int side = (AJInput.Instance.GetMoveRightDown() ? 1 : 0) - (AJInput.Instance.GetMoveLeftDown() ? 1 : 0);
+            if (side != 0)
+            {
+                IncrementResolution(side);
+            }
         }
     }
 
