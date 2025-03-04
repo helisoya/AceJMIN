@@ -16,6 +16,7 @@ settings_screen = Ecran
 settings_fullscreen = Plein Ecran
 settings_save = Sauvegarder
 settings_load = Charger
+settings_mainMenu = Menu principal
 title_enterText = Entrez votre nom...
 title_finishText = Continuer
 title_descName = Entrez votre nom
@@ -25,8 +26,17 @@ saves_title_load = Choisissez quel slot charger
 saves_none = Pas de données
 saves_confirmDesc = Utiliser ce slot ?
 saves_confirm = Confirmer
-saves_back = Retour
-
+general_back = Retour
+settings_desc_save = Sauvegarder ou charger des données.
+settings_desc_bgm = Changer le niveau de la musique.
+settings_desc_sfx = Changer le niveau des effets sonores.
+settings_desc_resolution = Changer la résolution.
+settings_desc_fullscreen = Mettre le jeu en plein écran ?
+settings_name_save = Données
+settings_name_bgm = Musique
+settings_name_sfx = Sons
+settings_name_resolution = Resolution
+settings_name_fullscreen = Fullscreen
 
 # ------------------------------------------------------------------------
 # ----------------------------- Map --------------------------------------

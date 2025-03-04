@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// Represents the pause menu
@@ -10,15 +12,25 @@ using TMPro;
 public class PauseMenu : MonoBehaviour
 {
     [Header("Pause Menu")]
+    [SerializeField] private bool isInGame = true;
     [SerializeField] private GameObject root;
     [SerializeField] private Slider sliderBGM;
-    [SerializeField] private Slider sliderVOICE;
     [SerializeField] private Slider sliderSFX;
     [SerializeField] private Resolution[] resolutions;
     [SerializeField] private TMP_Dropdown resolutionDropdown;
     [SerializeField] private Toggle fullscreenToggle;
-    [SerializeField] private TMP_Dropdown qualityDropdown;
     public bool open { get { return root.activeInHierarchy; } }
+
+    [Header("Event System")]
+    [SerializeField] private GameObject saveObj;
+    [SerializeField] private GameObject loadObj;
+    [SerializeField] private LocalizedText descriptionText;
+    [SerializeField] private string[] descriptions;
+    [SerializeField] private Image[] highlighters;
+    [SerializeField] private Sprite defaultSprite;
+    [SerializeField] private Sprite highlightedSprite;
+    private int currentIdx;
+
 
     /// <summary>
     /// Resets the options values
@@ -27,7 +39,6 @@ public class PauseMenu : MonoBehaviour
     {
         SETTINGSAVE save = Settings.GetSave();
         sliderBGM.SetValueWithoutNotify(save.valBGM);
-        sliderVOICE.SetValueWithoutNotify(save.valVOICE);
         sliderSFX.SetValueWithoutNotify(save.valSFX);
         fullscreenToggle.SetIsOnWithoutNotify(save.fullscreen);
 
@@ -52,17 +63,33 @@ public class PauseMenu : MonoBehaviour
         resolutionDropdown.ClearOptions();
         resolutionDropdown.AddOptions(list);
         resolutionDropdown.SetValueWithoutNotify(currentRes);
+    }
 
-        qualityDropdown.SetValueWithoutNotify(QualitySettings.GetQualityLevel());
+    /// <summary>
+    /// Highlight a new row
+    /// </summary>
+    /// <param name="rowIdx">The row's index</param>
+    public void HighlightRow(int rowIdx)
+    {
+        if (currentIdx != rowIdx)
+        {
+            if (currentIdx != -1) highlighters[currentIdx].sprite = defaultSprite;
+            currentIdx = rowIdx;
+            highlighters[currentIdx].sprite = highlightedSprite;
+            descriptionText.SetNewKey(descriptions[currentIdx]);
+        }
     }
 
     /// <summary>
     /// Shows the pause menu
     /// </summary>
-    public void Show()
+    /// <param name="isOnSaveButton">True if the cursor starts on the save button. False if it starts on the load button</param>
+    public void Show(bool isOnSaveButton = true)
     {
         ResetValues();
         root.SetActive(true);
+        HighlightRow(isInGame ? 0 : 1);
+        EventSystem.current.SetSelectedGameObject(isOnSaveButton ? saveObj : loadObj);
     }
 
     /// <summary>
@@ -71,14 +98,6 @@ public class PauseMenu : MonoBehaviour
     public void SetBGM()
     {
         Settings.SetVolumeBGM(sliderBGM.value);
-    }
-
-    /// <summary>
-    /// Changes the voice volume
-    /// </summary>
-    public void SetVoice()
-    {
-        Settings.SetVolumeVOICE(sliderVOICE.value);
     }
 
     /// <summary>
@@ -99,14 +118,6 @@ public class PauseMenu : MonoBehaviour
         Settings.SetResolution(newRes.width, newRes.height, newRes.refreshRate);
     }
 
-    /// <summary>
-    /// Changes the game's quality
-    /// </summary>
-    /// <param name="value">The quality's index</param>
-    public void ChangeQuality(int value)
-    {
-        Settings.SetQuality(value);
-    }
 
     /// <summary>
     /// Changes if the game is in fullscreen or not
@@ -150,6 +161,28 @@ public class PauseMenu : MonoBehaviour
     {
         Close();
         VNGUI.instance.OpenSaveMenu(false);
+    }
+
+    /// <summary>
+    /// Returns to the main menu
+    /// </summary>
+    public void ReturnToMainMenu()
+    {
+        if (isInGame) SceneManager.LoadScene("MainMenu");
+    }
+
+    void Update()
+    {
+        if (!open) return;
+
+        if (AJInput.Instance.GetCancelDown())
+        {
+            Close();
+        }
+        if (AJInput.Instance.GetReturnToTitleDown())
+        {
+            ReturnToMainMenu();
+        }
     }
 
 }

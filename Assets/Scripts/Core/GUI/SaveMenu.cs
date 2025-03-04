@@ -41,7 +41,7 @@ public class SaveMenu : MonoBehaviour
 
         if (isInGame && !isLoading)
         {
-            VNGUI.instance.OpenSettings();
+            VNGUI.instance.OpenSettings(isInSavingMode);
         }
     }
 

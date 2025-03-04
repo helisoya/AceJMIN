@@ -169,10 +169,11 @@ public class VNGUI : MonoBehaviour
     /// <summary>
     /// Event for opening the settings
     /// </summary>
-    public void OpenSettings()
+    /// <param name="isOnSaveButton">True if the cursor starts on the save button. False if it starts on the load button</param>
+    public void OpenSettings(bool isOnSaveButton = true)
     {
         ResetCursor();
-        if (!pauseMenu.open) pauseMenu.Show();
+        if (!pauseMenu.open) pauseMenu.Show(isOnSaveButton);
     }
 
     /// <summary>
@@ -213,10 +214,9 @@ public class VNGUI : MonoBehaviour
             button.interactable = NovelController.instance.isReadyForSaving;
         }
 
-        if (NovelController.instance.isReadyForSaving && Input.GetKeyDown(KeyCode.Escape))
+        if (!pauseMenu.open && NovelController.instance.isReadyForSaving && AJInput.Instance.GetOptionsDown())
         {
-            if (pauseMenu.open) pauseMenu.Close();
-            else pauseMenu.Show();
+            pauseMenu.Show();
         }
 
     }
