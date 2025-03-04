@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 /// <summary>
@@ -36,9 +37,9 @@ public class SaveButton : MonoBehaviour
         this.parent = parent;
 
         slotText.text = linkedInfo != null ? linkedInfo.saveName : "";
-        caseNameText.SetNewKey(linkedInfo != null ? linkedInfo.caseName : null);
-        caseDescText.SetNewKey(linkedInfo != null ? linkedInfo.caseDesc : "saves_none");
-        caseDescText.SetColor(linkedInfo != null ? Color.black : Color.white);
+        caseNameText.SetNewKey(linkedInfo != null ? linkedInfo.caseName : "saves_none");
+        caseDescText.SetNewKey(linkedInfo != null ? linkedInfo.caseDesc : null);
+        caseNameText.SetColor(linkedInfo != null ? Color.black : Color.white);
 
         backgroundImg.sprite = linkedInfo != null ? normalSprite : noFileSprite;
     }
