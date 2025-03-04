@@ -37,6 +37,8 @@ settings_name_bgm = Musique
 settings_name_sfx = Sons
 settings_name_resolution = Resolution
 settings_name_fullscreen = Fullscreen
+vn_options = Options
+vn_record = Dossier
 
 # ------------------------------------------------------------------------
 # ----------------------------- Map --------------------------------------

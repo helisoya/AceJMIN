@@ -155,6 +155,7 @@ public class SaveMenu : MonoBehaviour
         else
         {
             NovelController.instance.LoadGameFile(currentInfo.saveName);
+            VNGUI.instance.SetCoolDownForAction(0.1f);
             Close(true);
         }
     }

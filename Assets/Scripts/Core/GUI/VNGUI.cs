@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -15,9 +16,6 @@ public class VNGUI : MonoBehaviour
     [SerializeField] private Fade fadeBg;
     [SerializeField] private Fade fadeFg;
     [SerializeField] private Fade flash;
-
-    [Header("Buttons")]
-    [SerializeField] private Button[] buttonsRequiringSaveReady;
 
     [Header("Pause")]
     [SerializeField] private PauseMenu pauseMenu;
@@ -43,6 +41,9 @@ public class VNGUI : MonoBehaviour
     public bool fadingFlash { get { return flash.fading; } }
     public bool speechBubbleInProgress { get { return Time.time - speechBubbleStart < 1.1f; } }
 
+    public bool notInMenu { get { return !pauseMenu.open && !saveMenu.isOpen; } }
+    private float cooldownForAction = 0;
+
     void Awake()
     {
         instance = this;
@@ -53,6 +54,17 @@ public class VNGUI : MonoBehaviour
         fadeBg.FadeTo(0);
 
         flash.ForceAlphaTo(0);
+
+        cooldownForAction = 0;
+    }
+
+    /// <summary>
+    /// Sets the current cooldown for action (For instance, the action to pass a dialog)
+    /// </summary>
+    /// <param name="newValue">The new value</param>
+    public void SetCoolDownForAction(float newValue)
+    {
+        cooldownForAction = newValue;
     }
 
     /// <summary>
@@ -172,6 +184,8 @@ public class VNGUI : MonoBehaviour
     /// <param name="isOnSaveButton">True if the cursor starts on the save button. False if it starts on the load button</param>
     public void OpenSettings(bool isOnSaveButton = true)
     {
+        if (!NovelController.instance.isReadyForSaving) return;
+
         ResetCursor();
         if (!pauseMenu.open) pauseMenu.Show(isOnSaveButton);
     }
@@ -209,15 +223,21 @@ public class VNGUI : MonoBehaviour
 
     void Update()
     {
-        foreach (Button button in buttonsRequiringSaveReady)
+        if (cooldownForAction > 0)
         {
-            button.interactable = NovelController.instance.isReadyForSaving;
+            cooldownForAction -= Time.deltaTime;
         }
 
-        if (!pauseMenu.open && NovelController.instance.isReadyForSaving && AJInput.Instance.GetOptionsDown())
+        if (notInMenu && AJInput.Instance.GetOptionsDown())
         {
-            pauseMenu.Show();
+            OpenSettings(true);
         }
+
+        if (notInMenu && cooldownForAction <= 0 && AJInput.Instance.GetConfirmDown())
+        {
+            SkipDialog();
+        }
+
 
     }
 }
