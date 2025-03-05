@@ -28,4 +28,13 @@ public class PauseMenuGraphicObject
     {
         linkedImage.sprite = normalSprite;
     }
+
+    /// <summary>
+    /// Sets if the graphics is active or not
+    /// </summary>
+    /// <param name="active">Is the graphics active ?</param>
+    public void SetActive(bool active)
+    {
+        linkedImage.gameObject.SetActive(active);
+    }
 }

@@ -39,6 +39,11 @@ settings_name_resolution = Resolution
 settings_name_fullscreen = Fullscreen
 vn_options = Options
 vn_record = Dossier
+vn_press = Presser
+vn_present = Présenter
+casefiles_evidence = Preuves
+casefiles_profiles = Profiles
+casefiles_check = Vérifier
 
 # ------------------------------------------------------------------------
 # ----------------------------- Map --------------------------------------

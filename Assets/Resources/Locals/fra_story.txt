@@ -396,6 +396,18 @@ Char_Buendia = Buendia
 CASENAME_1 = Volte Face & Test
 CASEDESC_1_1 = Felix devienne fou
 
+Evidence_1_name = Smash
+Evidence_1_desc0 = Un jeu de merde.<br>Ace Attorney c'est mieux.
+
+Evidence_2_name = Caribou
+Evidence_2_desc0 = Le juge les adore.
+
+Profile_1_name = Felix Vrai
+Profile_1_desc0 = Moi<br>Très cool.
+
+Profile_2_name = Juge Lien
+Profile_2_desc0 = Le Juge.<br>Il a l'air triste ?
+
 Test_1 = Bienvenue au tribunal
 Test_2 = Je vole, mais on s'en fout...
 Test_3 = M.Felix, pourquoi avez-vous un pied de biche ?

@@ -1,0 +1,1873 @@
+fileFormatVersion: 2
+guid: 2591f36a130ab6642a88eeb27a16000f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: symbol_pc_white_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88b293ed77a150429ce5ba9cc85f934
+      internalID: 1768024437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 322
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816a4f768fd3fe944875af4c66fcb6f7
+      internalID: 1586314770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 322
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0a4efec33920b4f9fa861114e7a307
+      internalID: 328917581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 322
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac475fa7de78b124b8487907d8501a1f
+      internalID: -795865787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_4
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 322
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365131506728aba4f9041dbda1fac51c
+      internalID: 1692918432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_5
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 322
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e13c8029a06cb45aa97f8a712f3270
+      internalID: -2062672783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_6
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 322
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c20cf366b38674f943f3a0d664a153
+      internalID: -69475696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_7
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 322
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dbafcca45a752469c20ab62258c0ec
+      internalID: -1269807458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_8
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 322
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81cf80566a16dd46b6aa14a59164d0e
+      internalID: -1262971758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_9
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 322
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45770b298f452a74b8a3a0fb5fde902f
+      internalID: -345892562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 276
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf342f6ef1da964d9de7cadd6e978ce
+      internalID: 682291923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_11
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 276
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1640e202691973499be76d7f3290df5
+      internalID: -88578710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_12
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 276
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf538fd7bd860543b36d67b0f3d920c
+      internalID: 2094767287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_13
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 276
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ca10083d0037742a75185be4d410c3
+      internalID: -937011383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_14
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 276
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29983f2a9f7a154185e1cce95b11f0f
+      internalID: -357474310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_15
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 276
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aeea418d18e4644ebe8b2c01b69c8e0
+      internalID: 1691632176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_16
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 276
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f089d728e3d334bb07eccff23732a8
+      internalID: 768771626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_17
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 276
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9a1ef88452abf45ac1f01fc24a7dcf
+      internalID: 1682117745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_18
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 276
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfddb88ffe08aa84898ba35c5eda37b7
+      internalID: 1523480971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_19
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 276
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843775df82ba7964ca8a01ec028a0b0b
+      internalID: -55683300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd94d3e97d4c1e48b6988c1037b99c3
+      internalID: 300870190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_21
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 230
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456aec10bf6e18f4bbb035c5c11f2e70
+      internalID: -1054815500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_22
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 230
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a342c8fd7e205f74fa3bdbab6c567be5
+      internalID: 1104623072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_23
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 230
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a0bac1ec0ebd244a44972986475bf7
+      internalID: 1567142426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_24
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 230
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6346ac7c3b3aaf94494b0257ca0b0cf0
+      internalID: 812843445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_25
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 230
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243ad5458d5a8f442bcd58ce9a292e8c
+      internalID: 854054305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_26
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 230
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a2cd5d6c6c04a4aa632c5ba08675c8
+      internalID: -1384448525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_27
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 230
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277e49694ce2670438b284fe9954ebcf
+      internalID: 273165992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_28
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 230
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f772053136f67c84690ece234a767ddf
+      internalID: -531295830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_29
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 230
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdcf76a22c439154796ccd05e00c9dde
+      internalID: 1310357068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6eb24146b14e1d478d057acedad2420
+      internalID: -497474759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_31
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 184
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9364879ef90be4c8e3fb770a2cd199
+      internalID: -204216864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_32
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 184
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4378fd767fdfe948875bd3227a4088b
+      internalID: 791753979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_33
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 184
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985e3bcd3e6f03a44841401fbce92948
+      internalID: -62580327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_34
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 184
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85c31820265e0346a2f05d92e6bece9
+      internalID: -1345981298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_35
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 184
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4bb8ec79e9f4149916113f618aafcc
+      internalID: 2139070264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_36
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 184
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314ad29e5738eca4aad0cd49b33352fb
+      internalID: -697211957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_37
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 184
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53131f240f3457d42bf4ef87aa9a34b5
+      internalID: -1664951591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_38
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 184
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0bef3467fc78e5468d60d6991669583
+      internalID: 1113143126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_39
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 184
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9e5d70a83f2064b8b16628b113570f
+      internalID: 692111896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 138
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0ebf1c25ef42543b5ec4cd7e7a6db4
+      internalID: -210381451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_41
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 138
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30bd535a08b3194988978f69da21de3
+      internalID: -1402486081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_42
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 138
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63de72a81cf622549926f2232dc562fe
+      internalID: -695183952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_43
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 138
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd71faf3257bf842a870cba350f0ded
+      internalID: 1960044036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_44
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 138
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acddd07c46e741f458e3152608a7d4b9
+      internalID: 158373743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_45
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 138
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097ad38a8ba2c744a8252433aa9893e6
+      internalID: -714772752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_46
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 138
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ecb6ae2fb51c6649a84ebc9bf58f7fa
+      internalID: -1431131703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_47
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 138
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0373c2cabf449af48a281c6820dfe384
+      internalID: -665925767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_48
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 138
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da0921cb5fb341418c274b41d5ed082
+      internalID: 791303570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_49
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 138
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3fd48e8f597b74aa2162039c3f1eb6
+      internalID: -1131134014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 92
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b098c06c80fb746928bf656cc484b6
+      internalID: -64302867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_51
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 92
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3e5b05d5c435c4f9c2cb9af1551340
+      internalID: 880462235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_52
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 92
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429605f92ed14ef4ba4bb168cc1560ae
+      internalID: 294258013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_53
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 92
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1c114c50fe0b449b5abf97f4d558e2
+      internalID: 1237714373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_54
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 92
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de52bbe975ab7264ab96f07f603c5fde
+      internalID: 787054282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_55
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 92
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c41bfd99d33314aafc77fb6dc50102
+      internalID: -670896009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_56
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 92
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c606cac60ccaab44a64f86f72c966e7
+      internalID: -2033353388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_57
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 92
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b72874dd6d630a40a9cfd2b1ddeae4e
+      internalID: -387031616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_58
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 92
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1db13bca587884bb6d713c56e1ce8e
+      internalID: 1475377715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_59
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 92
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385c9b2bfab86914bbc8ceff32a8b5f2
+      internalID: 90761108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e072ed7770c8954429c75a52a0a54d7f
+      internalID: 1850660521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_61
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 46
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb94966abd0b2e4b88bff3994319fb3
+      internalID: -1537888268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_62
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 46
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a0c9fdcf0943f4aa3c9a76e57042f6
+      internalID: -199852173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_63
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 46
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71f7ddbb79d8b846961346135e95af8
+      internalID: 1950136688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_64
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 46
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2543688af41f76e488aad9f9f90bded9
+      internalID: 540576522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_65
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 46
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86396c9717be6a47b40f1f919b409b4
+      internalID: 651561164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_66
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 46
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7862ff50365d95f4eac2975e9a2498ec
+      internalID: 2102229079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_67
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 46
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82494c65deeb22a418b4bb6ecba080b9
+      internalID: -1805023588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_68
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 46
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa4903137fb4b34999fcf8c910887d3
+      internalID: 961897619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_69
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 46
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6678c05173d457f47a139788023aca94
+      internalID: 80868826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b94bc1fbaf1644b8d054cf81b5f699
+      internalID: 857608338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_71
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 0
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64444000100ef044da8d9d611fdb1aa3
+      internalID: 222221927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_72
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 0
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5dc4cd03b453444b9d6524e03027ca
+      internalID: -1361492652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_73
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf7f7c7325da9247855a44be97f77c4
+      internalID: -1414793224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_74
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 0
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d194edf8f608e9438028c03a5e81c3a
+      internalID: -1076334752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_75
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf6ae3a22b656d4fb26165fe04d24f2
+      internalID: 385442361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_76
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbef84c8ca335c54a8060521549b4bc4
+      internalID: -756772505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_77
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 0
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2217d741ef79b6342a76a1f000dadb28
+      internalID: -2112792866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbol_pc_white_78
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a37eb670e563645b28e6c3ff3cbc36
+      internalID: 1371423626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bc340fe668c8aab4e83e1189ffd45e8b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      symbol_pc_white_0: 1768024437
+      symbol_pc_white_1: 1586314770
+      symbol_pc_white_10: 682291923
+      symbol_pc_white_11: -88578710
+      symbol_pc_white_12: 2094767287
+      symbol_pc_white_13: -937011383
+      symbol_pc_white_14: -357474310
+      symbol_pc_white_15: 1691632176
+      symbol_pc_white_16: 768771626
+      symbol_pc_white_17: 1682117745
+      symbol_pc_white_18: 1523480971
+      symbol_pc_white_19: -55683300
+      symbol_pc_white_2: 328917581
+      symbol_pc_white_20: 300870190
+      symbol_pc_white_21: -1054815500
+      symbol_pc_white_22: 1104623072
+      symbol_pc_white_23: 1567142426
+      symbol_pc_white_24: 812843445
+      symbol_pc_white_25: 854054305
+      symbol_pc_white_26: -1384448525
+      symbol_pc_white_27: 273165992
+      symbol_pc_white_28: -531295830
+      symbol_pc_white_29: 1310357068
+      symbol_pc_white_3: -795865787
+      symbol_pc_white_30: -497474759
+      symbol_pc_white_31: -204216864
+      symbol_pc_white_32: 791753979
+      symbol_pc_white_33: -62580327
+      symbol_pc_white_34: -1345981298
+      symbol_pc_white_35: 2139070264
+      symbol_pc_white_36: -697211957
+      symbol_pc_white_37: -1664951591
+      symbol_pc_white_38: 1113143126
+      symbol_pc_white_39: 692111896
+      symbol_pc_white_4: 1692918432
+      symbol_pc_white_40: -210381451
+      symbol_pc_white_41: -1402486081
+      symbol_pc_white_42: -695183952
+      symbol_pc_white_43: 1960044036
+      symbol_pc_white_44: 158373743
+      symbol_pc_white_45: -714772752
+      symbol_pc_white_46: -1431131703
+      symbol_pc_white_47: -665925767
+      symbol_pc_white_48: 791303570
+      symbol_pc_white_49: -1131134014
+      symbol_pc_white_5: -2062672783
+      symbol_pc_white_50: -64302867
+      symbol_pc_white_51: 880462235
+      symbol_pc_white_52: 294258013
+      symbol_pc_white_53: 1237714373
+      symbol_pc_white_54: 787054282
+      symbol_pc_white_55: -670896009
+      symbol_pc_white_56: -2033353388
+      symbol_pc_white_57: -387031616
+      symbol_pc_white_58: 1475377715
+      symbol_pc_white_59: 90761108
+      symbol_pc_white_6: -69475696
+      symbol_pc_white_60: 1850660521
+      symbol_pc_white_61: -1537888268
+      symbol_pc_white_62: -199852173
+      symbol_pc_white_63: 1950136688
+      symbol_pc_white_64: 540576522
+      symbol_pc_white_65: 651561164
+      symbol_pc_white_66: 2102229079
+      symbol_pc_white_67: -1805023588
+      symbol_pc_white_68: 961897619
+      symbol_pc_white_69: 80868826
+      symbol_pc_white_7: -1269807458
+      symbol_pc_white_70: 857608338
+      symbol_pc_white_71: 222221927
+      symbol_pc_white_72: -1361492652
+      symbol_pc_white_73: -1414793224
+      symbol_pc_white_74: -1076334752
+      symbol_pc_white_75: 385442361
+      symbol_pc_white_76: -756772505
+      symbol_pc_white_77: -2112792866
+      symbol_pc_white_78: 1371423626
+      symbol_pc_white_8: -1262971758
+      symbol_pc_white_9: -345892562
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

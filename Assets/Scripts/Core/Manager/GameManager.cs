@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     private SaveManager saveManager;
-
+    private EvidenceManager evidenceManager;
 
     private string chapterToLoad;
     private bool loadSave;
@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
             instance = this;
             Locals.Init();
             saveManager = new SaveManager();
+            evidenceManager = new EvidenceManager();
 
             if (debug)
             {
@@ -53,10 +54,20 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Returns the save manager
     /// </summary>
-    /// <returns></returns>
+    /// <returns>The save manager</returns>
     public static SaveManager GetSaveManager()
     {
         if (instance != null) return instance.saveManager;
+        return null;
+    }
+
+    /// <summary>
+    /// Returns the evidence manager
+    /// </summary>
+    /// <returns>The evidence manager</returns>
+    public static EvidenceManager GetEvidenceManager()
+    {
+        if (instance != null) return instance.evidenceManager;
         return null;
     }
 

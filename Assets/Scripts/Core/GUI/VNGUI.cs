@@ -20,6 +20,7 @@ public class VNGUI : MonoBehaviour
     [Header("Pause")]
     [SerializeField] private PauseMenu pauseMenu;
     [SerializeField] private SaveMenu saveMenu;
+    [SerializeField] private CaseFileMenu caseFileMenu;
 
 
     [Header("Interaction Mode")]
@@ -41,7 +42,7 @@ public class VNGUI : MonoBehaviour
     public bool fadingFlash { get { return flash.fading; } }
     public bool speechBubbleInProgress { get { return Time.time - speechBubbleStart < 1.1f; } }
 
-    public bool notInMenu { get { return !pauseMenu.open && !saveMenu.isOpen; } }
+    public bool notInMenu { get { return !pauseMenu.open && !saveMenu.isOpen && !caseFileMenu.open; } }
     private float cooldownForAction = 0;
 
     void Awake()
@@ -191,6 +192,17 @@ public class VNGUI : MonoBehaviour
     }
 
     /// <summary>
+    /// Opens the case file menu
+    /// </summary>
+    public void OpenCaseFile()
+    {
+        if (!NovelController.instance.isReadyForSaving) return;
+
+        ResetCursor();
+        if (!caseFileMenu.open) caseFileMenu.Show();
+    }
+
+    /// <summary>
     /// Opens the save menu
     /// </summary>
     /// <param name="inSaveMode">True if in save mode. False if in load mode</param>
@@ -238,6 +250,9 @@ public class VNGUI : MonoBehaviour
             SkipDialog();
         }
 
-
+        if (notInMenu && AJInput.Instance.GetCourtRecordDown())
+        {
+            OpenCaseFile();
+        }
     }
 }

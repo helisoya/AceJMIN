@@ -16,6 +16,11 @@ setBackground(0;TEST)
 setCaseName(CASENAME_1)
 setCaseDesc(CASEDESC_1_1)
 
+variable(Evidence_1;0)
+variable(Evidence_2;0)
+
+variable(Profile_1;0)
+variable(Profile_2;0)
 
 # Judge talks
 cameraPosition(Judge;true;false)
