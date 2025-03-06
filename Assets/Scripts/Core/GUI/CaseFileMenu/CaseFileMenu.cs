@@ -18,6 +18,8 @@ public class CaseFileMenu : MonoBehaviour
     [SerializeField] private LocalizedText itemNameText;
     [SerializeField] private LocalizedText itemDescText;
     [SerializeField] private GameObject checkButton;
+    [SerializeField] private GameObject exitButton;
+    [SerializeField] private GameObject presentButton;
     [SerializeField] private Image itemSprite;
     [SerializeField] private RectTransform markerRoot;
     [SerializeField] private Transform caseFileButtonsRoot;
@@ -42,6 +44,8 @@ public class CaseFileMenu : MonoBehaviour
     private int currentTotalItems;
     private Evidence currentItem;
     private int checkModeCurrentIndex;
+    private bool canPresent;
+    private bool canExit;
 
 
     void Awake()
@@ -54,13 +58,28 @@ public class CaseFileMenu : MonoBehaviour
     }
 
     /// <summary>
+    /// Gets the selected item's ID
+    /// </summary>
+    /// <returns>The selected item's ID</returns>
+    public string SelectedItemID()
+    {
+        if (currentItem == null) return null;
+        return currentItem.ID;
+    }
+
+    /// <summary>
     /// Shows the menu
     /// </summary>
-    public void Show()
+    /// <param name="canPresent">Can evidence be presented ?</param>
+    /// <param name="canExit">Can the menu be exited ?</param>
+    public void Show(bool canPresent, bool canExit)
     {
         root.SetActive(true);
         currentEvidenceIdx = 0;
         currentProfileIdx = 0;
+        this.canExit = canExit;
+        this.canPresent = canPresent;
+        exitButton.SetActive(canExit);
         SwitchToEvidence();
     }
 
@@ -81,6 +100,7 @@ public class CaseFileMenu : MonoBehaviour
         tabNameText.SetNewKey("casefiles_evidence");
         switchButtonText.SetNewKey("casefiles_profiles");
         SetAvaiableItems(GameManager.GetEvidenceManager().GetAvailableEvidence());
+        presentButton.SetActive(canPresent);
         buttons[currentEvidenceIdx].OnSelect(null);
     }
 
@@ -93,6 +113,7 @@ public class CaseFileMenu : MonoBehaviour
         tabNameText.SetNewKey("casefiles_profiles");
         switchButtonText.SetNewKey("casefiles_evidence");
         SetAvaiableItems(GameManager.GetEvidenceManager().GetAvailableProfiles());
+        presentButton.SetActive(false);
         buttons[currentProfileIdx].OnSelect(null);
     }
 
@@ -208,6 +229,14 @@ public class CaseFileMenu : MonoBehaviour
     }
 
     /// <summary>
+    /// Present evidence
+    /// </summary>
+    public void PresentEvidence()
+    {
+        Hide();
+    }
+
+    /// <summary>
     /// Closes the check mode
     /// </summary>
     public void HideCheckMode()
@@ -272,7 +301,7 @@ public class CaseFileMenu : MonoBehaviour
             {
                 HideCheckMode();
             }
-            else
+            else if (canExit)
             {
                 Hide();
             }
@@ -288,6 +317,11 @@ public class CaseFileMenu : MonoBehaviour
             if (AJInput.Instance.GetConfirmDown() && currentItem != null && currentItem.GetNumberOfChecks() > 0)
             {
                 OpenCheckMode();
+            }
+
+            if (AJInput.Instance.GetPresentDown() && canPresent && currentItem != null)
+            {
+                PresentEvidence();
             }
         }
         else if (currentItem.GetNumberOfChecks() > 1)

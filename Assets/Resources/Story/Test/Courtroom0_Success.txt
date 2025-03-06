@@ -1,0 +1,5 @@
+# Felix shows a caribou
+
+cameraPosition(Judge;true;false)
+dialog(Judge;_;false;Test_14)
+dialog(Judge;_;false;Test_15)

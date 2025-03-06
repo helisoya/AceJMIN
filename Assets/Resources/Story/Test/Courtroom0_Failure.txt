@@ -1,0 +1,12 @@
+# Felix fails to show a caribou
+
+cameraPosition(Defense;true;false)
+dialog(Felix;_;false;Test_Failure_1)
+
+cameraPosition(Judge;true;false)
+dialog(Judge;_;false;Test_Failure_2)
+
+cameraPosition(Defense;true;false)
+dialog(Felix;_;false;Test_Failure_3)
+
+load(Test/Courtroom0_AskEvidence)

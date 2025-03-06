@@ -418,4 +418,13 @@ Test_7 = Et parce qu'il a volé mon prénom !
 Test_8 = C'est ridicule ! Même mes IA ne sont pas aussi stupide.
 Test_9 = Si M.UwU à le même prénom que vous, c'est parce qu'il joue à Smash.
 Test_10 = En effet, tout les smashe-
-Test_11 = Non.
+Test_11 = Non. Smash c'est naze. Et je vais le prouver !
+Test_12 = Intéréssant... Et pourquoi devrait-on parler de ça ?
+Test_13 = C'est un procès pour meurtre ici. Avez-vous quelque chose pour me faire changer d'avis ?
+
+Test_Failure_1 = Voila !
+Test_Failure_2 = Smash ? Oui, mais encore ?
+Test_Failure_3 = Ah, euh... Je me suis trompé de preuve... Je peux recommencer ?
+
+Test_14 = Caribou.
+Test_15 = Le témoin est à vous, Monsieur Felix.

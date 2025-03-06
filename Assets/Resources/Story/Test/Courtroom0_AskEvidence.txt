@@ -1,0 +1,8 @@
+# Judge asks for evidence
+
+cameraPosition(Judge;true;false)
+
+dialog(Judge;_;false;Test_12)
+dialog(Judge;_;false;Test_13)
+
+askEvidence(Evidence_2;Test/Courtroom0_Success;Test/Courtroom0_Failure)

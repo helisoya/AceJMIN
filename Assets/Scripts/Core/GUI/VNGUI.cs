@@ -43,6 +43,8 @@ public class VNGUI : MonoBehaviour
     public bool speechBubbleInProgress { get { return Time.time - speechBubbleStart < 1.1f; } }
 
     public bool notInMenu { get { return !pauseMenu.open && !saveMenu.isOpen && !caseFileMenu.open; } }
+    public bool caseFileMenuOpen { get { return caseFileMenu.open; } }
+    public string caseFileSelectedID { get { return caseFileMenu.SelectedItemID(); } }
     private float cooldownForAction = 0;
 
     void Awake()
@@ -194,12 +196,14 @@ public class VNGUI : MonoBehaviour
     /// <summary>
     /// Opens the case file menu
     /// </summary>
-    public void OpenCaseFile()
+    /// <param name="canPresent">Can evidence be presented ?</param>
+    /// <param name="canExit">Can the menu be exited ?</param>
+    public void OpenCaseFile(bool canExit, bool canPresent)
     {
-        if (!NovelController.instance.isReadyForSaving) return;
+        if (!NovelController.instance.isReadyForSaving && canExit) return;
 
         ResetCursor();
-        if (!caseFileMenu.open) caseFileMenu.Show();
+        if (!caseFileMenu.open) caseFileMenu.Show(canPresent, canExit);
     }
 
     /// <summary>
@@ -233,6 +237,14 @@ public class VNGUI : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Click event for opening the case file menu
+    /// </summary>
+    public void Click_OpenCaseFile()
+    {
+        OpenCaseFile(true, false);
+    }
+
     void Update()
     {
         if (cooldownForAction > 0)
@@ -252,7 +264,7 @@ public class VNGUI : MonoBehaviour
 
         if (notInMenu && AJInput.Instance.GetCourtRecordDown())
         {
-            OpenCaseFile();
+            OpenCaseFile(true, false);
         }
     }
 }

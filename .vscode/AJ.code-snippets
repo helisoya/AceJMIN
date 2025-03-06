@@ -317,5 +317,13 @@
 			"autosave()"
 		],
 		"description": "Auto save the game"
-	}
+	},
+	"Ask for evidence": {
+		"scope": "ansl",
+		"prefix": "askEvidence",
+		"body": [
+			"askEvidence(EVIDENCE_ID;CHAPTER_SUCCESS;CHAPTER_FAILURE)"
+		],
+		"description": "Asks for a specific evidence"
+	},
 }

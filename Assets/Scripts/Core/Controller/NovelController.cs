@@ -631,6 +631,28 @@ public class NovelController : MonoBehaviour
                 LoadChapterFile(parameters[0]);
                 break;
 
+            case "askEvidence":
+                if (isQuickCommand) break;
+
+                VNGUI.instance.OpenCaseFile(false, true);
+
+                yield return new WaitForEndOfFrame();
+                while (VNGUI.instance.caseFileMenuOpen)
+                {
+                    yield return new WaitForEndOfFrame();
+                }
+
+                if (VNGUI.instance.caseFileSelectedID.Equals(parameters[0]))
+                {
+                    LoadChapterFile(parameters[1]);
+                }
+                else
+                {
+                    LoadChapterFile(parameters[2]);
+                }
+
+                break;
+
             case "mainMenu":
                 if (isQuickCommand) break;
                 VNGUI.instance.FadeFgTo(1);
