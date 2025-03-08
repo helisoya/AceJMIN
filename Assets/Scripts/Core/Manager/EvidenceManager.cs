@@ -63,6 +63,8 @@ public class EvidenceManager
     /// <returns>The evidence's data</returns>
     public Evidence GetEvidence(string ID)
     {
+        if (ID == null) return null;
+
         if (evidences.TryGetValue(ID, out Evidence evidence))
         {
             return evidence;

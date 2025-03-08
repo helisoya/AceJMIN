@@ -1,5 +1,11 @@
 # Felix shows a caribou
 
 cameraPosition(Judge;true;false)
+
+displayEvidence(RIGHT;Evidence_2)
+
 dialog(Judge;_;false;Test_14)
+
+clearDisplayedEvidence()
+
 dialog(Judge;_;false;Test_15)

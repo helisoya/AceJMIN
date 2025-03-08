@@ -35,6 +35,9 @@ public class GAMEFILE
     public string caseName;
     public string caseDesc;
 
+    public EvidenceDisplayManager.EvidenceDisplaySide evidenceDisplaySide;
+    public string evidenceDisplayID;
+
     public GAMEFILE()
     {
         this.chapterName = "test2";
@@ -53,6 +56,9 @@ public class GAMEFILE
         this.cameraRotation = Vector3.zero;
         this.caseDesc = "";
         this.caseName = "";
+
+        this.evidenceDisplaySide = EvidenceDisplayManager.EvidenceDisplaySide.HIDDEN;
+        this.evidenceDisplayID = null;
     }
 
     [System.Serializable]

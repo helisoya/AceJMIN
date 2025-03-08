@@ -22,6 +22,9 @@ public class VNGUI : MonoBehaviour
     [SerializeField] private SaveMenu saveMenu;
     [SerializeField] private CaseFileMenu caseFileMenu;
 
+    [Header("Flow")]
+    [SerializeField] private EvidenceDisplayManager evidenceDisplayManager;
+
 
     [Header("Interaction Mode")]
     [SerializeField] private GameObject interactionModeRoot;
@@ -153,6 +156,34 @@ public class VNGUI : MonoBehaviour
     private void ResetCursor()
     {
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+    }
+
+    /// <summary>
+    /// Display evidence on the GUI
+    /// </summary>
+    /// <param name="side">The side where to display</param>
+    /// <param name="evidence">The evidence to display</param>
+    public void DisplayEvidence(EvidenceDisplayManager.EvidenceDisplaySide side, Evidence evidence)
+    {
+        evidenceDisplayManager.Display(side, evidence);
+    }
+
+    /// <summary>
+    /// Gets the currently used side for displaying evidence
+    /// </summary>
+    /// <returns>The currently used side</returns>
+    public EvidenceDisplayManager.EvidenceDisplaySide GetDisplayedSide()
+    {
+        return evidenceDisplayManager.GetCurrentSide();
+    }
+
+    /// <summary>
+    /// Gets the currently displayed evidence ID
+    /// </summary>
+    /// <returns>The ID</returns>
+    public string GetDisplayedEvidenceID()
+    {
+        return evidenceDisplayManager.GetEvidenceID();
     }
 
     /// <summary>

@@ -104,6 +104,8 @@ public class NovelController : MonoBehaviour
         currentCaseName = activeGameFile.caseName;
         currentCaseDesc = activeGameFile.caseDesc;
 
+        VNGUI.instance.DisplayEvidence(activeGameFile.evidenceDisplaySide, GameManager.GetEvidenceManager().GetEvidence(activeGameFile.evidenceDisplayID));
+
         loadedAutoSave = saveName.Equals("auto");
 
         LoadChapterFile(activeGameFile.chapterName, activeGameFile.chapterProgress);
@@ -141,6 +143,9 @@ public class NovelController : MonoBehaviour
 
         activeGameFile.caseName = currentCaseName;
         activeGameFile.caseDesc = currentCaseDesc;
+
+        activeGameFile.evidenceDisplaySide = VNGUI.instance.GetDisplayedSide();
+        activeGameFile.evidenceDisplayID = VNGUI.instance.GetDisplayedEvidenceID();
 
         GameManager.GetSaveManager().Save(saveName);
     }
@@ -696,6 +701,16 @@ public class NovelController : MonoBehaviour
 
             case "changeSkybox":
                 LightingManager.instance.ChangeData(parameters[0]);
+                break;
+            case "displayEvidence":
+                VNGUI.instance.DisplayEvidence(
+                    System.Enum.Parse<EvidenceDisplayManager.EvidenceDisplaySide>(parameters[0]),
+                    GameManager.GetEvidenceManager().GetEvidence(parameters[1])
+                );
+                break;
+
+            case "clearDisplayedEvidence":
+                VNGUI.instance.DisplayEvidence(EvidenceDisplayManager.EvidenceDisplaySide.HIDDEN, null);
                 break;
 
             case "wait":

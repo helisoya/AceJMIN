@@ -326,4 +326,20 @@
 		],
 		"description": "Asks for a specific evidence"
 	},
+	"Display evidence": {
+		"scope": "ansl",
+		"prefix": "displayEvidence",
+		"body": [
+			"displayEvidence(SIDE;EVIDENCE_ID)"
+		],
+		"description": "Displays evidence (LEFT,RIGHT or FULL)"
+	},
+	"Clears displayed evidence": {
+		"scope": "ansl",
+		"prefix": "clearDisplayedEvidence",
+		"body": [
+			"clearDisplayedEvidence()"
+		],
+		"description": "Clears displayed evidence"
+	},
 }
