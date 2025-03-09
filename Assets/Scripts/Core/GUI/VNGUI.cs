@@ -24,6 +24,7 @@ public class VNGUI : MonoBehaviour
 
     [Header("Flow")]
     [SerializeField] private EvidenceDisplayManager evidenceDisplayManager;
+    [SerializeField] private GameObject[] inExaminationObjects;
 
 
     [Header("Interaction Mode")]
@@ -74,6 +75,18 @@ public class VNGUI : MonoBehaviour
     }
 
     /// <summary>
+    /// Changes if the examination objects are active or not
+    /// </summary>
+    /// <param name="active">Are the examination objects active ?</param>
+    public void SetInExaminationObjectsActive(bool active)
+    {
+        foreach (GameObject obj in inExaminationObjects)
+        {
+            obj.SetActive(active);
+        }
+    }
+
+    /// <summary>
     /// Show a speech bubble
     /// </summary>
     /// <param name="bubbleSprite">The speech bubble's sprite</param>
@@ -83,6 +96,7 @@ public class VNGUI : MonoBehaviour
         speechBubbleAnimator.SetTrigger("Action");
         speechBubbleStart = Time.time;
     }
+
 
     /// <summary>
     /// Flashes the screen to a set alpha
@@ -273,7 +287,25 @@ public class VNGUI : MonoBehaviour
     /// </summary>
     public void Click_OpenCaseFile()
     {
-        OpenCaseFile(true, false);
+        OpenCaseFile(true, NovelController.instance.isInExamination);
+    }
+
+    /// <summary>
+    /// Click event for going in reverse in the examination mode
+    /// </summary>
+    public void Click_ExaminationGoReverse()
+    {
+        if (!NovelController.instance.isInExamination) return;
+        NovelController.instance.SetNextIsBackward();
+        NovelController.instance.Next();
+    }
+
+    /// <summary>
+    /// Click event for pressing a statement
+    /// </summary>
+    public void Click_Press()
+    {
+        if (NovelController.instance.isInExamination) NovelController.instance.PressOnDeposition();
     }
 
     void Update()
@@ -288,14 +320,24 @@ public class VNGUI : MonoBehaviour
             OpenSettings(true);
         }
 
-        if (notInMenu && cooldownForAction <= 0 && AJInput.Instance.GetConfirmDown())
+        if (notInMenu && cooldownForAction <= 0 && (AJInput.Instance.GetConfirmDown() || AJInput.Instance.GetMoveRightDown()))
         {
             SkipDialog();
         }
 
+        if (notInMenu && cooldownForAction <= 0 && NovelController.instance.isInExamination && AJInput.Instance.GetMoveLeftDown())
+        {
+            Click_ExaminationGoReverse();
+        }
+
+        if (notInMenu && cooldownForAction <= 0 && NovelController.instance.isInExamination && AJInput.Instance.GetPressDown())
+        {
+            Click_Press();
+        }
+
         if (notInMenu && AJInput.Instance.GetCourtRecordDown())
         {
-            OpenCaseFile(true, false);
+            OpenCaseFile(true, NovelController.instance.isInExamination);
         }
     }
 }

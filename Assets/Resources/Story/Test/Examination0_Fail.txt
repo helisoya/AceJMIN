@@ -1,0 +1,9 @@
+cameraPosition(Defense;false;true)
+
+dialog(Felix;_;false;Test_Examination_Fail_1)
+
+cameraPosition(Witness;false;true)
+
+dialog(UWU;_;false;Test_Examination_Fail_2)
+
+load(Test/Examination0)

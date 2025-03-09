@@ -9,3 +9,29 @@ dialog(Judge;_;false;Test_14)
 clearDisplayedEvidence()
 
 dialog(Judge;_;false;Test_15)
+
+fadeBg(1;true)
+
+# Witness testimony
+
+cameraPosition(Witness;true;false)
+
+fadeBg(0;false)
+
+dialog(UWU;_;false;Test_Testimony_1)
+dialog(UWU;_;false;Test_Testimony_2)
+dialog(UWU;_;false;Test_Testimony_3)
+
+# Cross Examination start
+
+fadeFg(1;true)
+
+cameraPosition(Defense;true;false)
+
+fadeFg(0;false)
+
+dialog(Felix;_;false;Test_16)
+
+
+
+load(Test/Examination0)

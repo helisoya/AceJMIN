@@ -7,6 +7,7 @@
 		{ "include": "#constants" },
 		{ "include": "#commands" },
 		{ "include": "#choice" },
+		{ "include": "#examination" },
 		{ "include": "#choice-entry" },
 		{ "include": "#trad-entry" }
 	],
@@ -117,6 +118,22 @@
 			"patterns": [
 				{
 					"match": "choice",
+					"name": "keyword.control.ansl"
+				},
+				{
+					"begin": " ",
+					"end": "$",
+					"name": "choice.id.ansl"
+				}
+			]
+		},
+		"examination": {
+			"begin": "^examination",
+			"end": "$",
+			"name": "keyword.control.ansl",
+			"patterns": [
+				{
+					"match": "examination",
 					"name": "keyword.control.ansl"
 				},
 				{

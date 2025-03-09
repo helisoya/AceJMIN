@@ -234,6 +234,7 @@ public class CaseFileMenu : MonoBehaviour
     public void PresentEvidence()
     {
         Hide();
+        if (NovelController.instance.isInExamination) NovelController.instance.PresentEvidence(currentItem.ID);
     }
 
     /// <summary>

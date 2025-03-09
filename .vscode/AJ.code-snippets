@@ -342,4 +342,12 @@
 		],
 		"description": "Clears displayed evidence"
 	},
+	"Examination": {
+		"scope": "ansl",
+		"prefix": "examination",
+		"body": [
+			"examination END_CHAPTER FAIL_CHAPTER LOOP_CHAPTER [NONE | PRESS | EVIDENCE_ID PRESENT_ID] \n\tDEPOSITION_ID1 SPEAKER_NAME SPEAKER_ID DEPOSITION_NEXT1\n\tDEPOSITION_ID2 SPEAKER_NAME SPEAKER_ID DEPOSITION_NEXT2"
+		],
+		"description": "Starts a cross examination (They are persistent between files)"
+	},
 }

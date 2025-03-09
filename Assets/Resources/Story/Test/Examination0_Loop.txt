@@ -1,0 +1,7 @@
+fadeFg(1;true)
+cameraPosition(Defense;true;false)
+fadeFg(0;false)
+
+dialog(Felix;_;false;Test_Examination_Loop_1)
+
+load(Test/Examination0)

@@ -38,6 +38,11 @@ public class GAMEFILE
     public EvidenceDisplayManager.EvidenceDisplaySide evidenceDisplaySide;
     public string evidenceDisplayID;
 
+    public Examination currentExamination;
+    public int lastIdxExamination;
+    public bool inExamination;
+    public List<int> examinationPressed;
+
     public GAMEFILE()
     {
         this.chapterName = "test2";
@@ -59,6 +64,10 @@ public class GAMEFILE
 
         this.evidenceDisplaySide = EvidenceDisplayManager.EvidenceDisplaySide.HIDDEN;
         this.evidenceDisplayID = null;
+        this.currentExamination = null;
+        this.inExamination = false;
+        this.lastIdxExamination = 0;
+        this.examinationPressed = new List<int>();
     }
 
     [System.Serializable]

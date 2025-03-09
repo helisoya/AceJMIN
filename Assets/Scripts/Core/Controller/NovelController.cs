@@ -14,6 +14,14 @@ public class NovelController : MonoBehaviour
         }
     }
 
+    public bool isInExamination
+    {
+        get
+        {
+            return currentExamination != null;
+        }
+    }
+
     private List<string> data = new List<string>();
     private string activeChapterFile = "";
     private bool next = false;
@@ -28,14 +36,28 @@ public class NovelController : MonoBehaviour
 
     private bool loadedAutoSave;
 
+    private Examination currentExamination = null;
+    private int lastIdxExamination = 0;
+    private List<int> examinationPressed;
+    private bool nextIsBackward;
+
     public void Next()
     {
         next = true;
     }
 
+    public void SetNextIsBackward()
+    {
+        nextIsBackward = true;
+    }
+
     void Start()
     {
         instance = this;
+
+        currentExamination = null;
+        examinationPressed = new List<int>();
+
         print("Is Loading Save : " + GameManager.instance.IsLoadingSave());
         if (GameManager.instance.IsLoadingSave())
         {
@@ -108,6 +130,10 @@ public class NovelController : MonoBehaviour
 
         loadedAutoSave = saveName.Equals("auto");
 
+        lastIdxExamination = activeGameFile.lastIdxExamination;
+        currentExamination = activeGameFile.inExamination ? activeGameFile.currentExamination : null;
+        examinationPressed = activeGameFile.examinationPressed;
+
         LoadChapterFile(activeGameFile.chapterName, activeGameFile.chapterProgress);
     }
 
@@ -147,6 +173,12 @@ public class NovelController : MonoBehaviour
         activeGameFile.evidenceDisplaySide = VNGUI.instance.GetDisplayedSide();
         activeGameFile.evidenceDisplayID = VNGUI.instance.GetDisplayedEvidenceID();
 
+        activeGameFile.lastIdxExamination = lastIdxExamination;
+        activeGameFile.currentExamination = currentExamination;
+        activeGameFile.inExamination = currentExamination != null;
+
+        activeGameFile.examinationPressed = examinationPressed;
+
         GameManager.GetSaveManager().Save(saveName);
     }
 
@@ -172,6 +204,9 @@ public class NovelController : MonoBehaviour
 
     IEnumerator HandlingChapterFile()
     {
+
+        VNGUI.instance.SetInExaminationObjectsActive(false);
+
         if (GameManager.instance.IsLoadingSave())
         {
             GameManager.instance.SetIsLoadingSave(false);
@@ -179,6 +214,10 @@ public class NovelController : MonoBehaviour
             if (currentChoice != null)
             {
                 yield return HandleChoice(currentChoice);
+            }
+            else if (currentExamination != null)
+            {
+                yield return HandleExamination();
             }
             else if (inInteractionMode)
             {
@@ -212,6 +251,10 @@ public class NovelController : MonoBehaviour
             {
                 yield return HandlingChoiceLine(line);
             }
+            else if (line.StartsWith("examination"))
+            {
+                yield return HandlingExaminationLine(line);
+            }
             else if (line.StartsWith("if"))
             {
                 yield return HandlingIf(line);
@@ -236,6 +279,144 @@ public class NovelController : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         if (!GameManager.instance.IsLoadingSave()) inInteractionMode = false;
+    }
+
+    IEnumerator HandlingExaminationLine(string line)
+    {
+
+        // examination END_CHAPTER FAIL_CHAPTER LOOP_CHAPTER [NONE | EVIDENCE_ID PRESENT_ID] 
+        //  DEPOSITION_ID1 SPEAKER_NAME SPEAKER_ID DEPOSITION_NEXT1
+        //  DEPOSITION_ID2 SPEAKER_NAME SPEAKER_ID DEPOSITION_NEXT2
+
+        currentExamination = new Examination();
+        string[] split = line.Split(' ');
+        currentExamination.successChaper = split[1];
+        currentExamination.failChapter = split[2];
+        currentExamination.loopChapter = split[3];
+        currentExamination.evidenceToPresent = split[4];
+        if (!split[4].Equals("PRESS") && !split[4].Equals("NONE")) currentExamination.evidenceToPresentIdx = int.Parse(split[5]);
+
+        int i = chapterProgress + 1;
+
+        while (i < data.Count && !string.IsNullOrEmpty(data[i]))
+        {
+            split = data[i].Replace("\t", "").Split(' ');
+            currentExamination.parts.Add(new Examination.Part
+            {
+                textId = split[0],
+                speakerId = split[1],
+                characterId = split[2],
+                nextChapter = split[3]
+            });
+
+            i++;
+        }
+
+        yield return HandleExamination();
+    }
+
+    IEnumerator HandleExamination()
+    {
+        VNGUI.instance.SetInExaminationObjectsActive(true);
+
+        while (currentExamination != null)
+        {
+            if (lastIdxExamination >= currentExamination.parts.Count)
+            {
+                // Exit loop
+                string nextChapter = currentExamination.loopChapter;
+                currentExamination = null;
+                lastIdxExamination = 0;
+                LoadChapterFile(nextChapter);
+                break;
+            }
+
+
+            if (currentExamination.evidenceToPresent.Equals("PRESS") && currentExamination.parts.Count == examinationPressed.Count)
+            {
+                // End by pressing all sentences
+                // Won't work well if you add new depositions mid examination
+                // Does exactly matter since new deposions usualy means you need to present evidence somewhere
+                examinationPressed.Clear();
+                lastIdxExamination = 0;
+                string nextChapter = currentExamination.successChaper;
+                currentExamination = null;
+                LoadChapterFile(nextChapter);
+                break;
+            }
+
+            next = false;
+            nextIsBackward = false;
+
+            DialogSystem.instance.OpenAllRequirementsForDialogueSystemVisibility(true);
+            DialogSystem.instance.Say(currentExamination.parts[lastIdxExamination].textId,
+                currentExamination.parts[lastIdxExamination].speakerId,
+                currentExamination.parts[lastIdxExamination].characterId.Equals("null") ? null : currentExamination.parts[lastIdxExamination].characterId);
+
+            TextArchitect architect = DialogSystem.instance.textArchitect;
+
+
+            while (architect.isConstructing)
+            {
+                if (next)
+                {
+                    next = false;
+                    nextIsBackward = false;
+                    architect.skip = true;
+                }
+                yield return new WaitForEndOfFrame();
+            }
+
+            yield return new WaitForEndOfFrame();
+
+            waitingForUserToEndDialog = true;
+            while (!next)
+            {
+                yield return new WaitForEndOfFrame();
+            }
+            waitingForUserToEndDialog = false;
+
+            if (nextIsBackward) lastIdxExamination--;
+            else lastIdxExamination++;
+
+            if (lastIdxExamination < 0) lastIdxExamination = 0;
+        }
+    }
+
+    public void PressOnDeposition()
+    {
+        if (currentExamination != null)
+        {
+            string toLoad = currentExamination.parts[lastIdxExamination].nextChapter;
+            if (!examinationPressed.Contains(lastIdxExamination)) examinationPressed.Add(lastIdxExamination);
+            currentExamination = null;
+            lastIdxExamination++;
+            LoadChapterFile(toLoad);
+        }
+    }
+
+    public void PresentEvidence(string evidenceID)
+    {
+        if (currentExamination == null) return;
+
+        string toLoad;
+
+        if (!currentExamination.evidenceToPresent.Equals("NONE") && !currentExamination.evidenceToPresent.Equals("PRESS") &&
+        evidenceID.Equals(currentExamination.evidenceToPresent) && lastIdxExamination == currentExamination.evidenceToPresentIdx)
+        {
+            // Presented the correct evidence
+            toLoad = currentExamination.successChaper;
+            examinationPressed.Clear();
+            lastIdxExamination = 0;
+        }
+        else
+        {
+            // Failed to present the correct evidence
+            toLoad = currentExamination.failChapter;
+        }
+
+        currentExamination = null;
+        LoadChapterFile(toLoad);
     }
 
 

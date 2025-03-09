@@ -1,0 +1,8 @@
+fadeFg(1;true)
+cameraPosition(Witness;true;false)
+fadeFg(0;false)
+
+examination Test/Courtroom1 Test/Examination0_Fail Test/Examination0_Loop Evidence_1 2
+	Test_Examination_1 UWU null Test/Examination0_1
+	Test_Examination_2 UWU null Test/Examination0_2
+	Test_Examination_3 UWU null Test/Examination0_3
