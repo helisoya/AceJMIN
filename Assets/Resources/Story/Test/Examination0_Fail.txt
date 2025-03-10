@@ -1,3 +1,8 @@
+updateHealthBar()
+setHealthBarVisible(true)
+setHealthBarGlow(1)
+
+hideDialog()
 cameraPosition(Defense;false;true)
 
 dialog(Felix;_;false;Test_Examination_Fail_1)
@@ -5,5 +10,9 @@ dialog(Felix;_;false;Test_Examination_Fail_1)
 cameraPosition(Witness;false;true)
 
 dialog(UWU;_;false;Test_Examination_Fail_2)
+
+variable(health;--)
+updateHealthBar()
+setHealthBarGlow(0)
 
 load(Test/Examination0)

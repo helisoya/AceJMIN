@@ -23,6 +23,7 @@ public class VNGUI : MonoBehaviour
     [SerializeField] private CaseFileMenu caseFileMenu;
 
     [Header("Flow")]
+    [SerializeField] private HeathbarManager healthbarManager;
     [SerializeField] private EvidenceDisplayManager evidenceDisplayManager;
     [SerializeField] private GameObject[] inExaminationObjects;
 
@@ -45,6 +46,10 @@ public class VNGUI : MonoBehaviour
     public Color fadeFgColor { get { return fadeFg.currenColor; } }
     public bool fadingFlash { get { return flash.fading; } }
     public bool speechBubbleInProgress { get { return Time.time - speechBubbleStart < 1.1f; } }
+
+    public bool healthBarShown { get { return healthbarManager.shown; } }
+    public int healthBarLength { get { return healthbarManager.currentHealth; } }
+    public int healthBarLengthGlowing { get { return healthbarManager.numberOfLastGlowing; } }
 
     public bool notInMenu { get { return !pauseMenu.open && !saveMenu.isOpen && !caseFileMenu.open; } }
     public bool caseFileMenuOpen { get { return caseFileMenu.open; } }
@@ -189,6 +194,34 @@ public class VNGUI : MonoBehaviour
     public EvidenceDisplayManager.EvidenceDisplaySide GetDisplayedSide()
     {
         return evidenceDisplayManager.GetCurrentSide();
+    }
+
+    /// <summary>
+    /// Sets the visibility of the healthbar
+    /// </summary>
+    /// <param name="visible">Is the healthbar visible ?</param>
+    public void SetHealthBarVisible(bool visible)
+    {
+        if (visible) healthbarManager.Show();
+        else healthbarManager.Hide();
+    }
+
+    /// <summary>
+    /// Changes the healthbar current length
+    /// </summary>
+    /// <param name="length">The new length</param>
+    public void SetHealthBarLength(int length)
+    {
+        healthbarManager.UpdateHealth(length);
+    }
+
+    /// <summary>
+    /// Sets the last X parts of the health bar to be glowing
+    /// </summary>
+    /// <param name="amount">The amount of parts that will be glowing</param>
+    public void SetHealthBarGlowingParts(int amount)
+    {
+        healthbarManager.SetGlowForLast(amount);
     }
 
     /// <summary>

@@ -134,6 +134,10 @@ public class NovelController : MonoBehaviour
         currentExamination = activeGameFile.inExamination ? activeGameFile.currentExamination : null;
         examinationPressed = activeGameFile.examinationPressed;
 
+        VNGUI.instance.SetHealthBarGlowingParts(activeGameFile.healthBarGlowAmount);
+        VNGUI.instance.SetHealthBarLength(activeGameFile.healthBarLength);
+        VNGUI.instance.SetHealthBarVisible(activeGameFile.healthBarShown);
+
         LoadChapterFile(activeGameFile.chapterName, activeGameFile.chapterProgress);
     }
 
@@ -178,6 +182,10 @@ public class NovelController : MonoBehaviour
         activeGameFile.inExamination = currentExamination != null;
 
         activeGameFile.examinationPressed = examinationPressed;
+
+        activeGameFile.healthBarShown = VNGUI.instance.healthBarShown;
+        activeGameFile.healthBarLength = VNGUI.instance.healthBarLength;
+        activeGameFile.healthBarGlowAmount = VNGUI.instance.healthBarLengthGlowing;
 
         GameManager.GetSaveManager().Save(saveName);
     }
@@ -923,6 +931,18 @@ public class NovelController : MonoBehaviour
                     yield return new WaitForEndOfFrame();
                 }
 
+                break;
+
+            case "setHealthBarVisible":
+                VNGUI.instance.SetHealthBarVisible(bool.Parse(parameters[0]));
+                break;
+
+            case "updateHealthBar":
+                VNGUI.instance.SetHealthBarLength(int.Parse(GameManager.GetSaveManager().GetItem("health")));
+                break;
+
+            case "setHealthBarGlow":
+                VNGUI.instance.SetHealthBarGlowingParts(int.Parse(parameters[0]));
                 break;
         }
     }

@@ -437,12 +437,12 @@ Test_Examination_1 = <color=green>Mais bordel, c'est quoi ton problème ?</color
 Test_Examination_2 = <color=green>Je peux plus jouer à smash tranquille ?</color>
 Test_Examination_3 = <color=green>Tu as une preuve pour me prouver que je peux pas jouer ?</color>
 
-Test_16 = <color=blue>Eh Eh ! Il est temps pour moi de prouver à ce monstre que smash c'est nul !</color>
+Test_16 = <color=#3A7CA3>Eh Eh ! Il est temps pour moi de prouver à ce monstre que smash c'est nul !</color>
 
 Test_Examination_1_1 = Toi.
 Test_Examination_2_1 = Non.
 Test_Examination_3_1 = Je vais te le prouver, ma preuve est prête.
-Test_Examination_Loop_1 = <color=blue>Bon, je dois lui montrer ma super preuve.</color>
+Test_Examination_Loop_1 = <color=#3A7CA3>Bon, je dois lui montrer ma super preuve.</color>
 Test_Examination_Fail_1 = Voici ma preuve !
 Test_Examination_Fail_2 = Tu crois vraiment qu'un Caribou va suffir pour me vaincre ? 
 

@@ -1,7 +1,13 @@
 # Game Items
 # KEY DEFAULT_VALUE
 
+# Engine Variables
+# Do not touch !
 playerName Felix
+health 10
+
+# You can edit here
+
 progress 0
 Evidence_1 -1
 Evidence_2 -1

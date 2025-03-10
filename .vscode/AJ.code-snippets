@@ -350,4 +350,28 @@
 		],
 		"description": "Starts a cross examination (They are persistent between files)"
 	},
+	"Set if the healthbar is visible": {
+		"scope": "ansl",
+		"prefix": "setHealthBarVisible",
+		"body": [
+			"setHealthBarVisible(true)"
+		],
+		"description": "Sets if the healthbar is visible"
+	},
+	"Set the amount of glowing parts on the healthbar": {
+		"scope": "ansl",
+		"prefix": "setHealthBarGlow",
+		"body": [
+			"setHealthBarGlow(AMOUNT)"
+		],
+		"description": "Sets the amount of glowing parts on the healthbar"
+	},
+	"Update the healthbar's value": {
+		"scope": "ansl",
+		"prefix": "updateHealthBar",
+		"body": [
+			"updateHealthBar()"
+		],
+		"description": "Updates the healthbar's value"
+	},
 }

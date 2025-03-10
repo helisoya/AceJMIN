@@ -1,4 +1,6 @@
 # Felix shows the evidence
+setHealthBarVisible(false)
+hideDialog()
 cameraPosition(Defense;false;true)
 dialog(Felix;_;false;Test_17)
 

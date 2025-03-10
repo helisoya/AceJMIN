@@ -43,6 +43,10 @@ public class GAMEFILE
     public bool inExamination;
     public List<int> examinationPressed;
 
+    public bool healthBarShown;
+    public int healthBarLength;
+    public int healthBarGlowAmount;
+
     public GAMEFILE()
     {
         this.chapterName = "test2";
@@ -68,6 +72,10 @@ public class GAMEFILE
         this.inExamination = false;
         this.lastIdxExamination = 0;
         this.examinationPressed = new List<int>();
+        this.healthBarShown = false;
+        this.healthBarLength = 0;
+        this.healthBarGlowAmount = 0;
+
     }
 
     [System.Serializable]
