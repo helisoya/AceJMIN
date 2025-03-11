@@ -79,9 +79,10 @@ public class SaveManager
         if (SaveFileExists(saveName))
         {
             saveFile = FileManager.LoadJSON<GAMEFILE>(savePath + saveName + ".txt");
-            foreach (GAMEFILE.ITEM item in saveFile.items)
+            foreach (GAMEFILE.ITEM item in items)
             {
-                items[GetIndexOfItem(item.name)].value = item.value;
+                GAMEFILE.ITEM inSave = saveFile.items.Find(x => x.name == item.name);
+                item.value = inSave == null ? item.defaultValue : inSave.value;
             }
         }
 

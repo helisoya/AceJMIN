@@ -9,9 +9,10 @@ using UnityEngine;
 public class HeathbarManager : MonoBehaviour
 {
     [Header("Infos")]
-    [SerializeField] private GameObject root;
+    [SerializeField] private Animator rootAnimator;
     [SerializeField] private Transform partsRoot;
     [SerializeField] private Material healthbarMat;
+    [SerializeField] private Animator explosionAnimator;
     private Image[] images;
     public int currentHealth { get; private set; }
     public int numberOfLastGlowing { get; private set; }
@@ -27,6 +28,7 @@ public class HeathbarManager : MonoBehaviour
             images[i].material.SetFloat("_Glow", 0);
         }
         UpdateHealth(10);
+        SetGlowForLast(0);
     }
 
 
@@ -36,7 +38,7 @@ public class HeathbarManager : MonoBehaviour
     public void Show()
     {
         shown = true;
-        root.SetActive(true);
+        rootAnimator.SetBool("Shown", true);
     }
 
     /// <summary>
@@ -45,7 +47,7 @@ public class HeathbarManager : MonoBehaviour
     public void Hide()
     {
         shown = false;
-        root.SetActive(false);
+        rootAnimator.SetBool("Shown", false);
     }
 
     /// <summary>
@@ -59,6 +61,18 @@ public class HeathbarManager : MonoBehaviour
         {
             images[i].gameObject.SetActive(10 - i <= healthAmount);
         }
+    }
+
+    /// <summary>
+    /// Starts an explosion on the last glowing part 
+    /// </summary>
+    public void ExplodeLastGlowPart()
+    {
+        int toBlowUp = currentHealth - numberOfLastGlowing + 1;
+        if (toBlowUp < 0 || toBlowUp > images.Length) return;
+
+        explosionAnimator.GetComponent<RectTransform>().anchoredPosition = images[10 - toBlowUp].rectTransform.anchoredPosition;
+        explosionAnimator.SetTrigger("Explode");
     }
 
     /// <summary>

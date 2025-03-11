@@ -134,8 +134,8 @@ public class NovelController : MonoBehaviour
         currentExamination = activeGameFile.inExamination ? activeGameFile.currentExamination : null;
         examinationPressed = activeGameFile.examinationPressed;
 
-        VNGUI.instance.SetHealthBarGlowingParts(activeGameFile.healthBarGlowAmount);
         VNGUI.instance.SetHealthBarLength(activeGameFile.healthBarLength);
+        VNGUI.instance.SetHealthBarGlowingParts(activeGameFile.healthBarGlowAmount);
         VNGUI.instance.SetHealthBarVisible(activeGameFile.healthBarShown);
 
         LoadChapterFile(activeGameFile.chapterName, activeGameFile.chapterProgress);
@@ -943,6 +943,10 @@ public class NovelController : MonoBehaviour
 
             case "setHealthBarGlow":
                 VNGUI.instance.SetHealthBarGlowingParts(int.Parse(parameters[0]));
+                break;
+
+            case "explodeHealthBarGlow":
+                VNGUI.instance.HeatlhBarExplodeLastGlowingPart();
                 break;
         }
     }

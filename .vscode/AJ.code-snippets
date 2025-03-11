@@ -374,4 +374,12 @@
 		],
 		"description": "Updates the healthbar's value"
 	},
+	"Explode the healthbar's last glowing parts": {
+		"scope": "ansl",
+		"prefix": "explodeHealthBarGlow",
+		"body": [
+			"explodeHealthBarGlow()"
+		],
+		"description": "Explodes the healthbar's last glowing parts"
+	},
 }

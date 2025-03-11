@@ -225,6 +225,14 @@ public class VNGUI : MonoBehaviour
     }
 
     /// <summary>
+    /// Explodes the last glowing parts
+    /// </summary>
+    public void HeatlhBarExplodeLastGlowingPart()
+    {
+        healthbarManager.ExplodeLastGlowPart();
+    }
+
+    /// <summary>
     /// Gets the currently displayed evidence ID
     /// </summary>
     /// <returns>The ID</returns>

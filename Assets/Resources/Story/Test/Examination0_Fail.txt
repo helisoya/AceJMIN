@@ -12,7 +12,9 @@ cameraPosition(Witness;false;true)
 dialog(UWU;_;false;Test_Examination_Fail_2)
 
 variable(health;--)
+explodeHealthBarGlow()
 updateHealthBar()
 setHealthBarGlow(0)
+wait(1)
 
 load(Test/Examination0)
