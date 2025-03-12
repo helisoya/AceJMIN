@@ -3045,6 +3045,7 @@ GameObject:
   - component: {fileID: 280569405}
   - component: {fileID: 280569407}
   - component: {fileID: 280569408}
+  - component: {fileID: 280569409}
   m_Layer: 0
   m_Name: Core
   m_TagString: Untagged
@@ -3119,6 +3120,19 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &280569409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280569404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a2c899f8068dd44ab66ab3182710df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 2025422442}
 --- !u!1 &280696927
 GameObject:
   m_ObjectHideFlags: 0
@@ -14242,6 +14256,7 @@ MonoBehaviour:
   - {fileID: 2057698209}
   - {fileID: 397304493}
   testimonyObj: {fileID: 1380297520}
+  gUIAnimationManager: {fileID: 280569409}
   interactionModeRoot: {fileID: 1754227105}
   speechBubbleAnimator: {fileID: 887009410}
   speechBubbleImg: {fileID: 2124616611}
@@ -17677,7 +17692,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -14.9999695, y: -68.5}
+  m_AnchoredPosition: {x: -15, y: -68.5}
   m_SizeDelta: {x: -770, y: -420}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1372228057
@@ -18249,7 +18264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -0.000061035156, y: 64.93512}
+  m_AnchoredPosition: {x: 0, y: 64.93512}
   m_SizeDelta: {x: 0, y: 98.048035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1396893786
@@ -37059,7 +37074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -15.599823, y: -16.900024}
+  m_AnchoredPosition: {x: -15.5998535, y: -16.900024}
   m_SizeDelta: {x: -770, y: -420}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2079743075

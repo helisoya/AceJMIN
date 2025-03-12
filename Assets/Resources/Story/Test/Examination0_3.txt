@@ -3,4 +3,4 @@ cameraPosition(Defense;false;true)
 
 dialog(Felix;_;false;Test_Examination_3_1)
 
-load(Test/Examination0)
+load(Test/Examination0_Fade)

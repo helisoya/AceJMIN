@@ -4,4 +4,4 @@ fadeFg(0;false)
 
 dialog(Felix;_;false;Test_Examination_Loop_1)
 
-load(Test/Examination0)
+load(Test/Examination0_Fade)

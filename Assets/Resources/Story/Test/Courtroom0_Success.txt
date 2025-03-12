@@ -7,16 +7,18 @@ displayEvidence(RIGHT;Evidence_2)
 dialog(Judge;_;false;Test_14)
 
 clearDisplayedEvidence()
+startAnimation(JudgeHammer;true)
 
 dialog(Judge;_;false;Test_15)
 
-fadeBg(1;true)
-
 # Witness testimony
 
+fadeBg(1;true)
 cameraPosition(Witness;true;false)
+hideDialog()
 fadeBg(0;false)
 
+startAnimation(Testimony;true)
 justifyDialog(Center)
 dialog(narrator;_;false;Test_Testimony_Name)
 
@@ -36,6 +38,18 @@ fadeFg(0;false)
 
 dialog(Felix;_;false;Test_16)
 
+fadeFg(1;true)
+hideDialog()
+cameraPosition(Witness;true;false)
+fadeFg(0;false)
 
+startAnimation(CrossExamination;true)
+
+justifyDialog(Center)
+dialog(narrator;_;false;Test_Testimony_Name)
+justifyDialog(Left)
+
+updateHealthBar()
+setHealthBarVisible(true)
 
 load(Test/Examination0)

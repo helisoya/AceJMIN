@@ -17,4 +17,4 @@ updateHealthBar()
 setHealthBarGlow(0)
 wait(1)
 
-load(Test/Examination0)
+load(Test/Examination0_Fade)

@@ -398,4 +398,28 @@
 		],
 		"description": "Justifies the dialog"
 	},
+	"Start an animation": {
+		"scope": "ansl",
+		"prefix": "startAnimation",
+		"body": [
+			"startAnimation(ID;DELETEATTHEEND)"
+		],
+		"description": "Starts an animation"
+	},
+	"Remove an animation": {
+		"scope": "ansl",
+		"prefix": "removeAnimation",
+		"body": [
+			"removeAnimation(ID)"
+		],
+		"description": "Removes an animation"
+	},
+	"Remove all animations": {
+		"scope": "ansl",
+		"prefix": "removeAllAnimations",
+		"body": [
+			"removeAllAnimations()"
+		],
+		"description": "Removes all animations"
+	},
 }

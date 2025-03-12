@@ -966,6 +966,22 @@ public class NovelController : MonoBehaviour
             case "justifyDialog":
                 DialogSystem.instance.JustifyDialog(Enum.Parse<HorizontalAlignmentOptions>(parameters[0]));
                 break;
+
+            case "startAnimation":
+                float length = VNGUI.instance.StartGUIAnimation(parameters[0]);
+
+                yield return new WaitForSeconds(length);
+
+                if (bool.Parse(parameters[1])) VNGUI.instance.RemoveGUIAnimation(parameters[0]);
+                break;
+
+            case "removeAnimation":
+                VNGUI.instance.RemoveGUIAnimation(parameters[0]);
+                break;
+
+            case "removeAllAnimations":
+                VNGUI.instance.RemoveAllGUIAnimations();
+                break;
         }
     }
 

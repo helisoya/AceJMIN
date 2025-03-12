@@ -1,0 +1,7 @@
+fadeFg(1;true)
+updateHealthBar()
+setHealthBarVisible(true)
+cameraPosition(Witness;true;false)
+fadeFg(0;false)
+
+load(Test/Examination0)

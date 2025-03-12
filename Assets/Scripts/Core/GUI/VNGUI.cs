@@ -27,6 +27,7 @@ public class VNGUI : MonoBehaviour
     [SerializeField] private EvidenceDisplayManager evidenceDisplayManager;
     [SerializeField] private GameObject[] inExaminationObjects;
     [SerializeField] private GameObject testimonyObj;
+    [SerializeField] private GUIAnimationManager gUIAnimationManager;
 
 
     [Header("Interaction Mode")]
@@ -70,6 +71,33 @@ public class VNGUI : MonoBehaviour
         flash.ForceAlphaTo(0);
 
         cooldownForAction = 0;
+    }
+
+    /// <summary>
+    /// Starts a new GUI animation
+    /// </summary>
+    /// <param name="ID">The animation's ID</param>
+    /// <returns>The animation's length</returns>
+    public float StartGUIAnimation(string ID)
+    {
+        return gUIAnimationManager.StartNewAnimation(ID);
+    }
+
+    /// <summary>
+    /// Removes a GUI Animation
+    /// </summary>
+    /// <param name="ID">The animation's ID</param>
+    public void RemoveGUIAnimation(string ID)
+    {
+        gUIAnimationManager.DeleteAnimation(ID);
+    }
+
+    /// <summary>
+    /// Removes all existing GUI Animations
+    /// </summary>
+    public void RemoveAllGUIAnimations()
+    {
+        gUIAnimationManager.DeleteAllAnimations();
     }
 
     /// <summary>
