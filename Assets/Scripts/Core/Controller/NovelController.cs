@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class NovelController : MonoBehaviour
@@ -138,6 +140,10 @@ public class NovelController : MonoBehaviour
         VNGUI.instance.SetHealthBarGlowingParts(activeGameFile.healthBarGlowAmount);
         VNGUI.instance.SetHealthBarVisible(activeGameFile.healthBarShown);
 
+        VNGUI.instance.SetTestimonyActive(activeGameFile.testimonyActive);
+
+        DialogSystem.instance.JustifyDialog(activeGameFile.dialogAlignement);
+
         LoadChapterFile(activeGameFile.chapterName, activeGameFile.chapterProgress);
     }
 
@@ -186,6 +192,10 @@ public class NovelController : MonoBehaviour
         activeGameFile.healthBarShown = VNGUI.instance.healthBarShown;
         activeGameFile.healthBarLength = VNGUI.instance.healthBarLength;
         activeGameFile.healthBarGlowAmount = VNGUI.instance.healthBarLengthGlowing;
+
+        activeGameFile.testimonyActive = VNGUI.instance.testimonyActive;
+
+        activeGameFile.dialogAlignement = DialogSystem.instance.dialogAlignement;
 
         GameManager.GetSaveManager().Save(saveName);
     }
@@ -933,6 +943,10 @@ public class NovelController : MonoBehaviour
 
                 break;
 
+            case "setTestimonyActive":
+                VNGUI.instance.SetTestimonyActive(bool.Parse(parameters[0]));
+                break;
+
             case "setHealthBarVisible":
                 VNGUI.instance.SetHealthBarVisible(bool.Parse(parameters[0]));
                 break;
@@ -947,6 +961,10 @@ public class NovelController : MonoBehaviour
 
             case "explodeHealthBarGlow":
                 VNGUI.instance.HeatlhBarExplodeLastGlowingPart();
+                break;
+
+            case "justifyDialog":
+                DialogSystem.instance.JustifyDialog(Enum.Parse<HorizontalAlignmentOptions>(parameters[0]));
                 break;
         }
     }

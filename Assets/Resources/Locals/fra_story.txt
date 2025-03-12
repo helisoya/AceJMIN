@@ -429,6 +429,7 @@ Test_Failure_3 = Ah, euh... Je me suis trompé de preuve... Je peux recommencer 
 Test_14 = Caribou.
 Test_15 = Le témoin est à vous, Monsieur Felix.
 
+Test_Testimony_Name = <color=red>-Smash-</color>
 Test_Testimony_1 = Mais bordel, c'est quoi ton problème ?
 Test_Testimony_2 = Je peux plus jouer à smash tranquille ?
 Test_Testimony_3 = Tu as une preuve pour me prouver que je peux pas jouer ?

@@ -26,6 +26,7 @@ public class VNGUI : MonoBehaviour
     [SerializeField] private HeathbarManager healthbarManager;
     [SerializeField] private EvidenceDisplayManager evidenceDisplayManager;
     [SerializeField] private GameObject[] inExaminationObjects;
+    [SerializeField] private GameObject testimonyObj;
 
 
     [Header("Interaction Mode")]
@@ -47,6 +48,7 @@ public class VNGUI : MonoBehaviour
     public bool fadingFlash { get { return flash.fading; } }
     public bool speechBubbleInProgress { get { return Time.time - speechBubbleStart < 1.1f; } }
 
+    public bool testimonyActive { get { return testimonyObj.activeInHierarchy; } }
     public bool healthBarShown { get { return healthbarManager.shown; } }
     public int healthBarLength { get { return healthbarManager.currentHealth; } }
     public int healthBarLengthGlowing { get { return healthbarManager.numberOfLastGlowing; } }
@@ -68,6 +70,15 @@ public class VNGUI : MonoBehaviour
         flash.ForceAlphaTo(0);
 
         cooldownForAction = 0;
+    }
+
+    /// <summary>
+    /// Changes if the testimony GFX is active or not
+    /// </summary>
+    /// <param name="active">Is the GFX active ?</param>
+    public void SetTestimonyActive(bool active)
+    {
+        testimonyObj.SetActive(active);
     }
 
     /// <summary>

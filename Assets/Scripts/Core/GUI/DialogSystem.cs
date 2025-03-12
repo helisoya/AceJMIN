@@ -19,6 +19,13 @@ public class DialogSystem : MonoBehaviour
     public TextArchitect textArchitect { get; private set; }
 
     public List<string> currentTextsIds { get; private set; }
+    public HorizontalAlignmentOptions dialogAlignement
+    {
+        get
+        {
+            return elements.speechText.horizontalAlignment;
+        }
+    }
 
 
     void Awake()
@@ -26,6 +33,15 @@ public class DialogSystem : MonoBehaviour
         instance = this;
 
         currentTextsIds = new List<string>();
+    }
+
+    /// <summary>
+    /// Justify the dialog box
+    /// </summary>
+    /// <param name="alignement">The new alignement</param>
+    public void JustifyDialog(HorizontalAlignmentOptions alignement)
+    {
+        elements.speechText.horizontalAlignment = alignement;
     }
 
     /// <summary>

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 
 [System.Serializable]
@@ -47,6 +48,9 @@ public class GAMEFILE
     public int healthBarLength;
     public int healthBarGlowAmount;
 
+    public bool testimonyActive;
+    public HorizontalAlignmentOptions dialogAlignement;
+
     public GAMEFILE()
     {
         this.chapterName = "test2";
@@ -75,7 +79,8 @@ public class GAMEFILE
         this.healthBarShown = false;
         this.healthBarLength = 0;
         this.healthBarGlowAmount = 0;
-
+        this.testimonyActive = false;
+        this.dialogAlignement = HorizontalAlignmentOptions.Left;
     }
 
     [System.Serializable]

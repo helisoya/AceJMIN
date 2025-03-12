@@ -382,4 +382,20 @@
 		],
 		"description": "Explodes the healthbar's last glowing parts"
 	},
+	"Change if the testimony GFX is active or not": {
+		"scope": "ansl",
+		"prefix": "setTestimonyActive",
+		"body": [
+			"setTestimonyActive(true)"
+		],
+		"description": "Changes if the testimony GFX is active or not"
+	},
+	"Justify the dialog": {
+		"scope": "ansl",
+		"prefix": "justifyDialog",
+		"body": [
+			"justifyDialog(ALIGNEMENT)"
+		],
+		"description": "Justifies the dialog"
+	},
 }
