@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -13,6 +14,8 @@ public class SaveButton : MonoBehaviour
     [Header("General")]
     [SerializeField] private LocalizedText caseNameText;
     [SerializeField] private LocalizedText caseDescText;
+    [SerializeField] private TextMeshProUGUI dateText;
+    [SerializeField] private TextMeshProUGUI hourText;
     [SerializeField] private TextMeshProUGUI slotText;
 
     [Header("Sprite")]
@@ -40,6 +43,9 @@ public class SaveButton : MonoBehaviour
         caseNameText.SetNewKey(linkedInfo != null ? linkedInfo.caseName : "saves_none");
         caseDescText.SetNewKey(linkedInfo != null ? linkedInfo.caseDesc : null);
         caseNameText.SetColor(linkedInfo != null ? Color.black : Color.white);
+
+        dateText.text = linkedInfo != null ? (linkedInfo.date.day + "/" + linkedInfo.date.month + "/" + linkedInfo.date.year) : "";
+        hourText.text = linkedInfo != null ? (linkedInfo.date.hour + ":" + linkedInfo.date.minute) : "";
 
         backgroundImg.sprite = linkedInfo != null ? normalSprite : noFileSprite;
     }

@@ -179,6 +179,7 @@ public class NovelController : MonoBehaviour
 
         activeGameFile.caseName = currentCaseName;
         activeGameFile.caseDesc = currentCaseDesc;
+        activeGameFile.date = new GAMEFILE.DateAJ(DateTime.Now);
 
         activeGameFile.evidenceDisplaySide = VNGUI.instance.GetDisplayedSide();
         activeGameFile.evidenceDisplayID = VNGUI.instance.GetDisplayedEvidenceID();

@@ -7,6 +7,7 @@ displayEvidence(RIGHT;Evidence_2)
 dialog(Judge;_;false;Test_14)
 
 clearDisplayedEvidence()
+hideDialog()
 startAnimation(JudgeHammer;true)
 
 dialog(Judge;_;false;Test_15)

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -161,7 +162,8 @@ public class SaveManager
                 {
                     saveName = toTest[i],
                     caseDesc = temp.caseDesc,
-                    caseName = temp.caseName
+                    caseName = temp.caseName,
+                    date = temp.date
                 };
             }
         }
@@ -174,5 +176,6 @@ public class SaveManager
         public string saveName;
         public string caseDesc;
         public string caseName;
+        public GAMEFILE.DateAJ date;
     }
 }

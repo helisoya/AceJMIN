@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 [System.Serializable]
 public class GAMEFILE
@@ -35,6 +36,7 @@ public class GAMEFILE
     public Vector3 cameraRotation;
     public string caseName;
     public string caseDesc;
+    public DateAJ date;
 
     public EvidenceDisplayManager.EvidenceDisplaySide evidenceDisplaySide;
     public string evidenceDisplayID;
@@ -81,6 +83,28 @@ public class GAMEFILE
         this.healthBarGlowAmount = 0;
         this.testimonyActive = false;
         this.dialogAlignement = HorizontalAlignmentOptions.Left;
+        this.date = new DateAJ();
+    }
+
+    [System.Serializable]
+    public class DateAJ
+    {
+        public int year;
+        public int month;
+        public int day;
+        public int hour;
+        public int minute;
+
+        public DateAJ(DateTime date)
+        {
+            year = date.Year;
+            month = date.Month;
+            day = date.Day;
+            hour = date.Hour;
+            minute = date.Minute;
+        }
+
+        public DateAJ() : this(DateTime.Now) { }
     }
 
     [System.Serializable]
