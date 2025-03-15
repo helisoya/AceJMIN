@@ -17,7 +17,7 @@ public class DialogSystem : MonoBehaviour
     [HideInInspector] public string targetSpeech = "";
     private Coroutine speaking = null;
     public TextArchitect textArchitect { get; private set; }
-
+    private string currentCharacterID = null;
     public List<string> currentTextsIds { get; private set; }
     public HorizontalAlignmentOptions dialogAlignement
     {
@@ -33,6 +33,25 @@ public class DialogSystem : MonoBehaviour
         instance = this;
 
         currentTextsIds = new List<string>();
+    }
+
+    /// <summary>
+    /// Changes the currently speaking character
+    /// </summary>
+    /// <param name="newID">The new character's ID</param>
+    public void SetCurrentCharacterID(string newID)
+    {
+        if (currentCharacterID != null)
+        {
+            CharacterManager.instance.SetCharacterTalking(currentCharacterID, false);
+        }
+
+        currentSpeakerID = newID;
+
+        if (currentCharacterID != null)
+        {
+            CharacterManager.instance.SetCharacterTalking(currentCharacterID, true);
+        }
     }
 
     /// <summary>
@@ -113,10 +132,7 @@ public class DialogSystem : MonoBehaviour
         speakerNameText.text = DetermineSpeaker(speaker);
         speakerNameText.transform.parent.gameObject.SetActive(speakerNameText.text != "" && speakerNameText.text != "narrator");
 
-        if (characterID != null)
-        {
-            CharacterManager.instance.SetCharacterTalking(characterID, true);
-        }
+        SetCurrentCharacterID(characterID);
 
         isWaitingForUserInput = false;
 
@@ -126,10 +142,7 @@ public class DialogSystem : MonoBehaviour
         }
         //if skipping stopped the display text from updating correctly, force it to update at the end.
 
-        if (characterID != null)
-        {
-            CharacterManager.instance.SetCharacterTalking(characterID, false);
-        }
+        SetCurrentCharacterID(null);
 
         //text finished
         isWaitingForUserInput = true;

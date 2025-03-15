@@ -1,6 +1,6 @@
 hideDialog()
 cameraPosition(Defense;false;true)
 
-dialog(Felix;_;false;Test_Examination_3_1)
+dialog(Felix;_;false;false;Test_Examination_3_1)
 
 load(Test/Examination0_Fade)

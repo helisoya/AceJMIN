@@ -1,3 +1,0 @@
-setInteractionChapter(Exit;ChezHarold/Salon_Exit)
-
-interact

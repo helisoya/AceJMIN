@@ -1,9 +1,0 @@
-playMusic(Exploration_2)
-removeAllCharacters()
-setBackground(SwampEntrance)
-
-if(rain = 1) changeSkybox(NightRain)
-
-if(discoveredSwamp = 0) Swamp/Discovery
-
-load(Swamp/Interaction)

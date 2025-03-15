@@ -1,6 +1,0 @@
-dialog([MC];_;false;Swamp_Intro_1)
-dialog([MC];_;false;Swamp_Intro_2)
-dialog([MC];_;false;Swamp_Intro_3)
-
-variable(discoveredSwamp;1)
-load(Swamp/Interaction)

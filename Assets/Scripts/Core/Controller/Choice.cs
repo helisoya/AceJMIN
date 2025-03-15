@@ -7,12 +7,10 @@ using UnityEngine;
 [Serializable]
 public class Choice
 {
-    public string title;
     public List<ChoiceAnswer> answers;
 
-    public Choice(string title)
+    public Choice()
     {
-        this.title = title;
         this.answers = new List<ChoiceAnswer>();
     }
 

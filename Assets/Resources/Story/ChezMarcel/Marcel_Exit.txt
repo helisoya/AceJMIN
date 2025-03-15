@@ -1,8 +1,0 @@
-setCharacterAlpha(Marcel;0;true)
-
-setCharacterPosition(Marcel;MarcelSpot)
-setCharacterRotation(Marcel;MarcelSpot)
-
-setCharacterAlpha(Marcel;1;false)
-
-load(ChezMarcel/Interaction)

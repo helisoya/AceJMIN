@@ -2,396 +2,158 @@
 # --------------- Characters --------------------------------
 # -----------------------------------------------------------
 
-
-Char_Harold = Harold
-Char_Rickey = Rickey
-Char_Boyardee = Boyardee
-Char_Runcan = Chevalier de Runan
-Char_Waldo = Waldo
-Char_??? = ???
-Char_Dragon = Dragon
-Char_Katsumoto = Katsumoto
-Char_Touriste = Touriste
-Char_Foule = Foule
-Char_Natasha = Natasha
-Char_Ogre = Ogre
-Char_Archer = Archer
-Char_Mage = Sorcier
-Char_GUARD = GARDE
-Char_Braise = Braise
-Char_OldMan = Vieillard
-Char_OlWoman = Vieillarde
-Char_Marcel = Chasseur
-Char_Adrian = Adrien
-Char_Security = Securité
+Char_Judge = Juge Lien
+Char_Felix = Felix
+Char_UWU = UwU
+Char_Buendia = Buandy
+Char_MadLaine = Mad Laine
+Char_Lucas = Lucas
+Char_Clelia = Clelia
 
 # -----------------------------------------------------------
 # --------------- Choices -----------------------------------
 # -----------------------------------------------------------
 
-Choice_Generic = Que faire ?
-Choice_Chat = De quoi parler ?
-Choice_Road = Quel chemin prendre ?
+Choice_LucasTastroffe = Lucas Tastroffe
+Choice_Graillou = Graillou
+Choice_MadLaine = Mad Laine
 
-Choice_Map = Carte
-Choice_Harold = Parler à Harold
-Choice_CheckArea = Vérifier les alentours
-Choice_Nothing = Rien (Partir)
-Choice_MoveOut = Continuer
+Choice_JugeLien = Juge Lien
+Choice_AntoninPosture = Antonin Posture
+Choice_AntoninPortekoi = Antonin Portekoi
 
-Choice_Ideas = Des idées ?
-Choice_AboutRegion = A propos de la région
-Choice_AboutYou = A propos de vous
-Choice_AboutJob = A propos de votre travail
-Choice_AboutEmber = A propos du dragon
-Choice_AboutAssassin = A propos de l'assassin
-Choice_AboutPark = A propos du parc
-Choice_AboutRickey = A propos de Rickey
-Choice_AboutArcher = A propos de l'archer
-Choice_WhyMe = Pourquoi moi ?
-Choice_Guild = A propos de la guilde
-Choice_AboutSect = A propos de la secte
-Choice_LastYear = A propos de l'année dernière
-Choice_Grimoire = A propos du grimoire
-Choice_AboutLastNight = A propos de la nuit dernière
-Choice_AboutRickeyLand = A propos de RickeyLand
-Choice_Play = Essayer l'attraction
-Choice_Rules = Quelles sont les règles ?
+Choice_Stabed = Poignardée
+Choice_Shocked = Electrocutée
+Choice_Strangled = Etranglée
 
+# -----------------------------------------------------------
+# --------------- Case names --------------------------------
+# -----------------------------------------------------------
 
-Choice_Left = Aller à Gauche
-Choice_Right = Aller à Droite
+Case1_Name = La première volte face
+Case1_Sub1 = Introduction
+Case1_Sub2 = Témoignage de Lucas
+Case2_Sub3 = Témoignage de Clélia
 
-Choice_Accept = Accepter
-Choice_Refuse = Refuser
+# -----------------------------------------------------------
+# --------------- Preuves -----------------------------------
+# -----------------------------------------------------------
 
-Choice_ScaleWall = Escalader le mur
-Choice_GoBack = Retourner en arrière
+General_Evidence_Badge_name = Badge d'avocat
+General_Evidence_Badge_desc0 = Mon badge d'avocat.<br>Il prouve ma profession.
 
-Choice_RunAway = Fuir
+Case1_Evidence_Autopsy_name = Rapport d'autopsie
+Case1_Evidence_Autopsy_desc0 = Victime : Antonin<br>électrocuté<br>mort entre 19h45 et 20h15
 
+Case1_Evidence_CrimeScene_name = Photo de la scène de crime
+Case1_Evidence_CrimeScene_desc0 = Une photo de la scène de crime
 
-# ---------------------------------------------------------
-# ------------------- Intro -------------------------------
-# ---------------------------------------------------------
+Case1_Evidence_Notice_name = Notice de panneaux LED
+Case1_Evidence_Notice_desc0 = C'est une notice en chinois.<br>Je ne peux pas la lire.
 
+Case1_Evidence_Bill_name = Facture
+Case1_Evidence_Bill_desc0 = Facture d'un restaurant<br>Payé à 20h48
 
-Intro_1 = La province de Vlatyr, paisible constituante des provinces Unis de Kosky.
-Intro_2 = Elle est si calme, qu'on pourrait croire qu'il ne s'y passe jamais rien.
-Intro_3 = Cependant, dans les montagnes reculées, un mystère se prépare.
-Intro_4 = Ce qui était auparavant le domaine d'un terrible dragon, est maintenant abandonné.
-Intro_5 = Certains ont tenté de se l'approprier, mais ont échoués.
-Intro_6 = Les rumeurs disent qu'un individu est venu, et les a tous vaincu.
-Intro_7 = Personne ne sait qui il était, ni ce à quoi il ressemblait.
-Intro_8 = Mais grâce à lui, l'ancien domaine du dragon et son trésor restèrent intact.
-Intro_9 = Cependant, les choses ne se sont pas arrêtés ici.
-Intro_10 = Des rumeurs ont refait surface. Elles parlaient d'une étrange secte résidant dans la vielle forteresse.
-Intro_11 = Qui étaient-ils ? Quel était leur but ? Les gens ne pouvaient que spéculer...
-Intro_12 = Ils semblaient vénérer un dieu dangereux, le Seigneur Cerf.
-Intro_13 = Dans la foi locale, il est le dieu du chaos et de la destruction.
-Intro_14 = Les légendes racontent qu'il parcourait cette terre, semant le chaos aux quatres coins du continent.
-Intro_15 = Un jour, il fut arrêté par le Dieu des dieux, Le Grand Caribou.
-Intro_16 = Il scella le Cerf démoniaque dans les tréprofonds, l'empechant ainsi de semer le chaos.
-Intro_17 = Enfin, c'est ce que disaient les légendes...
-Intro_18 = Au cours des siecles, nombreux furent ceux qui tentèrent, en vain, de faire revenir le Seigneur Cerf.
-Intro_19 = Cette secte semblait être une nouvelle tentative de ramener à la vie une entitié disparu depuis longtemps.
-Intro_20 = Les rumeurs s'éteignirent. Qui s'intéresse à une étrange secte dans les montagnes de toute manières.
-Intro_21 = Jusqu'a...
-Intro_22 = ...Ce que la vielle forteresse explose sans raison.
-Intro_23 = La province tomba dans la confusion. Personne ne reclama l'attaque.
-Intro_24 = Certains disent que la secte avaient échoué dans leur invocation du Seigneur Cerf.
-Intro_25 = D'autres parlent d'un héro venu mettre un terme à leur opération.
-Intro_26 = Au final, personne n'est vraiment sur. Ca aurait pu être l'un des deux. Peut être même les deux en même temps.
-Intro_27 = Mais ce n'était qu'une interlude pour une tempête à venir.
-Intro_28 = Une tempête si forte, qu'elle pourrait englober le monde entier. 
-Intro_29 = Et en son centre, une seule personne.
-Intro_30 = Elle sera capable d'y mettre un terme.
-Intro_31 = Elle pourra résoudre les mystères paralysant la province.
-Intro_32 = Son nom ? [MC].
-Intro_33 = Bientôt, il lui appartiendra de faire sense de tout cela.
-Intro_34 = Les ennemis viendront de partout, même de l'intérieur.
-Intro_35 = Cette quête dangereuse pourrait bien être sa dernière.
-Intro_36 = ........
-Intro_37 = ........
-Intro_38 = Ou- Ou suis-je ?
-Intro_39 = J'ai eu un rêve étrange... Qu'est ce que c'était ?
-Intro_40 = Attend... Je suis de retour, pas vrai ?
-Intro_41 = C'est Vlatyr, Harold m'a invoqué à nouveau.
-Intro_42 = Je pensais que c'était fini. Je n'ai pas le droit d'avoir une pause ?
-Intro_43 = ...... En fait, ou suis-je ?
-Intro_44 = Ce n'est pas la maison d'Harold. C'est un lac.
-Intro_45 = Comment vais-je retrouver sa maison ? Je ne me souviens pas de son emplacement.
-Intro_46 = Une ombre attire mon attention.
-Intro_47 = Qui va là ?!
-Intro_48 = .......
-Intro_49 = On dirais que je me suis trom-
-Intro_50 = Eh gaillard. Tu connais la différence entre un humain et une galinette cendrée ?
-Intro_51 = ...Le ...Les humains ne peuvent pas voler ?
-Intro_52 = Quoi ? Tu ne connais pas la différence ? Moi non plus !
-Intro_53 = Donc ça fait de toi une galinette cendrée. Et j'adore chasser les galinettes cendrées !
-Intro_54 = Attendez, quoi ?
-Intro_55 = Meurt, petit oiseau !
-Intro_56 = Le chasseur me vise avec son fusil. Je commence à fuir.
+Case1_Evidence_Plan_name = Plan
+Case1_Evidence_Plan_desc0 = Plan de la scène du crime
 
-Intro_57 = ...... Je crois que j'ai réussit à fuir....
-Intro_58 = Qui était ce fou ?
-Intro_59 = Attend... C'est la maison d'Harold, non ?
-Intro_60 = Bien. Il a des explications à me donner...
-Intro_61 = Je m'approche de la maison, et toque à la porte.
-Intro_62 = .....
-Intro_63 = Après quelques minutes, la porte s'ouvre.
-Intro_64 = Qui toque à une heure pareille ?
-Intro_65 = [MC] ?! C'est vous ?
-Intro_66 = Oui, c'est moi.
-Intro_67 = Ah ! Je suis heureux de voir revoir !
-Intro_68 = J'ai cru que l'invocation avait échouée... Je commençais à m'inquiéter, vous voyez.
-Intro_69 = La dernière fois que j'ai échoué une invocation, et bien...
-Intro_70 = ...Ce n'est plus important, je suis ici maintenant.
-Intro_71 = Donc, quelle est la situation ? Pourquoi m'avez-vous invoqué à nouveau ?
-Intro_72 = Je croyais que nous étions d'accord sur le fait que je reste dans mon monde.
-Intro_73 = Oui, bien... Je suis navré, vraiment.
-Intro_74 = C'est juste que j'ai des problèmes. Et je me suis dit que vous seul pouvait m'aider !
-Intro_75 = D'accord, d'accord... Dites-moi ce qui est arrivé cette fois...
-Intro_76 = Mais par pitié, pas de mensonges. Je ne vais pas risquer ma vie pour des clés à nouveau.
-Intro_77 = Hmm.... Dans ce cas, j'ai une bonne et une mauvaise nouvelle.
-Intro_78 = Mais nous en parlerons à l'intérieur. Venez.
-Intro_79 = Je suis Harold à l'intérieur de sa maison.
-Intro_80 = Elle n'a pas changé. Je me demande combien de temps s'est passé depuis la dernière fois.
-Intro_81 = Combi-
-Intro_82 = Cela fait un an, [MC]. Une longue année.
-Intro_83 = Tout est devenu silencieux dans la province après que vous ayez vaincu le dragon.
-Intro_84 = Nous avons eu des problèmes mineurs environ une semaine après votre départ.
-Intro_85 = Mais j'ai réussit à les résoudre. C'était simple.
-Intro_86 = Vous ? Vous êtes parti accomplir une quête seul ?
-Intro_87 = Et bien... Disons que j'ai eu un peu d'aide.
-Intro_88 = Oui... Maintenant, a propos de cette bonne et mauvaise nouvelles ?
-Intro_89 = Oh, bien sur. Voyons...
-Intro_90 = La mauvaise nouvelle est qu'on m'a volé mes affaires à nouveau.
-Intro_91 = Et la bonne nouvelle ?
-Intro_92 = Et bien, cette fois, ce ne sont pas mes clés. C'est un livre !
-Intro_93 = .......
-Intro_94 = .......
-Intro_95 = J'ai dis quelque chose de ridicule une fois de plus, pas vrai ?
-Intro_96 = Oh ça oui...
-Intro_97 = Oh, mais attendez ! Ce n'est pas n'importe quel livre !
-Intro_98 = C'est un grimoire ! Mon grimoire d'invocation !
-Intro_99 = A l'intérieur de ses pages se cachent les secrets permettant d'invoquer des entitiés dans notre monde.
-Intro_100 = Vous comprenez la gravité de la situation, pas vrai ?
-Intro_101 = S'il tombe entre de mauvaises mains, il pourrait être utilisé pour invoquer de terrible créatures.
-Intro_102 = Oh. Je vois. C'est assez problématique, en effet...
-Intro_103 = Et qui a volé votre grimoire ? Est-ce qu'ils l'ont toujours ?
-Intro_104 = Et bien... Comment devrais-je vous l'expliquer ?
-Intro_105 = Peut être que vous devriez le voir par vous même...
-Intro_106 = Harold me guide vers sa télévision.
-Intro_107 = Il l'allume, and change la chaine. Et elle est... particulière...
+Case1_Evidence_Message_name = Message à Antonin
+Case1_Evidence_Message_desc0 = Message envoyé à Antonin à 19h<br>“Viens réparer notre installation”
 
-Intro_108 = Avez-vous déjà révé d'aller dans un parc somptueux ?
-Intro_109 = Et bien ne revez plus ! RickeyLand est fait pour vous !
-Intro_110 = Nous avons tout pour la famille ici ! Venez voir nos attractions.
-Intro_111 = La maison hantée ! Trouverez-vous la sortie dans cette endroit effrayant ?
-Intro_112 = Le quiz de Waldo ! Répondez aux questions de mon assistant et gagnez des prix !
-Intro_113 = La course de chevaux ! Arriverez-vous à battre mes gardes à la course ?
-Intro_114 = Le tir sur marchand ! Amusez-vous à tirer sur cette ordure qui a tenté de me vendre un aspirateur !
-Intro_115 = AU SECOURS !
-Intro_116 = LA FERME !
-Intro_117 = Quels magnifiques attractions ! Tout le monde les adores !
-Intro_118 = Mais ce n'est pas fini !
-Intro_119 = La première personne à finir les 4 attractions gagnera un prix !
-Intro_120 = Regardez ce livre que j'ai vo-... obtenu d'un viellard. Quel prix magnifique !
-Intro_121 = Je vais même vous donner mon autographe, car je suis un si gentil PDG !
-Intro_122 = Alors, venez au parc ! RickeyLand vous attend !
-Intro_123 = Oh, et avant que j'oublie. 
-Intro_124 = Venez à la boutique de souvenir ! C'est si sympa ! On a toutes les couleurs dont vous avez besoin !
-Intro_125 = Et si je ne vous y vois pas.... JE VAIS VOUS A-
+# -----------------------------------------------------------
+# --------------- Profiles ----------------------------------
+# -----------------------------------------------------------
 
-Intro_126 = .......
-Intro_127 = Qu'est ce que je viens de voir ?
-Intro_128 = C'est RickeyLand. Vous y étiez aller la dernière fois, pas vrai ?
-Intro_129 = Et... Le livre qu'il vient de montrer, le prix... C'est mon grimoire.
-Intro_130 = Donc vous voulez que j'aille le gagner pour vous ?
-Intro_131 = S'il vous plait, [MC]. Vous êtes mon seul espoir !
-Intro_132 = Ok, Ok. Mais qu'est ce que vous avez fait pour l'énerver ?
-Intro_133 = Et bien... C'est une longue histoire.
-Intro_134 = Mais tout ce que vous devez savoir, c'est que Rickey, PDG de RickeyLand, est devenu fou.
-Intro_135 = Son parc n'allait pas bien financièrement l'année dernière, et a décliné.
-Intro_136 = Il y a une semaine, il est devenu fou, et a "invité" tout les habitants de la province à venir dans son parc.
-Intro_137 = C'est sans doute une dernière tentative pour faire de l'argent.
-Intro_138 = Et le bijou de son plan est le prix, mon grimoire.
-Intro_139 = On dirait qu'il ne connait pas ses secrets. En tout cas pour le moment.
-Intro_140 = Donc je vais devoir le gagner avant que Rickey ne découvre qu'il ne s'agit pas d'un simple livre.
-Intro_141 = Oui. Mais vous allez devoir attendre l'aube avant d'accéder au parc.
-Intro_142 = N'hésitez pas à utiliser ma chambre pour la nuit.
-Intro_143 = Je vous dois au moins ça.
-Intro_144 = Merci, Harold.
-Intro_145 = Et ainsi, j'ai décidé de dormir pour la nuit.
-Intro_146 = Une fois le matin arrivé, j'ai décidé de commencer ma quête.
-Intro_147 = Bien, au moins il fait plus chaud qu'hier soir...
-Intro_148 = Je devrais aller à RickeyLand maintenant. Le plus tôt j'aurais fini cette quête, le plus tôt je pourrais rentrer chez moi.
-Intro_149 = Je peux intéragir avec les objets bleus. Pour bouger, je peux intéragir avec le bas de l'écran.
+Case1_Profile_Felix_name = Felix Vrai
+Case1_Profile_Felix_desc0 = Moi-même<br>Ce sont mes débuts en tant qu'avocat<br>J'espère ne pas me planter.
 
+Case1_Profile_MadLaine_name = Mad Laine
+Case1_Profile_MadLaine_desc0 = Mon associée un peu trop enthousiaste qui a parfois des réactions trop bizarres. 
 
-# ---------------------------------------------------------
-# ------------- Chez Harold -------------------------------
-# ---------------------------------------------------------
+Case1_Profile_Buendia_name = Axel Buandy (Age : 53)
+Case1_Profile_Buendia_desc0 = Procureur qui adore casser les débutants.<br>On dit qu'il soutient beaucoup les IA au tribunal
 
-ChezHarold_Car_1 = La voiture d'Harold. Dire que j'ai du retrouver ses clés...
+Case1_Profile_Antonin_name = Antonin Portekoi (Age : 37)
+Case1_Profile_Antonin_desc0 = La victime<br>Responsable de l'événement Faux Règne.
 
-ChezHarold_Harold_LastTime_1 = Vous êtes venu ici la dernière fois il y a un an.
-ChezHarold_Harold_LastTime_2 = A l'époque, je vous avais demandé de retrouver mes clés de voitures.
-ChezHarold_Harold_LastTime_3 = Une expédition idiote, j'en suis vraiment navré.
-ChezHarold_Harold_LastTime_4 = Peu de temps après votre départ, un nouvel incident est arrivé.
-ChezHarold_Harold_LastTime_5 = Des criminels ont tenté de prendre le contrôle de la forteresse, dont Rickey.
-ChezHarold_Harold_LastTime_6 = Je savais que je ne pouvais pas vous faire revenir, pas aussi tôt en tout cas...
-ChezHarold_Harold_LastTime_7 = Donc j'ai décidé de tout gérer moi-même. Et j'ai réussit !
-ChezHarold_Harold_LastTime_8 = La province est redevenu paisible pendant un an, jusqu'à la semaine dernière.
-ChezHarold_Harold_LastTime_9 = La vielle forteresse a explosée, et Rickey a volé mon grimoire.
-ChezHarold_Harold_LastTime_10 = Je savais que j'avais besoin d'aide. Je vous ais donc invoqué à nouveau.
+Case1_Profile_Lucas_name = Lucas Tastroffe (Age : 21)
+Case1_Profile_Lucas_desc0 = Mon client<br>Est accusé du meurtre de Portekoi.<br>Ne semble pas avoir d'amis et tient beaucoup à son caillou.
 
-ChezHarold_Harold_Grimoire_1 = Mon grimoire est remplis de secrets magiques.
-ChezHarold_Harold_Grimoire_2 = Avec lui, un individu peut facilement invoquer n'importe quoi dans ce monde.
-ChezHarold_Harold_Grimoire_3 = Donc vous vous douter ce que pourrait faire un PDG fou avec un tel grimoire.
-ChezHarold_Harold_Grimoire_4 = Il pourrait invoquer des horreurs, et conquérir le monde à tout moment.
-ChezHarold_Harold_Grimoire_5 = C'est une bonne chose que je me souviens de l'incantation pour vous invoquer. Sinon, j'aurais eu des problèmes.
-
-
-ChezHarold_Harold_MainQuest0_1 = Vous devez entrer dans RickeyLand, [MC].
-ChezHarold_Harold_MainQuest0_2 = Finir les 4 attractions principales est la seule manière d'obtenir mon grimoire.
-
-ChezHarold_Harold_MainQuest1_1 = Vous avez besoin d'une invitation pour rentrer dans le parc ?
-ChezHarold_Harold_MainQuest1_2 = Et bien... Je n'en ai pas reçu alors. Rickey doit me détester.
-ChezHarold_Harold_MainQuest1_3 = Vous allez devoir improviser. Peut être que quelqu'un peut vous donner son invitation.
-
-
-ChezHarold_Harold_Default = [MC] ! Avez-vous besoin d'aide ?
-
-# ---------------------------------------------------------
-# ------------------- Vlatyr ------------------------------
-# ---------------------------------------------------------
-
-Vlatyr_ChezBoyardee_Done_1 = C'est fermée.
-
-
-# ---------------------------------------------------------
-# -------------- Chez Marcel ------------------------------
-# ---------------------------------------------------------
-
-ChezMarcel_Marcel_Default_1 = Eh, gaillard. Tu as trouvé une galinette cendrée ?
-
-ChezMarcel_Marcel_AboutYou_1 = Je suis juste un chasseur local. Rien de plus.
-ChezMarcel_Marcel_AboutYou_2 = J'aime chasser les galinettes et boire des bieres avec mes amis.
-ChezMarcel_Marcel_AboutYou_3 = Tu connais le bon vieux Harold ? Je bois avec lui de temps en temps.
-ChezMarcel_Marcel_AboutYou_4 = Même si, il ne chasse pas. Il dit qu'il n'aime pas les armes. Je me demande pourquoi...
-
-ChezMarcel_Marcel_LastNight_1 = On s'est vu la nuit dernière ?
-ChezMarcel_Marcel_LastNight_2 = C'est bizarre, j'ai chassé une galinette cendrée toute la nuit.
-ChezMarcel_Marcel_LastNight_3 = Elle courait vite maintenant que j'y pense.
-ChezMarcel_Marcel_LastNight_4 = Et elle criait en français. Quel oiseau étrange.
-
-ChezMarcel_Marcel_MainQuest1_1 = RickeyLand ? C'est quoi, un oiseau ?
-ChezMarcel_Marcel_MainQuest1_2 = Non, c'est un parc d'attraction situé à quelques minutes d'ici.
-ChezMarcel_Marcel_MainQuest1_3 = Ils ont envoyé une invitation il y a environ une semaine.
-ChezMarcel_Marcel_MainQuest1_4 = ? ... Attendez...
-ChezMarcel_Marcel_MainQuest1_5 = Le chasseur cherche dans ses poches, et sort un papier.
-ChezMarcel_Marcel_MainQuest1_6 = Je me souviens maintenant ! J'ai reçu ça il y a une semaine, comme vous l'avez dit.
-ChezMarcel_Marcel_MainQuest1_7 = J'ai cru que c'était une carte montrant ou niche les galinettes cendrées.
-ChezMarcel_Marcel_MainQuest1_8 = Mais je n'ai pas réussit à trouver ou je me situait sur la carte, donc j'ai abandonné.
-ChezMarcel_Marcel_MainQuest1_9 = Puis-je vous l'emprunter ? J'en ai besoin pour quelque chose.
-ChezMarcel_Marcel_MainQuest1_10 = Allez-y. Je n'en ai pas d'utilité dans tout les cas.
-ChezMarcel_Marcel_MainQuest1_11 = Super. Je peux maintenant accéder à RickeyLand.
-
-
-# ---------------------------------------------------------
-# ------------- Intersection ------------------------------
-# ---------------------------------------------------------
-
-
-# ---------------------------------------------------------
-# --------------- Rickeyland - Entrée ---------------------
-# ---------------------------------------------------------
-
-RickeyLandEntrance_Door_No_1 = Je n'ai pas besoin d'entrer dans le parc.
-
-RickeyLandEntrance_MainQuest0_1 = Eh, attendez !
-RickeyLandEntrance_MainQuest0_2 = Un garde de sécurité m'empeche d'entrer dans le parc.
-RickeyLandEntrance_MainQuest0_3 = Vous devez me montrer votre invitation avant d'entrer.
-RickeyLandEntrance_MainQuest0_4 = Mon invitation ?
-RickeyLandEntrance_MainQuest0_5 = Oui, vous devriez l'avoir reçu dans votre boite aux lettres.
-RickeyLandEntrance_MainQuest0_6 = Enfin, sauf si vous vous appellez Harold. Le PDG déteste Harold.
-RickeyLandEntrance_MainQuest0_7 = Oh... Je vois. Je crois l'avoir oublié chez moi.
-RickeyLandEntrance_MainQuest0_8 = Je vais aller la chercher, monsieur.
-RickeyLandEntrance_MainQuest0_9 = Super... J'ai besoin d'une invitation pour entrer dans RickeyLand. Et je suppose qu'Harold n'en a pas reçu.
-RickeyLandEntrance_MainQuest0_10 = Je vais peut être devoir explorer un peu, voir si quelqu'un pourrait me préter la sienne.
-
-RickeyLandEntrance_MainQuest1_1 = Eh ! Pas d'invitation, pas d'entrée !
-
-RickeyLandEntrance_MainQuest2_1 = Eh, attendez !
-RickeyLandEntrance_MainQuest2_2 = Le garde m'empeche à nouveau d'entrer.
-RickeyLandEntrance_MainQuest2_3 = Pourquoi avoir besoin d'autant de sécurité de toute façon ?
-RickeyLandEntrance_MainQuest2_4 = J'ai réussit à retrouver mon inviation. La voila.
-RickeyLandEntrance_MainQuest2_5 = ...
-RickeyLandEntrance_MainQuest2_6 = C'est bon. Bienvenue à RickeyLand.
-RickeyLandEntrance_MainQuest2_7 = Merci, monsieur.
-RickeyLandEntrance_MainQuest2_8 = Enfin.... Entrons.
-RickeyLandEntrance_MainQuest2_9 = J'entre dans le parc. J'espère que ça ne prendra pas trop de temps.
-RickeyLandEntrance_MainQuest2_10 = Donc voici RickeyLand. Je dois dire, je n'ai pas vraiment fait attention au décor la dernière fois.
-RickeyLandEntrance_MainQuest2_11 = Ce parc est gigantesque. Je dois essayer de ne pas me perdre.
-RickeyLandEntrance_MainQuest2_12 = Un stand m'intrigue. Il offre des cartes du parc.
-RickeyLandEntrance_MainQuest2_13 = Parfait. Avec cette carte, je vais pouvoir me retrouver dans le parc.
-RickeyLandEntrance_MainQuest2_14 = Ma première tache est de finir les quatres attractions de RickeyLand.
-RickeyLandEntrance_MainQuest2_15 = Après ça, je dois obtenir le grimoire d'Harold avant que quelqu'un d'autre l'obtienne. Ou pire, que Rickey découvre son secret.
-RickeyLandEntrance_MainQuest2_16 = Je peux sortir de RickeyLand en intéragissant avec la porte d'entrée.
-
-# ---------------------------------------------------------
-# ----------------- Rickeyland - Quiz ---------------------
-# ---------------------------------------------------------
-
-Quiz_Waldo_Default_1 = Bonjour ! Voulez-vous essayer le quiz ?
-
-Quiz_Waldo_Done_1 = Vous avez déjà fini cette attraction !
-
-Quiz_Waldo_Rules_1 = Votre but est de répondre correctement à mes questions.
-Quiz_Waldo_Rules_2 = Ce sont des questions simples. L'histoire du parc, la géographie...
-Quiz_Waldo_Rules_3 = Laissez-moi savoir quand vous êtes prêt. Je commençerai le quiz.
-
-Quiz_Waldo_Play_1 = Très bien ! Commençons le quiz !
-
-# ---------------------------------------------------------
-# ------------------- Marais ------------------------------
-# ---------------------------------------------------------
-
-
-# ---------------------------------------------------------
-# ------------------ Swamtyr ------------------------------
-# ---------------------------------------------------------
-
-Swamtyr_Car_1 = Une voiture brulée. Quelqu'un a été plus rapide que moi.
+Case1_Profile_Clelia_name = Clélia Ceu (Age : 22)
+Case1_Profile_Clelia_desc0 = Participante à l'événement Faux Règne.
 
 
 
-# ---------------------------------------------------------
-# ---------------- Montagnes ------------------------------
-# ---------------------------------------------------------
+
+# -----------------------------------------------------------
+# --------------- Case 1 - Faux Règne -----------------------
+# -----------------------------------------------------------
 
 
-Mountains_Sign_Default_1 = "Demeure du grand sorcier de Vlatyr"
-Mountains_Sign_Default_2 = Ou est la maison ?
+C1D1_Courtroom1_1 = Je déclare la séance ouverte pour le procès de Mr Lucas Tastroffe.
+C1D1_Courtroom1_2 = L'accusation est prête, votre Honneur
+C1D1_Courtroom1_3 = La… la défense est prête, Mr le Juge. Euh… votre Honneur.
+C1D1_Courtroom1_4 = Hum… Mr Vrai, je lis ici qu'il s'agit de votre premier procès.
+C1D1_Courtroom1_5 = Ça se voit-il tant que ça ?
+C1D1_Courtroom1_6 = Et oui. Mr Vrai, laissez vous rappeler qu'un procès pour meurtre n'est pas quelque chose d'anodin.
+C1D1_Courtroom1_7 = Vous tenez l'avenir de vos clients entre vos mains. Êtes-vous bien sûr d'en comprendre les enjeux ?
+C1D1_Courtroom1_8 = Oui, votre Honneur.
+C1D1_Courtroom1_9 = Très bien. Alors je vais vous poser quelques questions pour savoir si vous êtes bien préparer.
+C1D1_Courtroom1_10 = Ok Félix, c'est le moment de voir si tu es prêt à faire des débuts dans la cour.
+C1D1_Courtroom1_11 = <color=#3A7CA3>Tout d'abord, veuillez nous rappeler le nom de l'accusé ?</color>
 
-Mountains_Car_1 = Comment est-ce que cette voiture a finie là ?
+C1D1_Courtroom1_Graillou_1 = C'est... Graillou ?
+C1D1_Courtroom1_Graillou_2 = Graillou ? Mais d'où sors-tu ce nom ? Qui est ce Graillou ?
+C1D1_Courtroom1_Graillou_3 = Aucune idée mais ça sonnait bien[changeSpeaker(null)] <color=#3A7CA3>(Je mets en doute mes compétences de lecture…)</color>
 
-# ---------------------------------------------------------
-# ---------------- Mines ------------------------------
-# ---------------------------------------------------------
+C1D1_Courtroom1_MadLaine_1 = C'est... Mad Laine ?
+C1D1_Courtroom1_MadLaine_2 = Hé ! Jusqu'à preuve du contraire, je n'ai tué personne !
+C1D1_Courtroom1_MadLaine_3 = Mais ça pourrait arriver prochainement si tu recommences à dire des idioties.
+C1D1_Courtroom1_MadLaine_4 = <color=#3A7CA3>(Oh là là, Mad Laine n’a pas l'air de plaisanter. Je devrais me concentrer)</color>
 
+C1D1_Courtroom1_12 = Il s'agit de Lucas Tastroffe, mon client.
+C1D1_Courtroom1_13 = Correct. Maintenant, pouvez-vous m'indiquer le nom de la victime ?
+C1D1_Courtroom1_14 = La victime ? C'est euh… [changeSpeaker(null)] <color=#3A7CA3>(Oh non, j'ai complètement oublié ! C'était si important ?)</color>
+C1D1_Courtroom1_15 = Ne me dis pas que tu ne te souviens plus…
+C1D1_Courtroom1_16 = <color=#3A7CA3>(Je n’aurais jamais dû jouer à Monster Hunter jusqu’à 4h du matin…)</color>
+C1D1_Courtroom1_17 = Tu ferais bien de consulter le dossier de l'affaire avant de répondre en appuyant sur <sprite=21>.
+C1D1_Courtroom1_18 = Tu pourras le consulter ensuite à n'importe quel moment.
+C1D1_Courtroom1_19 = <color=#3A7CA3>(On dirait que j’ai le droit à mes notes)</color>
+C1D1_Courtroom1_20 = <color=#3A7CA3>Tout d'abord, veuillez me rappeler le nom de la victime</color>
+
+C1D1_Courtroom1_JugeLien_1 = C'est... C'est le Juge !
+C1D1_Courtroom1_JugeLien_2 = Hein ? Moi ? Mais je ne suis pas mort ?
+C1D1_Courtroom1_JugeLien_3 = Vous souhaitez ma mort, Mr Vrai ? À la guillotine ! COUPABLE ! COUPABLE !
+C1D1_Courtroom1_JugeLien_4 = Euh attendez… Calmez-vous ! Je crois que je me suis trompé.
+C1D1_Courtroom1_JugeLien_5 = <color=#3A7CA3>(Le juge fait trop peur. Il faut que je relise ce dossier)</color>
+
+C1D1_Courtroom1_Posture_1 = C'est... C'est Antonin Posture !
+C1D1_Courtroom1_Posture_2 = Hum… Nous allons dire que c'est le stress.
+C1D1_Courtroom1_Posture_3 = Si tu continues de te tromper, on va penser que tu es une fraude !
+C1D1_Courtroom1_Posture_4 = Oui, c'est vrai… [changeSpeaker(null)] <color=#3A7CA3>(J'aurais dû faire des études d'ergonomie)</color>
+
+C1D1_Courtroom1_21 = C'est Antonin Portekoi, votre Honneur.
+C1D1_Courtroom1_22 = C'est exact.
+C1D1_Courtroom1_23 = <color=#3A7CA3>À présent, pouvez-vous nous dire comment la victime a été tuée ?</color>
+
+C1D1_Courtroom1_Stabed_1 = Elle a été poignardée !
+C1D1_Courtroom1_Stabed_2 = Un imposteur ! Visiblement, la défense ne prend pas son rôle au sérieux
+C1D1_Courtroom1_Stabed_3 = Hum… Vous n'avez jamais pensé à une reconversion Mr Vrai ?
+C1D1_Courtroom1_Stabed_4 = <color=#3A7CA3>(Pourquoi personne ne me respecte ?)</color>
+
+C1D1_Courtroom1_Strangled_1 = Elle a été... étranglée ?
+C1D1_Courtroom1_Strangled_2 = C'est tellement galère d'étrangler, tu es sûr que ce n'était pas un moyen plus simple ?
+C1D1_Courtroom1_Strangled_3 = <color=#3A7CA3>(Hum… Elle n'a pas tort. Qu'est ce que je dis moi ? Comment sait-elle ça ?)</color>
+
+C1D1_Courtroom1_24 = Elle a été électrocuté, votre honneur.
+C1D1_Courtroom1_25 = Bien. Je pense que nous pouvons commencer le procès.
+C1D1_Courtroom1_26 = Super ! C'est l'heure de la bagarre ! Euh… je veux dire, notre plaidoirie évidemment.
+C1D1_Courtroom1_27 = <color=#3A7CA3>(Cette fille est trop bizarre. Elle me fait peur)</color>
 
 
 # ---------------------------------------------------------
 # --------------------- Test ------------------------------
 # ---------------------------------------------------------
-
-Char_Judge = Juge Lien
-Char_Felix = Felix
-Char_UWU = UwU
-Char_Buendia = Buendia
 
 CASENAME_1 = Volte Face & Test
 CASEDESC_1_1 = Felix devienne fou
@@ -455,3 +217,6 @@ Test_21 = ...
 Test_22 = Merci de ne pas utiliser vos avis subjectifs dans un tribunal, M.Felix.
 Test_23 = Euh, oui... Pardon...
 Test_24 = Je peux recommencer ? J'ai une vrai preuve à montrer.
+
+Test_Choice_Yes = Oui
+Test_Choice_No = Non

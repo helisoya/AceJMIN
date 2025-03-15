@@ -1,0 +1,6 @@
+# Happy, the judge asks for evidences
+# The trial really starts now
+
+hideDialog()
+startAnimation(JudgeHammer;true)
+cameraPosition(Judge;true;false)

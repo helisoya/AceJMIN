@@ -1,4 +1,0 @@
-setInteractionChapter(Door;RickeyLandEntrance/Door_Check)
-setInteractionChapter(Exit;MAP-Vlatyr-RickeyLand)
-
-interact

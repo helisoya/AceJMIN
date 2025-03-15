@@ -1,3 +1,0 @@
-setInteractionChapter(Exit;Swamp/River_Enter)
-
-interact

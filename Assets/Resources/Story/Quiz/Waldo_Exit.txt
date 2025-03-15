@@ -1,8 +1,0 @@
-setCharacterAlpha(Waldo;0;true)
-
-setCharacterPosition(Waldo;Desk)
-setCharacterRotation(Waldo;Desk)
-
-setCharacterAlpha(Waldo;1;false)
-
-load(Quiz/Interaction)

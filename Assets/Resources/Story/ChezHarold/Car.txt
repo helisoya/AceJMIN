@@ -1,3 +1,0 @@
-dialog(narrator;_;false;ChezHarold_Car_1)
-
-load(ChezHarold/Arrive)

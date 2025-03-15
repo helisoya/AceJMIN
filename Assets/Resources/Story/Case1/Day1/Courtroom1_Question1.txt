@@ -1,0 +1,10 @@
+cameraPosition(Sidekick;true;false)
+dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_10)
+
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_11)
+
+choice
+	Choice_LucasTastroffe Case1/Day1/Courtroom1_Question1_Lucas
+	Choice_Graillou Case1/Day1/Courtroom1_Question1_Graillou
+	Choice_MadLaine Case1/Day1/Courtroom1_Question1_MadLaine

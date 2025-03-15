@@ -1,0 +1,16 @@
+cameraPosition(Defense;true;false)
+dialog(Felix;Felix;false;false;C1D1_Courtroom1_Stabed_1)
+
+hideDialog()
+speechBubble(Wouhoo;Wouhoo_Buendia)
+
+cameraPosition(Prosecution;false;true)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom1_Stabed_2)
+
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_Stabed_3)
+
+cameraPosition(Defense;true;false)
+dialog(Felix;_;false;false;C1D1_Courtroom1_Stabed_4)
+
+load(Case1/Day1/Courtroom1_Question3)

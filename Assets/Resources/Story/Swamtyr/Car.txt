@@ -1,3 +1,0 @@
-dialog(narrator;_;false;Swamtyr_Car_1)
-
-load(Swamtyr/Interaction)

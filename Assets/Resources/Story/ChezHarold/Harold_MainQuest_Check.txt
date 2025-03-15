@@ -1,3 +1,0 @@
-if(mainQuest = 1) ChezHarold/Harold_MainQuest1
-
-load(ChezHarold/Harold_MainQuest0)

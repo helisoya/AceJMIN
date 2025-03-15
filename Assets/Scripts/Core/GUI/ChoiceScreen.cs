@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEngine.EventSystems;
 
 public class ChoiceScreen : MonoBehaviour
 {
@@ -11,7 +12,6 @@ public class ChoiceScreen : MonoBehaviour
 
     [Header("Choice Screen")]
     [SerializeField] private GameObject root;
-    [SerializeField] private TtileHeader header;
     [SerializeField] private GameObject awnserPrefab;
     [SerializeField] private Transform answersRoot;
     [SerializeField] private VerticalLayoutGroup layoutGroup;
@@ -32,8 +32,6 @@ public class ChoiceScreen : MonoBehaviour
     public void Show(Choice choice)
     {
         instance.root.SetActive(true);
-        if (!string.IsNullOrEmpty(choice.title)) header.Show(choice.title);
-        else header.Hide();
 
         if (isShowingChoices)
         {
@@ -50,7 +48,6 @@ public class ChoiceScreen : MonoBehaviour
             instance.StopCoroutine(showChoices);
         }
         showChoices = null;
-        header.Hide();
         ClearAllCurrentChoices();
         instance.root.SetActive(false);
     }
@@ -69,17 +66,13 @@ public class ChoiceScreen : MonoBehaviour
         yield return new WaitForEndOfFrame();
         chosenIndex = -1;
 
-        while (header.isRevealing)
-        {
-            yield return new WaitForEndOfFrame();
-        }
-
         for (int i = 0; i < answers.Count; i++)
         {
             CreateChoice(answers[i].choice, i);
         }
 
         SetLayoutSpacing();
+        SetSelectionToFirstButton();
 
         while (isWaitingForChoiceToBeMade)
         {
@@ -122,7 +115,13 @@ public class ChoiceScreen : MonoBehaviour
         button.Init(choice, index);
     }
 
-
+    public void SetSelectionToFirstButton()
+    {
+        if (answersRoot.childCount > 0)
+        {
+            EventSystem.current.SetSelectedGameObject(answersRoot.GetChild(0).gameObject);
+        }
+    }
 
     public void MakeChoice(int index)
     {

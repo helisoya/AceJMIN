@@ -504,9 +504,9 @@ public class NovelController : MonoBehaviour
 
     IEnumerator HandlingChoiceLine(string line)
     {
-        // Choice ID_QUESTION
+        // Choice
         // ID_REP NEXTCHAPTER
-        currentChoice = new Choice(line.Split(' ')[1]);
+        currentChoice = new Choice();
 
         int i = chapterProgress + 1;
         while (i < data.Count && !string.IsNullOrEmpty(data[i]))
@@ -566,9 +566,9 @@ public class NovelController : MonoBehaviour
                 if (isQuickCommand) break;
                 next = false;
 
-                // Speaker - CharacterModel - additive - dialog
+                // Speaker - CharacterModel - additive - autoSkip - dialog
                 DialogSystem.instance.OpenAllRequirementsForDialogueSystemVisibility(true);
-                DialogSystem.instance.Say(parameters[3], parameters[0], parameters[1].Equals("_") ? null : parameters[1], bool.Parse(parameters[2]));
+                DialogSystem.instance.Say(parameters[4], parameters[0], parameters[1].Equals("_") ? null : parameters[1], bool.Parse(parameters[2]));
 
                 TextArchitect architect = DialogSystem.instance.textArchitect;
 
@@ -585,11 +585,15 @@ public class NovelController : MonoBehaviour
 
                 yield return new WaitForEndOfFrame();
 
-                waitingForUserToEndDialog = true;
-                while (!next)
+                if (!bool.Parse(parameters[3]))
                 {
-                    yield return new WaitForEndOfFrame();
+                    waitingForUserToEndDialog = true;
+                    while (!next)
+                    {
+                        yield return new WaitForEndOfFrame();
+                    }
                 }
+
                 waitingForUserToEndDialog = false;
 
                 break;
@@ -915,6 +919,11 @@ public class NovelController : MonoBehaviour
 
             case "wait":
                 yield return new WaitForSeconds(float.Parse(parameters[0], System.Globalization.CultureInfo.InvariantCulture));
+                break;
+
+            case "changeSpeaker":
+                if (!isQuickCommand) break;
+                DialogSystem.instance.SetCurrentCharacterID(parameters[0]);
                 break;
 
             case "speechBubble":

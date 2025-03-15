@@ -1,0 +1,61 @@
+# Felix enters the courtroom and anwsers some questions
+
+# Characters setup
+
+addCharacter(Judge;false)
+setCharacterPosition(Judge;Judge)
+
+addCharacter(Felix;false)
+setCharacterPosition(Felix;Defense)
+
+addCharacter(Buendia;false)
+setCharacterPosition(Buendia;Prosecution)
+
+addCharacter(Lucas;false)
+setCharacterPosition(Lucas;Witness)
+
+addCharacter(MadLaine;false)
+setCharacterPosition(MadLaine;Sidekick)
+
+
+# Start
+
+autosave()
+
+hideDialog()
+cameraPosition(Global;true;false)
+wait(2)
+
+startAnimation(JudgeHammer;true)
+
+# People say ready
+
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_1)
+
+cameraPosition(Prosecution;true;false)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom1_2)
+
+hideDialog()
+cameraPosition(Defense;false;true)
+dialog(Felix;Felix;false;false;C1D1_Courtroom1_3)
+
+# Judge questions Felix's skills
+
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_4)
+
+cameraPosition(Defense;true;false)
+dialog(Felix;Felix;false;false;C1D1_Courtroom1_5)
+
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_6)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_7)
+
+cameraPosition(Defense;true;false)
+dialog(Felix;Felix;false;false;C1D1_Courtroom1_8)
+
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_9)
+
+load(Case1/Day1/Courtroom1_Question1)

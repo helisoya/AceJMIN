@@ -148,6 +148,10 @@ public class PauseMenu : MonoBehaviour
     public void Close()
     {
         root.SetActive(false);
+        if (isInGame && ChoiceScreen.instance.isWaitingForChoiceToBeMade)
+        {
+            ChoiceScreen.instance.SetSelectionToFirstButton();
+        }
     }
 
     /// <summary>

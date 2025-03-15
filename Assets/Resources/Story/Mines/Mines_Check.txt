@@ -1,3 +1,0 @@
-if(mainQuest = 3) Mines/MainQuest3
-
-load(Mines/Mines_Done)

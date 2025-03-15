@@ -89,6 +89,10 @@ public class CaseFileMenu : MonoBehaviour
     public void Hide()
     {
         root.SetActive(false);
+        if (ChoiceScreen.instance.isWaitingForChoiceToBeMade)
+        {
+            ChoiceScreen.instance.SetSelectionToFirstButton();
+        }
     }
 
     /// <summary>

@@ -18,9 +18,17 @@
 		"scope": "ansl",
 		"prefix": "dialog",
 		"body": [
-			"dialog(SPEAKER_ID;CHARACTER_ID;ADDITIVE;TEXT_ID)"
+			"dialog(SPEAKER_ID;CHARACTER_ID;ADDITIVE;AUTOSKIP;TEXT_ID)"
 		],
 		"description": "Shows a dialog"
+	},
+	"Change the current speaker": {
+		"scope": "ansl",
+		"prefix": "changeSpeaker",
+		"body": [
+			"changeSpeaker(ID)"
+		],
+		"description": "Changes the current speaker (Quick Command Only)"
 	},
 	"Change the background": {
 		"scope": "ansl",
@@ -234,7 +242,7 @@
 		"scope": "ansl",
 		"prefix": "choice",
 		"body": [
-			"choice ID_TEXT\n\tID_CHOICE1 NEXTCHAPTER_CHOICE1\n\tID_CHOICE2 NEXTCHAPTER_CHOICE2"
+			"choice\n\tID_CHOICE1 NEXTCHAPTER_CHOICE1\n\tID_CHOICE2 NEXTCHAPTER_CHOICE2"
 		],
 		"description": "Starts a choice"
 	},

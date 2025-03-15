@@ -6,9 +6,22 @@
 
 
 [Evidence]
+General_Evidence_Badge
 Evidence_1
 Evidence_2 Caribou1 Caribou2
+Case1_Evidence_Autopsy
+Case1_Evidence_CrimeScene
+Case1_Evidence_Notice
+Case1_Evidence_Bill
+Case1_Evidence_Plan
+Case1_Evidence_Message
 
 [Profile]
 Profile_1
 Profile_2
+Case1_Profile_Felix
+Case1_Profile_MadLaine
+Case1_Profile_Buendia
+Case1_Profile_Antonin
+Case1_Profile_Lucas
+Case1_Profile_Clelia

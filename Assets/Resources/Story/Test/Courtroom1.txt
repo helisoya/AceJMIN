@@ -2,29 +2,33 @@
 setHealthBarVisible(false)
 hideDialog()
 cameraPosition(Defense;false;true)
-dialog(Felix;_;false;Test_17)
+dialog(Felix;_;false;false;Test_17)
 
 displayEvidence(LEFT;Evidence_1)
 
-dialog(Felix;_;false;Test_18)
-dialog(Felix;_;false;Test_19)
+dialog(Felix;_;false;false;Test_18)
+dialog(Felix;_;false;false;Test_19)
 
 # Judge & Buendia Silence
 cameraPosition(Judge;true;false)
-dialog(Judge;_;false;Test_20)
+dialog(Judge;_;false;false;Test_20)
 
 cameraPosition(Prosecution;true;false)
-dialog(Buendia;_;false;Test_21)
+dialog(Buendia;_;false;false;Test_21)
 
 # Judge reprimends
 
 clearDisplayedEvidence()
 
 cameraPosition(Judge;true;false)
-dialog(Judge;_;false;Test_22)
+dialog(Judge;_;false;false;Test_22)
 
 # Felix oopsy : (
 
 cameraPosition(Defense;true;false)
-dialog(Felix;_;false;Test_23)
-dialog(Felix;_;false;Test_24)
+dialog(Felix;_;false;false;Test_23)
+dialog(Felix;_;false;false;Test_24)
+
+choice
+	Test_Choice_Yes Test/Courtroom2
+	Test_Choice_No Test/FelixGuily

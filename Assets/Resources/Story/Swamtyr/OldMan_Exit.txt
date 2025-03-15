@@ -1,8 +1,0 @@
-setCharacterAlpha(OldMan;0;true)
-
-setCharacterPosition(OldMan;Civilian3)
-setCharacterRotation(OldMan;Civilian3)
-
-setCharacterAlpha(OldMan;1;false)
-
-load(Swamtyr/Interaction)

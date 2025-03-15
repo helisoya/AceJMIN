@@ -1,0 +1,17 @@
+# Case 1 - Day 1
+# Antonin was killed : (
+# Setup of initial 
+
+setCaseName(Case1_Name)
+setCaseDesc(Case1_Sub1)
+
+variable(General_Evidence_Badge;0)
+variable(Case1_Evidence_Autopsy;0)
+
+variable(Case1_Profile_Felix;0)
+variable(Case1_Profile_MadLaine;0)
+variable(Case1_Profile_Buendia;0)
+variable(Case1_Profile_Antonin;0)
+variable(Case1_Profile_Lucas;0)
+
+load(Case1/Day1/Courtroom1)

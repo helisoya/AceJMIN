@@ -4,13 +4,13 @@ cameraPosition(Judge;true;false)
 
 displayEvidence(RIGHT;Evidence_2)
 
-dialog(Judge;_;false;Test_14)
+dialog(Judge;_;false;false;Test_14)
 
 clearDisplayedEvidence()
 hideDialog()
 startAnimation(JudgeHammer;true)
 
-dialog(Judge;_;false;Test_15)
+dialog(Judge;_;false;false;Test_15)
 
 # Witness testimony
 
@@ -21,14 +21,14 @@ fadeBg(0;false)
 
 startAnimation(Testimony;true)
 justifyDialog(Center)
-dialog(narrator;_;false;Test_Testimony_Name)
+dialog(narrator;_;false;false;Test_Testimony_Name)
 
 setTestimonyActive(true)
 
 justifyDialog(Left)
-dialog(UWU;_;false;Test_Testimony_1)
-dialog(UWU;_;false;Test_Testimony_2)
-dialog(UWU;_;false;Test_Testimony_3)
+dialog(UWU;_;false;false;Test_Testimony_1)
+dialog(UWU;_;false;false;Test_Testimony_2)
+dialog(UWU;_;false;false;Test_Testimony_3)
 
 # Cross Examination start
 
@@ -37,7 +37,7 @@ setTestimonyActive(false)
 cameraPosition(Defense;true;false)
 fadeFg(0;false)
 
-dialog(Felix;_;false;Test_16)
+dialog(Felix;_;false;false;Test_16)
 
 fadeFg(1;true)
 hideDialog()
@@ -47,7 +47,7 @@ fadeFg(0;false)
 startAnimation(CrossExamination;true)
 
 justifyDialog(Center)
-dialog(narrator;_;false;Test_Testimony_Name)
+dialog(narrator;_;false;false;Test_Testimony_Name)
 justifyDialog(Left)
 
 updateHealthBar()

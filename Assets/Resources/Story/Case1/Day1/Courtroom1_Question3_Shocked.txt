@@ -1,0 +1,13 @@
+cameraPosition(Defense;true;false)
+dialog(Felix;Felix;false;false;C1D1_Courtroom1_24)
+
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_25)
+
+cameraPosition(Sidekick;true;false)
+dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_26)
+
+cameraPosition(Defense;true;false)
+dialog(Felix;_;false;false;C1D1_Courtroom1_27)
+
+load(Case1/Day1/Courtroom2)

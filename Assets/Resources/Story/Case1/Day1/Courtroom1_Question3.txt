@@ -1,0 +1,7 @@
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_23)
+
+choice
+	Choice_Stabed Case1/Day1/Courtroom1_Question3_Stabed
+	Choice_Shocked Case1/Day1/Courtroom1_Question3_Shocked
+	Choice_Strangled Case1/Day1/Courtroom1_Question3_Strangled

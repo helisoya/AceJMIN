@@ -1,9 +1,0 @@
-fadeBg(1;true)
-
-playMusic(Exploration_2)
-removeAllCharacters()
-setBackground(SwampRiver;false)
-
-fadeBg(0;false)
-
-load(Swamp/River)

@@ -1,3 +1,0 @@
-dialog(narrator;_;false;Fortress_Barrier_1)
-
-load(BraiseFortress/Interaction)

@@ -1,4 +1,0 @@
-setInteractionChapter(Exit;MAP-RickeyLand-Quiz)
-setInteractionChapter(Waldo;Quiz/Waldo_Enter)
-
-interact

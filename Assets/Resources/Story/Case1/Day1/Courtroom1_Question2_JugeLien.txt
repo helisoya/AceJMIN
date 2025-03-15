@@ -1,0 +1,12 @@
+cameraPosition(Defense;true;false)
+dialog(Felix;Felix;false;false;C1D1_Courtroom1_JugeLien_1)
+
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_JugeLien_2)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_JugeLien_3)
+
+cameraPosition(Defense;true;false)
+dialog(Felix;Felix;false;false;C1D1_Courtroom1_JugeLien_4)
+dialog(Felix;_;false;false;C1D1_Courtroom1_JugeLien_5)
+
+load(Case1/Day1/Courtroom1_Question2)

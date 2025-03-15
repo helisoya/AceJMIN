@@ -1,0 +1,10 @@
+cameraPosition(Defense;true;false)
+dialog(Felix;_;false;false;C1D1_Courtroom1_19)
+
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_20)
+
+choice
+	Choice_JugeLien Case1/Day1/Courtroom1_Question2_JugeLien
+	Choice_AntoninPosture Case1/Day1/Courtroom1_Question2_Posture
+	Choice_AntoninPortekoi Case1/Day1/Courtroom1_Question2_Portekoi

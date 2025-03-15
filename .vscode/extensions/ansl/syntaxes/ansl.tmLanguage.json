@@ -119,11 +119,6 @@
 				{
 					"match": "choice",
 					"name": "keyword.control.ansl"
-				},
-				{
-					"begin": " ",
-					"end": "$",
-					"name": "choice.id.ansl"
 				}
 			]
 		},
