@@ -1,6 +1,84 @@
 # Happy, the judge asks for evidences
 # The trial really starts now
 
+autosave()
+
 hideDialog()
 startAnimation(JudgeHammer;true)
 cameraPosition(Judge;true;false)
+
+dialog(Judge;Judge;false;false;C1D1_Courtroom2_1)
+
+cameraPosition(Prosecution;true;false)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_2)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_3)
+
+# Unclock new evidence
+
+variable(Case1_Evidence_Plan;0)
+displayEvidence(FULL;Case1_Evidence_Plan)
+dialog(narrator;_;false;false;C1D1_Courtroom2_4)
+clearDisplayedEvidence()
+wait(0.5)
+
+variable(Case1_Evidence_CrimeScene;0)
+displayEvidence(FULL;Case1_Evidence_CrimeScene)
+dialog(narrator;_;false;false;C1D1_Courtroom2_5)
+clearDisplayedEvidence()
+
+# Buendia explains the situation further
+
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1D1_Courtroom2_6)
+
+cameraPosition(Prosecution;true;false)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_7)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_8)
+
+# Phone Message unlock
+
+variable(Case1_Evidence_Message;0)
+displayEvidence(FULL;Case1_Evidence_Message)
+dialog(narrator;_;false;false;C1D1_Courtroom2_9)
+clearDisplayedEvidence()
+
+# Why Lucas was arrested
+
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1D1_Courtroom2_10)
+
+cameraPosition(Prosecution;true;false)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_11)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_12)
+
+variable(Case1_Evidence_Notice;0)
+displayEvidence(FULL;Case1_Evidence_Notice)
+dialog(narrator;_;false;false;C1D1_Courtroom2_13)
+clearDisplayedEvidence()
+wait(0.5)
+
+variable(Case1_Evidence_Bill;0)
+displayEvidence(FULL;Case1_Evidence_Bill)
+dialog(narrator;_;false;false;C1D1_Courtroom2_14)
+clearDisplayedEvidence()
+
+# Judge goes for the insta kill
+
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1D1_Courtroom2_15)
+
+speechBubble(Objection;null)
+
+cameraPosition(Defense;true;false)
+dialog(Felix;Felix;false;false;C1D1_Courtroom2_16)
+
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1D1_Courtroom2_17)
+
+cameraPosition(Prosecution;true;false)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_18)
+
+cameraPosition(Defense;true;false)
+dialog(Felix;Felix;false;false;C1D1_Courtroom2_19)
+
+load(Case1/Day1/Courtroom3)

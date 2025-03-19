@@ -30,7 +30,7 @@ Choice_Strangled = Etranglée
 # --------------- Case names --------------------------------
 # -----------------------------------------------------------
 
-Case1_Name = La première volte face
+Case1_Name = La volte face du garage
 Case1_Sub1 = Introduction
 Case1_Sub2 = Témoignage de Lucas
 Case2_Sub3 = Témoignage de Clélia
@@ -149,6 +149,27 @@ C1D1_Courtroom1_24 = Elle a été électrocuté, votre honneur.
 C1D1_Courtroom1_25 = Bien. Je pense que nous pouvons commencer le procès.
 C1D1_Courtroom1_26 = Super ! C'est l'heure de la bagarre ! Euh… je veux dire, notre plaidoirie évidemment.
 C1D1_Courtroom1_27 = <color=#3A7CA3>(Cette fille est trop bizarre. Elle me fait peur)</color>
+
+C1D1_Courtroom2_1 = Mr Buandy, veuillez nous rappeler les éléments de ce dossier ?
+C1D1_Courtroom2_2 = La victime a été retrouvée électrocutée dans le garage de l'ENJMIN sur l'un des stands de l'événement <color=red>Faux Règne</color> dont elle est également le responsable.
+C1D1_Courtroom2_3 = Nous avons pris une photo de la scène de crime.
+C1D1_Courtroom2_4 = <color=#3A7CA3><b>Plan</b> ajouté à l'inventaire.</color>
+C1D1_Courtroom2_5 = <color=#3A7CA3><b>Photo de la scène de crime</b> ajoutée à l'inventaire.</color>
+C1D1_Courtroom2_6 = Qu'est ce donc que cet événement... <color=red>Farine</color> ?
+C1D1_Courtroom2_7 = Faux Règne est un festival punk où les participants construisent des choses avec 2 bouts de ficelles et du carton. Il semblerait qu'ils doivent aussi utiliser de l'équipement électronique.
+C1D1_Courtroom2_8 = Nous avons également retrouvé le téléphone de la victime sur place. Le dernier message a été reçu aux alentours de 19h et lui demande de venir sur place.
+C1D1_Courtroom2_9 = <color=#3A7CA3><b>Dernier message d'Antonin</b> ajouté à l'inventaire.</color>
+C1D1_Courtroom2_10 = Le crime a été prémédité alors. 
+C1D1_Courtroom2_11 = L'accusé est la dernière personne à avoir vu la victime en vie.
+C1D1_Courtroom2_12 = Lorsque nous l'avons arrêté, il avait ce papier chiffonné dans sa poche et a essayé de manger cette facture.
+C1D1_Courtroom2_13 = <color=#3A7CA3><b>Notice chiffonnée écrite en chinois</b> ajouté à l'inventaire.</color>
+C1D1_Courtroom2_14 = <color=#3A7CA3><b>Facture</b> ajouté à l'inventaire.</color>
+C1D1_Courtroom2_15 = En effet, tout cela est très suspect. Je déclare l'accusé cou…
+C1D1_Courtroom2_16 = Euh… Je… Ouai… Je veux dire, je ne suis pas censé défendre mon client avant ?
+C1D1_Courtroom2_17 = Ah oui, c'est vrai. Que l'accusation appelle à la barre son premier témoin.
+C1D1_Courtroom2_18 = L'accusation appelle Mr Lucas Tastroffe à la barre.
+C1D1_Courtroom2_19 = <color=#3A7CA3>(Oh non, le faire témoigner va le discréditer complètement…)</color>
+
 
 
 # ---------------------------------------------------------
