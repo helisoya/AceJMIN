@@ -170,6 +170,53 @@ C1D1_Courtroom2_17 = Ah oui, c'est vrai. Que l'accusation appelle à la barre so
 C1D1_Courtroom2_18 = L'accusation appelle Mr Lucas Tastroffe à la barre.
 C1D1_Courtroom2_19 = <color=#3A7CA3>(Oh non, le faire témoigner va le discréditer complètement…)</color>
 
+C1D1_Courtroom3_1 = Veuillez décliner votre nom et votre profession.
+C1D1_Courtroom3_2 = C'EST PAS MOI, JE VOUS JURE ! LAISSEZ MOI TRANQUILLE ! J'AI RIEN FAIT !
+C1D1_Courtroom3_3 = Votre nom et votre profession !
+C1D1_Courtroom3_4 = Si je vous le dis, vous laisserez Kayou partir ?
+C1D1_Courtroom3_5 = Kayou ?
+C1D1_Courtroom3_6 = Il semblerait que l'accusé désigne ce petit rocher sur son épaule…
+C1D1_Courtroom3_7 = PARLEZ MIEUX DE KAYOU ! C'EST MON AMI !
+C1D1_Courtroom3_8 = <color=#3A7CA3>(Visiblement le seul)</color>
+C1D1_Courtroom3_9 = Eh bien… euh oui… Nous relâcherons votre ami si vous vous calmez et que vous répondez à nos questions.
+C1D1_Courtroom3_10 = Tu crois que le Juge Lien a compris que Kayou était vivant aussi ?
+C1D1_Courtroom3_11 = C'est juste un galet, Mad Laine…
+C1D1_Courtroom3_12 = Chut ! Tu vas vexer Kayou ! Ce n'est pas parce qu'il ne peut parler qu'il n'est pas en vie !
+C1D1_Courtroom3_13 = Tu entends Kayou ? Ils vont te libérer. Je vais essayer de rester calme pour toi.
+C1D1_Courtroom3_14 = Bon très bien. Nous allons pouvoir passer au témoignage.
+
+C1D1_Testimony1_Name = <color=red>-La nuit du meurtre-</color>
+C1D1_Testimony1_1 = Je suis un participant de Faux Règne. Kayou et moi étions en train de monter une installation. On était en charge de l'électronique.
+C1D1_Testimony1_2 = Parce que vous savez, en vrai, je suis programmeur. Kayou m'a dit que ça payait bien et comme j'ai confiance en lui, je l'ai écouté.
+C1D1_Testimony1_3 = J'ai travaillé toute la journée. De 8h à 18h. Heureusement que Kayou était là pour me soutenir et me motiver.
+C1D1_Testimony1_4 = C'était vraiment pas facile. Mon équipe voulait que j'utilise des panneaux LED mais j'avais jamais fait ça moi !
+C1D1_Testimony1_5 = J'ai dû me débrouiller. Il n'y avait pas de réseau mais heureusement, une notice était fournie avec le matériel.
+C1D1_Testimony1_6 = Je suis un excellent prog. J'ai réussi à mettre l'image de Kayou sur les panneaux LED !
+
+C1D1_Courtroom3_15 = Un témoignage plein d'affection pour Kayou, je le conçois.
+C1D1_Courtroom3_16 = <color=#3A7CA3>(J’ai du mal à croire qu’une personne imaginant que son galet est vivant puisse être un excellent prog.)</color>
+C1D1_Courtroom3_17 = Waouh tant d'amour entre Kayou et lui, je devrais me mettre à écrire une fan-fiction. Tu crois que ça me rendrais riche ?
+C1D1_Courtroom3_18 = Je ne suis pas sûr Mad Laine…
+C1D1_Courtroom3_19 = Mr Vrai, votre contre interrogatoire, s'il vous plaît.
+C1D1_Courtroom3_20 = Je… Oui bien sûr… Que suis-je censé faire ?
+C1D1_Courtroom3_21 = Ne me dis pas que tu n'as pas appris ça en cours de droit !
+C1D1_Courtroom3_22 = Il se peut que j'ai dormi pendant quelques cours…
+C1D1_Courtroom3_23 = Il faut que tu trouves des incohérences dans son témoignage.
+C1D1_Courtroom3_24 = D'accord et comment je fais ça ?
+C1D1_Courtroom3_25 = Fais monter la pression et attaque le en appuyant sur <sprite=19>. Il va sûrement lâcher des infos en plus.
+C1D1_Courtroom3_26 = Et une fois que j'ai ces infos ?
+C1D1_Courtroom3_27 = Tu présentes une preuve dès que tu as remarqué une incohérence !
+C1D1_Courtroom3_28 = Consulte le dossier de l'affaire en appuyant sur <sprite=21> et appuies sur <sprite=20> pour lui opposer une preuve. 
+C1D1_Courtroom3_29 = Fais le cracher du sang, Félix !
+C1D1_Courtroom3_30 = <color=#3A7CA3>(Oula je ferais mieux de trouver une incohérence rapidement avant que Mad Laine ne l’étrippe)</color>
+
+C1D1_Examination1_Name = <color=red>-La nuit du meurtre-</color>
+C1D1_Examination1_1 = <color=green>Je suis un participant de Faux Règne. Kayou et moi étions en train de monter une installation. On était en charge de l'électronique.</color>
+C1D1_Examination1_2 = <color=green>Parce que vous savez, en vrai, je suis programmeur. Kayou m'a dit que ça payait bien et comme j'ai confiance en lui, je l'ai écouté.</color>
+C1D1_Examination1_3 = <color=green>J'ai travaillé toute la journée. De 8h à 18h. Heureusement que Kayou était là pour me soutenir et me motiver.</color>
+C1D1_Examination1_4 = <color=green>C'était vraiment pas facile. Mon équipe voulait que j'utilise des panneaux LED mais j'avais jamais fait ça moi !</color>
+C1D1_Examination1_5 = <color=green>J'ai dû me débrouiller. Il n'y avait pas de réseau mais heureusement, une notice était fournie avec le matériel.</color>
+C1D1_Examination1_6 = <color=green>Je suis un excellent prog. J'ai réussi à mettre l'image de Kayou sur les panneaux LED !</color>
 
 
 # ---------------------------------------------------------

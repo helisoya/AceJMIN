@@ -4,8 +4,6 @@ dialog(Felix;Felix;false;false;C1D1_Courtroom1_MadLaine_1)
 cameraPosition(Sidekick;true;false)
 dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_MadLaine_2)
 dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_MadLaine_3)
-
-cameraPosition(Defense;true;false)
 dialog(Felix;_;false;false;C1D1_Courtroom1_MadLaine_4)
 
 load(Case1/Day1/Courtroom1_Question1)

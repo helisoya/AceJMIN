@@ -196,13 +196,13 @@ MonoBehaviour:
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 19
-    m_Scale: 1
+    m_Scale: 1.5
     m_Name: symbol_pc_49
     m_HashCode: 279734520
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 20
-    m_Scale: 1
+    m_Scale: 1.5
     m_Name: symbol_pc_37
     m_HashCode: 279734609
   - m_ElementType: 2
@@ -958,9 +958,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 46
       m_Height: 46
-      m_HorizontalBearingX: -23
-      m_HorizontalBearingY: 23
-      m_HorizontalAdvance: 46
+      m_HorizontalBearingX: -5
+      m_HorizontalBearingY: 31.9
+      m_HorizontalAdvance: 35
     m_GlyphRect:
       m_X: 414
       m_Y: 138
@@ -974,9 +974,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 46
       m_Height: 46
-      m_HorizontalBearingX: -23
-      m_HorizontalBearingY: 23
-      m_HorizontalAdvance: 46
+      m_HorizontalBearingX: -5
+      m_HorizontalBearingY: 32
+      m_HorizontalAdvance: 35
     m_GlyphRect:
       m_X: 322
       m_Y: 184
@@ -990,7 +990,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 46
       m_Height: 46
-      m_HorizontalBearingX: -10
+      m_HorizontalBearingX: 0
       m_HorizontalBearingY: 29
       m_HorizontalAdvance: 46
     m_GlyphRect:

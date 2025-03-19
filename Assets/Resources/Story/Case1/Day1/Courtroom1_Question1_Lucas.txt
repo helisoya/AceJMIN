@@ -9,11 +9,7 @@ dialog(Felix;Felix;false;false;C1D1_Courtroom1_14)
 
 cameraPosition(Sidekick;true;false)
 dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_15)
-
-cameraPosition(Defense;true;false)
 dialog(Felix;_;false;false;C1D1_Courtroom1_16)
-
-cameraPosition(Sidekick;true;false)
 dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_17)
 dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_18)
 
