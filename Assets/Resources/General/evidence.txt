@@ -7,6 +7,7 @@
 
 [Evidence]
 General_Evidence_Badge
+General_Evidence_Caribou
 Evidence_1
 Evidence_2 Caribou1 Caribou2
 Case1_Evidence_Autopsy

@@ -9,11 +9,14 @@ health 10
 # You can edit here
 
 progress 0
+examinationProgress 0
+
 Evidence_1 -1
 Evidence_2 -1
 Profile_1 -1
 Profile_2 -1
 
+General_Evidence_Caribou -1
 General_Evidence_Badge -1
 Case1_Evidence_Autopsy -1
 Case1_Evidence_CrimeScene -1

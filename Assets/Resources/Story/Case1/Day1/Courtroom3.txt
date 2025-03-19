@@ -5,18 +5,20 @@ fadeBg(1;true)
 cameraPosition(Witness;true;false)
 fadeBg(0;false)
 
+setCaseDesc(Case1_Sub2)
+
 wait(2)
 
 cameraPosition(Prosecution;false;true)
 dialog(Buendia;Buendia;false;false;C1D1_Courtroom3_1)
 
-cameraPosition(Witness;true;false)
+cameraPosition(Witness;false;true)
 dialog(Lucas;Lucas;false;false;C1D1_Courtroom3_2)
 
-cameraPosition(Prosecution;true;false)
+cameraPosition(Prosecution;false;true)
 dialog(Buendia;Buendia;false;false;C1D1_Courtroom3_3)
 
-cameraPosition(Witness;true;false)
+cameraPosition(Witness;false;true)
 dialog(Lucas;Lucas;false;false;C1D1_Courtroom3_4)
 
 cameraPosition(Judge;true;false)
@@ -25,10 +27,10 @@ dialog(Judge;Judge;false;false;C1D1_Courtroom3_5)
 cameraPosition(Prosecution;true;false)
 dialog(Buendia;Buendia;false;false;C1D1_Courtroom3_6)
 
-cameraPosition(Witness;true;false)
+cameraPosition(Witness;false;true)
 dialog(Lucas;Lucas;false;false;C1D1_Courtroom3_7)
 
-cameraPosition(Defense;true;false)
+cameraPosition(Defense;false;true)
 dialog(Felix;_;false;false;C1D1_Courtroom3_8)
 
 cameraPosition(Judge;true;false)
@@ -48,7 +50,7 @@ dialog(Judge;Judge;false;false;C1D1_Courtroom3_14)
 
 # Testimony 1 - The night of the crime
 
-fadeBg(1;true)
+fadeFg(1;true)
 cameraPosition(Witness;true;false)
 hideDialog()
 fadeFg(0;false)
@@ -73,6 +75,7 @@ dialog(Lucas;Lucas;false;false;C1D1_Testimony1_6)
 # Felix forgor how to cross-examine people : (
 
 fadeFg(1;true)
+hideDialog()
 setTestimonyActive(false)
 cameraPosition(Judge;true;false)
 fadeFg(0;false)
@@ -119,6 +122,7 @@ justifyDialog(Left)
 
 updateHealthBar()
 setHealthBarVisible(true)
+variable(examinationProgress;0)
 
 autosave()
 

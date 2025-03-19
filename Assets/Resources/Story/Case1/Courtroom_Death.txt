@@ -1,0 +1,30 @@
+# Felix failed, oh no
+
+hideDialog()
+setHealthBarVisible(false)
+startAnimation(JudgeHammer;true)
+
+cameraPosition(Judge;true;false)
+dialog(Judge;Judge;false;false;C1_Death_1)
+dialog(Judge;Judge;false;false;C1_Death_2)
+dialog(Judge;Judge;false;false;C1_Death_3)
+
+displayEvidence(LEFT;General_Evidence_Caribou)
+dialog(Judge;Judge;false;false;C1_Death_4)
+dialog(Judge;Judge;false;false;C1_Death_5)
+
+clearDisplayedEvidence()
+startAnimation(JudgeHammer;true)
+dialog(Judge;Judge;false;false;C1_Death_6)
+
+# ADD GUILTY ANIMATION
+# startAnimation(Guilty;true)
+
+dialog(Judge;Judge;false;false;C1_Death_7)
+
+cameraPosition(Defense;true;false)
+dialog(Felix;Felix;false;false;C1_Death_8)
+
+fadeFg(1;true)
+
+# Do thing at the end, I guess

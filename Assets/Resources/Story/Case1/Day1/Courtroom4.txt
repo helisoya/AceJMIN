@@ -1,0 +1,4 @@
+setHealthBarVisible(false)
+hideDialog()
+speechBubble(Objection;null)
+cameraPosition(Defense;false;true)
