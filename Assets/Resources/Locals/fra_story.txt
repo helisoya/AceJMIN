@@ -287,6 +287,26 @@ C1D1_Examination1_Fail_4 = Mr. Felix... Je sais que c'est votre premier procès,
 C1D1_Examination1_Fail_5 = Je vais devoir vous assener une pénalité pour ça.
 C1D1_Examination1_Fail_6 = <color=#3A7CA3>(Oh la la ! Je dois faire vraiment attention avec mes preuves, moi.)</color>
 
+C1D1_Courtroom4_1 = Vous n'avez pas pu afficher l'image de Kayou sur ces panneaux LED. À vrai dire, vous n'avez même pas pu faire fonctionner les panneaux.
+C1D1_Courtroom4_2 = Pourquoi dites-vous cela ?
+C1D1_Courtroom4_3 = Il n'y avait qu'une notice et elle est écrite en chinois. Or, vous avez vous-même avoué que vous ne saviez pas lire le chinois.
+C1D1_Courtroom4_4 = Je… euh…
+C1D1_Courtroom4_5 = Mais enfin, le témoin aurait pu utiliser un traducteur automatique que l'on trouve sur les cellulaires !
+C1D1_Courtroom4_6 = Ou encore utiliser l'IA pour faire une traduction.
+C1D1_Courtroom4_7 = Cela est vrai mais mon client a lui-même avoué ne pas avoir de réseau. 
+C1D1_Courtroom4_8 = Trop concentré sur sa tâche, il n'a pas non plus pensé à sortir du garage, utiliser le réseau pour sa traduction et revenir.
+C1D1_Courtroom4_9 = Oui c'est vrai, j'y ai pas pensé ! 
+C1D1_Courtroom4_10 = Mais de toute façon, les assets des graph étaient trop moches ! Ils ne méritaient pas leur place sur les panneaux LED !
+C1D1_Courtroom4_11 = On dirait qu'il cherche à se dédouaner de sa propre incompétence.
+C1D1_Courtroom4_12 = Il va peut-être réussir à convaincre ce tribunal qu'il n'a pas les neuronnes suffisantes pour commettre un meurtre.
+C1D1_Courtroom4_13 = Je n'ai pas tout compris, vous n'aimiez pas les affaires des girafes ? Je ne vois pas trop ce que ça vient faire ici. 
+C1D1_Courtroom4_14 = Au final, avez vous mis votre image de Kayou sur ces écrans ?
+C1D1_Courtroom4_15 = Non ! Mais c'était une très belle image de Kayou.
+C1D1_Courtroom4_16 = Avez-vous réussi à faire fonctionner ces panneaux ?
+C1D1_Courtroom4_17 = Euh… Oui…
+C1D1_Courtroom4_18 = <color=#3A7CA3>(Cela doit être assez important pour qu’il mente à ce sujet)</color>
+C1D1_Courtroom4_19 = Très bien, vous allez devoir nous en dire plus à ce sujet.
+
 C1_Death_1 = Mr. Felix ! Vous faites honte à votre profession.
 C1_Death_2 = Je vous ordonne de quitter les lieux.
 C1_Death_3 = Je vais devoir me fier à mon fidèle Caribou pour finir ce procès.
