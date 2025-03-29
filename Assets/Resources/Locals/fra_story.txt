@@ -262,7 +262,11 @@ C1D1_Examination1_5_3 = Et vous savez lire le chinois ?
 C1D1_Examination1_5_4 = Pas du tout.
 C1D1_Examination1_5_5 = Il y avait d'autre moyen pour vous apprendre à faire fonctionner ces panneaux LED ?
 C1D1_Examination1_5_6 = Non pas du tout. Il n'y avait que ça. C'est encore de la camelote bas de gamme avec des informations obscures.
-C1D1_Examination1_5_7 = Cette information m'a l'air importante. Veuillez l'ajouter à votre déposition.
+C1D1_Examination1_5_7 = Vous n'aviez pas de traducteur sous la main ?
+C1D1_Examination1_5_8 = Non, je n'ai aucune connaissance qui ait fait ces études. Je n'ai aucun ami non plus… À part Kayou.
+C1D1_Examination1_5_9 = <color=#3A7CA3>(Il le fait exprès ?)</color>[changeSpeaker(Felix)] Je voulais dire un traducteur sur votre téléphone.
+C1D1_Examination1_5_10 = Il n'y a aucun réseau dans le garage et je devais être au plus près pour atteindre la perfection de mon œuvre.
+C1D1_Examination1_5_11 = <color=#3A7CA3>(Il aurait pû déplacer les panneaux LED et les remettre après mais je doute qu'il ait l'intelligence suffisante pour le faire)</color>
 
 C1D1_Examination1_6_1 = Pourquoi mettre en priorité l'image Kayou et pas votre projet ?
 C1D1_Examination1_6_2 = Je… hum… Parce qu'il n'y avait que ça…
@@ -270,12 +274,6 @@ C1D1_Examination1_6_3 = C'est à dire ? Vous aviez des graphistes dans votre éq
 C1D1_Examination1_6_4 = Si mais… C'est gênant, on pourrait passer à autre chose ?
 C1D1_Examination1_6_5 = Peut-être que Lucas voulait rendre hommage à Kayou et que son équipe l'en a empêché ?
 C1D1_Examination1_6_6 = Cela m'étonnerait, on dirait plutôt qu'il a honte de quelque chose.
-
-C1D1_Examination1_Addendum_1 = Vous n'aviez pas de traducteur sous la main ?
-C1D1_Examination1_Addendum_2 = Non, je n'ai aucune connaissance qui ait fait ces études. Je n'ai aucun ami non plus… À part Kayou.
-C1D1_Examination1_Addendum_3 = <color=#3A7CA3>(Il le fait exprès ?)</color>[changeSpeaker(Felix)] Je voulais dire un traducteur sur votre téléphone.
-C1D1_Examination1_Addendum_4 = Il n'y a aucun réseau dans le garage et je devais être au plus près pour atteindre la perfection de mon œuvre.
-C1D1_Examination1_Addendum_5 = <color=#3A7CA3>(Il aurait pû déplacer les panneaux LED et les remettre après mais je doute qu'il ait l'intelligence suffisante pour le faire)</color>
 
 C1D1_Examination1_Loop_1 = N'as-tu rien remarqué d'étrange ?
 C1D1_Examination1_Loop_2 = Non, pourtant, je suis convaincu qu'il cherche à cacher quelque chose.
