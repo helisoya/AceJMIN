@@ -1,0 +1,6 @@
+# Lucas is lying in his testimony once more
+
+setHealthBarVisible(false)
+hideDialog()
+speechBubble(Objection;null)
+cameraPosition(Defense;false;true)
