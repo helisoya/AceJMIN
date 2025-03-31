@@ -15,6 +15,7 @@ public class SETTINGSAVE
     public int refreshRate;
     public bool fullscreen;
     public int quality;
+    public int caseProgress;
 
     public SETTINGSAVE()
     {
@@ -24,5 +25,6 @@ public class SETTINGSAVE
         valVOICE = 0.3f;
         fullscreen = true;
         language = "eng";
+        caseProgress = 0;
     }
 }

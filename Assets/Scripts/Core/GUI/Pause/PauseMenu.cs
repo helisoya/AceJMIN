@@ -152,6 +152,10 @@ public class PauseMenu : MonoBehaviour
         {
             ChoiceScreen.instance.SetSelectionToFirstButton();
         }
+        else if (!isInGame)
+        {
+            MainMenuManager.instance.SetActiveMainScreenButton(2);
+        }
     }
 
     /// <summary>
@@ -197,12 +201,12 @@ public class PauseMenu : MonoBehaviour
         {
             Close();
         }
-        if (AJInput.Instance.GetReturnToTitleDown())
+        if (AJInput.Instance.GetReturnToTitleDown() && isInGame)
         {
             ReturnToMainMenu();
         }
 
-        if (currentIdx == 3)
+        if ((currentIdx == 3 && isInGame) || (currentIdx == 2 && !isInGame))
         {
             // Change Resolution
             int side = (AJInput.Instance.GetMoveRightDown() ? 1 : 0) - (AJInput.Instance.GetMoveLeftDown() ? 1 : 0);

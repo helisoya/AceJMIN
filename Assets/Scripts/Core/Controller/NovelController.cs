@@ -63,7 +63,7 @@ public class NovelController : MonoBehaviour
         print("Is Loading Save : " + GameManager.instance.IsLoadingSave());
         if (GameManager.instance.IsLoadingSave())
         {
-            LoadGameFile();
+            LoadGameFile(GameManager.instance.GetSaveToLoad());
         }
         else
         {
@@ -75,7 +75,7 @@ public class NovelController : MonoBehaviour
 
     public void LoadGameFile(string saveName = "save")
     {
-        GameManager.instance.SetIsLoadingSave(true);
+        //GameManager.instance.SetSaveToLoad(saveName);
         GAMEFILE activeGameFile = GameManager.GetSaveManager().Load(saveName);
 
         VNGUI.instance.ForceBgTo(activeGameFile.fadeBg);
@@ -228,7 +228,7 @@ public class NovelController : MonoBehaviour
 
         if (GameManager.instance.IsLoadingSave())
         {
-            GameManager.instance.SetIsLoadingSave(false);
+            GameManager.instance.SetSaveToLoad(null);
 
             if (currentChoice != null)
             {

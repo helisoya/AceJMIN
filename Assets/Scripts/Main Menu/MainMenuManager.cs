@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// Handles the Main Menu
@@ -12,12 +13,14 @@ public class MainMenuManager : MonoBehaviour
 {
     [Header("General")]
     [SerializeField] private string menuMusic;
+    [SerializeField] private CaseSelector caseSelector;
     [SerializeField] private PauseMenu pauseMenu;
+    [SerializeField] private SaveMenu saveMenu;
     [SerializeField] private Fade fade;
 
     [Header("Main Screen")]
     [SerializeField] private GameObject mainScreenRoot;
-    [SerializeField] private Button continueButton;
+    [SerializeField] private GameObject[] mainScreenButtons;
 
 
     [Header("Name Input")]
@@ -26,14 +29,29 @@ public class MainMenuManager : MonoBehaviour
 
     private Coroutine fading;
 
+    public static MainMenuManager instance;
+
+
+    void Awake()
+    {
+        instance = this;
+    }
 
 
     void Start()
     {
         AudioManager.instance.PlaySong(menuMusic);
-        continueButton.interactable = GameManager.GetSaveManager().SaveFileExists("save");
         fade.ForceAlphaTo(1);
         fade.FadeTo(0);
+    }
+
+    /// <summary>
+    /// Sets the currently active button on the main screen
+    /// </summary>
+    /// <param name="idx">The button's index</param>
+    public void SetActiveMainScreenButton(int idx)
+    {
+        EventSystem.current.SetSelectedGameObject(mainScreenButtons[idx]);
     }
 
     /// <summary>
@@ -42,8 +60,7 @@ public class MainMenuManager : MonoBehaviour
     public void Event_NewGame()
     {
         if (fading != null) return;
-        mainScreenRoot.SetActive(false);
-        nameInputRoot.SetActive(true);
+        caseSelector.Event_Open();
     }
 
     /// <summary>
@@ -53,7 +70,7 @@ public class MainMenuManager : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(nameInput.text))
         {
-            GameManager.instance.SetIsLoadingSave(false);
+            GameManager.instance.SetSaveToLoad(null);
             GameManager.instance.SetNextChapter("Intro/Intro");
             GameManager.GetSaveManager().ResetItems();
             GameManager.GetSaveManager().EditItem("playerName", nameInput.text);
@@ -69,9 +86,7 @@ public class MainMenuManager : MonoBehaviour
     public void Event_Continue()
     {
         if (fading != null) return;
-        GameManager.instance.SetIsLoadingSave(true);
-        GameManager.instance.SetNextChapter("");
-        StartTransitionToVN();
+        saveMenu.Open(false, true);
     }
 
     /// <summary>
@@ -95,7 +110,7 @@ public class MainMenuManager : MonoBehaviour
     /// <summary>
     /// Starts the transition to the VN Scene
     /// </summary>
-    private void StartTransitionToVN()
+    public void StartTransitionToVN()
     {
         if (fading != null) return;
 

@@ -1,1 +1,1 @@
-{"language":"fra","valBGM":0.1572474241256714,"valSFX":0.04452501982450485,"valVOICE":0.30000001192092898,"resolutionWidth":1280,"resolutionHeight":1024,"refreshRate":59,"fullscreen":true,"quality":2}
+{"language":"fra","valBGM":0.1572474241256714,"valSFX":0.04452501982450485,"valVOICE":0.30000001192092898,"resolutionWidth":1920,"resolutionHeight":1080,"refreshRate":60,"fullscreen":true,"quality":2,"caseProgress":0}

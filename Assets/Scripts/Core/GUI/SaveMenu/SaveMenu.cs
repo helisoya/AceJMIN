@@ -43,6 +43,10 @@ public class SaveMenu : MonoBehaviour
         {
             VNGUI.instance.OpenSettings(isInSavingMode);
         }
+        else if (!isInGame)
+        {
+            MainMenuManager.instance.SetActiveMainScreenButton(1);
+        }
     }
 
     /// <summary>
@@ -154,9 +158,20 @@ public class SaveMenu : MonoBehaviour
         }
         else
         {
-            NovelController.instance.LoadGameFile(currentInfo.saveName);
-            VNGUI.instance.SetCoolDownForAction(0.1f);
-            Close(true);
+            if (isInGame)
+            {
+                NovelController.instance.LoadGameFile(currentInfo.saveName);
+                VNGUI.instance.SetCoolDownForAction(0.1f);
+                Close(true);
+            }
+            else
+            {
+                GameManager.instance.SetSaveToLoad(currentInfo.saveName);
+                GameManager.instance.SetNextChapter("");
+                MainMenuManager.instance.StartTransitionToVN();
+                Close(true);
+            }
+
         }
     }
 
