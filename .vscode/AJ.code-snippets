@@ -430,4 +430,20 @@
 		],
 		"description": "Removes all animations"
 	},
+	"Set the BG Alpha": {
+		"scope": "ansl",
+		"prefix": "setBG",
+		"body": [
+			"setBG(ALPHA)"
+		],
+		"description": "Sets the BG Alpha"
+	},
+	"Set the FG Alpha": {
+		"scope": "ansl",
+		"prefix": "setFG",
+		"body": [
+			"setFG(ALPHA)"
+		],
+		"description": "Sets the FG Alpha"
+	},
 }

@@ -9,6 +9,7 @@ Char_Buendia = Buandy
 Char_MadLaine = Mad Laine
 Char_Lucas = Lucas
 Char_Clelia = Clelia
+Char_Huissier = Huissier
 
 # -----------------------------------------------------------
 # --------------- Choices -----------------------------------
@@ -91,6 +92,29 @@ Case1_Profile_Clelia_desc0 = Participante à l'événement Faux Règne.
 # -----------------------------------------------------------
 # --------------- Case 1 - Faux Règne -----------------------
 # -----------------------------------------------------------
+
+C1D1_Courtroom0_1 = <color=#3A7CA3>(Oh là là ça fait déjà 2h que j'attends. J'espère qu'ils ne m’ont pas enfermé dehors et oublié…)</color>
+C1D1_Courtroom0_2 = Félix ! Alors, prêt pour ton 1er procès ?
+C1D1_Courtroom0_3 = Mad Laine ! Je te trouve enfin ! J'ai cru qu'on m'avait enfermé à l'extérieur de la pièce. J'ai dû passer par le garage pour rentrer. Les portes étaient fermées.
+C1D1_Courtroom0_4 = Mais Félix… Le procès ne commence qu'à 10h et il est 9h30.
+C1D1_Courtroom0_5 = J'avais si peur d'être en retard que je suis arrivé en avance.
+C1D1_Courtroom0_6 = Ils ne vont pas commencer le procès sans toi, tu aurais même pû arriver en retard.
+C1D1_Courtroom0_7 = Je ne suis pas sûr que ce soit une bonne idée…
+C1D1_Courtroom0_8 = <color=#3A7CA3>(Je m'appelle Félix Vrai et ceci est mon premier procès en tant qu'avocat de la défense.)</color>
+C1D1_Courtroom0_9 = <color=#3A7CA3>(Personne n'a accepté de prendre mon client car la plupart des gens le trouvait trop étrange.)</color>
+C1D1_Courtroom0_10 = <color=#3A7CA3>(Mais moi… J'ai besoin d'argent pour rembourser mon prêt pour des études d'ergonomie que j'ai foiré.)</color>
+C1D1_Courtroom0_11 = <color=#3A7CA3>(J'ai donc accepté et Mad Laine, mon associée a dit qu'elle allait m'assister sur cette affaire)</color>
+C1D1_Courtroom0_12 = Je suis fini !!! Si je dois mourir, sauvez au moins Kayou !!!
+C1D1_Courtroom0_13 = Qui est Kayou ?
+C1D1_Courtroom0_14 = C'est lui !
+C1D1_Courtroom0_15 = Je crois qu'il parle au caillou sur son épaule.
+C1D1_Courtroom0_16 = C'est mon seul ami, ma seule famille. S'il ne doit rester qu'une chose de moi, faites que ce soit Kayou.
+C1D1_Courtroom0_17 = Euh… Calmez vous Mr Tastroffe, nous allons essayer de vous innocenter.
+C1D1_Courtroom0_18 = Oui, enfin, c'est ton premier procès, on est pas sûr d'y arriver.
+C1D1_Courtroom0_19 = Quoi ?
+C1D1_Courtroom0_20 = Ne l'écoutez pas, elle raconte n'importe quoi. <color=#3A7CA3>(Comment ne pas du tout faire stresser mon client…)</color>
+C1D1_Courtroom0_21 = Mr Vrai ? Vous êtes prêt ? Le procès va démarrer.
+C1D1_Courtroom0_22 = Bon allons-y.
 
 
 C1D1_Courtroom1_1 = Je déclare la séance ouverte pour le procès de Mr Lucas Tastroffe.
