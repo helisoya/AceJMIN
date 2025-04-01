@@ -130,7 +130,7 @@
 		"scope": "ansl",
 		"prefix": "setCharacterAlpha",
 		"body": [
-			"setCharacterAlpha(CHARACTER_ID;TARGETALPHA;WAITFOREND)"
+			"setCharacterAlpha(CHARACTER_ID;TARGETALPHA;IMMEDIATE;WAITFOREND)"
 		],
 		"description": "Sets a character's alpha"
 	},
