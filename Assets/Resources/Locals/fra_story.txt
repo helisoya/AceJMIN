@@ -244,7 +244,6 @@ C1D1_Examination1_3 = <color=green>J'ai travaillé toute la journée. De 8h à 1
 C1D1_Examination1_4 = <color=green>C'était vraiment pas facile. Mon équipe voulait que j'utilise des panneaux LED mais j'avais jamais fait ça moi !</color>
 C1D1_Examination1_5 = <color=green>J'ai dû me débrouiller. Il n'y avait pas de réseau mais heureusement, une notice était fournie avec le matériel.</color>
 C1D1_Examination1_6 = <color=green>Je suis un excellent prog. J'ai réussi à mettre l'image de Kayou sur les panneaux LED !</color>
-C1D1_Examination1_Addendum = <color=green>Il n'y avait qu'une notice en chinois pour faire fonctionner les panneaux LED. Malheureusement, je ne comprends pas cette langue.</color>
 
 C1D1_Examination1_1_1 = Quelle genre d'installation était-ce ?
 C1D1_Examination1_1_2 = Un espèce de bulldozer avec lequel le participant doit rouler sur des personnes d'un certain bord politique.
@@ -286,7 +285,11 @@ C1D1_Examination1_5_3 = Et vous savez lire le chinois ?
 C1D1_Examination1_5_4 = Pas du tout.
 C1D1_Examination1_5_5 = Il y avait d'autre moyen pour vous apprendre à faire fonctionner ces panneaux LED ?
 C1D1_Examination1_5_6 = Non pas du tout. Il n'y avait que ça. C'est encore de la camelote bas de gamme avec des informations obscures.
-C1D1_Examination1_5_7 = Cette information m'a l'air importante. Veuillez l'ajouter à votre déposition.
+C1D1_Examination1_5_7 = Vous n'aviez pas de traducteur sous la main ?
+C1D1_Examination1_5_8 = Non, je n'ai aucune connaissance qui ait fait ces études. Je n'ai aucun ami non plus… À part Kayou.
+C1D1_Examination1_5_9 = <color=#3A7CA3>(Il le fait exprès ?)</color>[changeSpeaker(Felix)] Je voulais dire un traducteur sur votre téléphone.
+C1D1_Examination1_5_10 = Il n'y a aucun réseau dans le garage et je devais être au plus près pour atteindre la perfection de mon œuvre.
+C1D1_Examination1_5_11 = <color=#3A7CA3>(Il aurait pû déplacer les panneaux LED et les remettre après mais je doute qu'il ait l'intelligence suffisante pour le faire)</color>
 
 C1D1_Examination1_6_1 = Pourquoi mettre en priorité l'image Kayou et pas votre projet ?
 C1D1_Examination1_6_2 = Je… hum… Parce qu'il n'y avait que ça…
@@ -294,12 +297,6 @@ C1D1_Examination1_6_3 = C'est à dire ? Vous aviez des graphistes dans votre éq
 C1D1_Examination1_6_4 = Si mais… C'est gênant, on pourrait passer à autre chose ?
 C1D1_Examination1_6_5 = Peut-être que Lucas voulait rendre hommage à Kayou et que son équipe l'en a empêché ?
 C1D1_Examination1_6_6 = Cela m'étonnerait, on dirait plutôt qu'il a honte de quelque chose.
-
-C1D1_Examination1_Addendum_1 = Vous n'aviez pas de traducteur sous la main ?
-C1D1_Examination1_Addendum_2 = Non, je n'ai aucune connaissance qui ait fait ces études. Je n'ai aucun ami non plus… À part Kayou.
-C1D1_Examination1_Addendum_3 = <color=#3A7CA3>(Il le fait exprès ?)</color>[changeSpeaker(Felix)] Je voulais dire un traducteur sur votre téléphone.
-C1D1_Examination1_Addendum_4 = Il n'y a aucun réseau dans le garage et je devais être au plus près pour atteindre la perfection de mon œuvre.
-C1D1_Examination1_Addendum_5 = <color=#3A7CA3>(Il aurait pû déplacer les panneaux LED et les remettre après mais je doute qu'il ait l'intelligence suffisante pour le faire)</color>
 
 C1D1_Examination1_Loop_1 = N'as-tu rien remarqué d'étrange ?
 C1D1_Examination1_Loop_2 = Non, pourtant, je suis convaincu qu'il cherche à cacher quelque chose.
@@ -332,6 +329,94 @@ C1D1_Courtroom4_16 = Avez-vous réussi à faire fonctionner ces panneaux ?
 C1D1_Courtroom4_17 = Euh… Oui…
 C1D1_Courtroom4_18 = <color=#3A7CA3>(Cela doit être assez important pour qu’il mente à ce sujet)</color>
 C1D1_Courtroom4_19 = Très bien, vous allez devoir nous en dire plus à ce sujet.
+
+C1D1_Testimony2_Name = <color=red>-Les panneaux LED-</color>
+C1D1_Testimony2_1 = Je n'ai pas réussi à lire cette notice.
+C1D1_Testimony2_2 = En fait, j'ai essayé et au départ, je pensais que c'était un message codé avec des petits dessins.
+C1D1_Testimony2_3 = Puis quelqu'un de mon équipe m'a dit que c'était du chinois. Je me suis rendu compte que je ne parlais pas chinois.
+C1D1_Testimony2_4 = J'ai fait que Allemand LV2, même si je n'ai eu que 7 à mon BAC.
+C1D1_Testimony2_5 = J'ai passé des heures à prier le rocher suprême en espérant une réponse. Et je l'ai eu !
+C1D1_Testimony2_6 = Antonin est venu m'aider vers 20h. Il m'a aidé à réparer les panneaux LED et Kayou a pu avoir son heure de gloire !
+
+C1D1_Courtroom4_20 = Donc vous admettez avoir vu la victime ?
+C1D1_Courtroom4_21 = Oui, il m'a aidé. Sinon les écrans n'auraient jamais fonctionné !
+C1D1_Courtroom4_22 = Pff… C'est presque un aveux de votre culpabilité !
+C1D1_Courtroom4_23 = <color=#3A7CA3>(Oh non, Lucas… Pourquoi ne m'as-tu rien dit ? Je n'aurais pas dû insister… Comment puis-je encore prouver ton innocence ?)</color>
+C1D1_Courtroom4_24 = Je suis si heureuse que l'image de Kayou ait pu être sur ces panneaux !
+C1D1_Courtroom4_25 = Je ne suis pas sûr que cette nouvelle soit réjouissante.
+C1D1_Courtroom4_26 = Mr Vrai, vous pouvez passer à votre contre interrogatoire.
+
+C1D1_Examination2_Name = <color=red>-Les panneaux LED-</color>
+C1D1_Examination2_1 = <color=green>Je n'ai pas réussi à lire cette notice.</color>
+C1D1_Examination2_2 = <color=green>En fait, j'ai essayé et au départ, je pensais que c'était un message codé avec des petits dessins.</color>
+C1D1_Examination2_3 = <color=green>Puis quelqu'un de mon équipe m'a dit que c'était du chinois. Je me suis rendu compte que je ne parlais pas chinois.</color>
+C1D1_Examination2_4 = <color=green>J'ai fait que Allemand LV2, même si je n'ai eu que 7 à mon BAC.</color>
+C1D1_Examination2_5 = <color=green>J'ai passé des heures à prier le rocher suprême en espérant une réponse. Et je l'ai eu !</color>
+C1D1_Examination2_6 = <color=green>Antonin est venu m'aider vers 20h. Il m'a aidé à réparer les panneaux LED et Kayou a pu avoir son heure de gloire !</color>
+
+C1D1_Examination2_Loop_1 = Lucas a bien vu Portekoi avant sa mort… On est cuit si on ne trouve pas de contradictions.
+C1D1_Examination2_Loop_2 = En effet. Il aurait dû me le dire plus tôt.
+C1D1_Examination2_Loop_3 = Ne trouves-tu pas son comportement suspect ?
+C1D1_Examination2_Loop_4 = Tu as raison. Il n'a pas l'air sûr de certaines choses. Je devrais l'attaquer pour en avoir le cœur net.
+
+C1D1_Examination2_1_1 = Pourquoi n'avez-vous pas réussi ?
+C1D1_Examination2_1_2 = Je crois qu'il y vient. Tu devrais le laisser parler !
+C1D1_Examination2_1_3 = Pouvez-vous cessé d'interrompre le témoin ?
+C1D1_Examination2_1_4 = <color=#3A7CA3>(Et voilà qu'ils se liguent contre moi…)</color>
+
+C1D1_Examination2_2_1 = Qu'est ce qui vous faisait penser ça ?
+C1D1_Examination2_2_2 = Comme j'étais seul sur mon stand, je pensais que c'était un escape game pour un team building.
+C1D1_Examination2_2_3 = Un tire bullshit ? Qu'est ce que c'est ?
+C1D1_Examination2_2_4 = Un événement d'entreprise censé resserrer les liens.
+C1D1_Examination2_2_5 = Ça ressemble à un truc SM bizarre…
+C1D1_Examination2_2_6 = Pourquoi as-tu l'esprit aussi mal placé ?
+C1D1_Examination2_2_7 = On utilise pas de cordes dans le BDSM ?
+C1D1_Examination2_2_8 = <color=#3A7CA3>(Je ferais bien de poursuivre ce contre interrogatoire…)</color>
+
+C1D1_Examination2_3_1 = Était-ce réellement du chinois ou simplement une métaphore pour dire que vous ne compreniez pas ce qui était écrit ?
+C1D1_Examination2_3_2 = C'est pas faux.
+C1D1_Examination2_3_3 = Euh…
+C1D1_Examination2_3_4 = Je crois qu'il ne connaît pas le mot “métaphore”. Peut-être que Kayou devrait l'aider ?
+C1D1_Examination2_3_5 = Je ne suis pas sûr qu'un rocher puisse y faire quoi que ce soit…
+C1D1_Examination2_3_6 = HÉ !!! N'INSULTEZ PAS KAYOU !!!
+C1D1_Examination2_3_7 = Excuse-toi auprès de Kayou !
+C1D1_Examination2_3_8 = Je… Pardon Kayou [changeSpeaker(null)]<color=#3A7CA3>(Qu'est ce qu'il ne faut pas faire ?)</color>
+
+C1D1_Examination2_4_1 = Et il n'y avait pas de traduction en allemand sur la notice ?
+C1D1_Examination2_4_2 = Pour servir à quoi ? Le témoin n'a pas le niveau pour le lire !
+C1D1_Examination2_4_3 = Moi aussi j'avais fait allemand dans ma jeunesse. J'arrivais à lire les carnets de mon grand-père.
+C1D1_Examination2_4_4 = Dommage qu'il soit parti aussi vite en Argentine, j'aurais pu apprendre à mieux le connaître…
+C1D1_Examination2_4_5 = Euh… Actually, je ne suis pas sûr que ça aide le débat.
+C1D1_Examination2_4_6 = Quoi ??? Tu manques de respect à mon grand père ? À LA GUILLOTINE ! COUPABLE ! COUPABLE !
+C1D1_Examination2_4_7 = Ce n'est pas ce que je voulais dire. Pardon ! Pardon !
+C1D1_Examination2_4_8 = Le juge Lien a l'air sous tensions aujourd'hui.
+C1D1_Examination2_4_9 = Et moi donc…
+
+C1D1_Examination2_5_1 = Comment s'est manifesté le rocher suprême ?
+C1D1_Examination2_5_2 = Il m'a envoyé un signe ! Je suis tous ses enseignements.
+C1D1_Examination2_5_3 = Par exemple, je fais super attention à bien regarder le sol pour ne pas shooter un copain de Kayou.
+C1D1_Examination2_5_4 = Et cela fonctionne ? Le rocher suprême existe vraiment ?
+C1D1_Examination2_5_5 = Oui ! Chaque jour je le remercie d'avoir mis Kayou sur ma voie.
+C1D1_Examination2_5_6 = L'autre jour, je voulais acheter du K-Colac. Une canette était bloquée et j'ai pu en avoir deux au lieu d'une ! Tout ça, grâce au rocher suprême !
+C1D1_Examination2_5_7 = Ça a l'air super rentable. Je devrais m'y mettre.
+C1D1_Examination2_5_8 = Je pense qu'il s'agit plutôt d'une coïncidence. Après tout, le rocher suprême ne l'a pas empêché de se retrouver sur le banc des accusés.
+
+C1D1_Examination2_6_1 = Vous êtes sûr que c'était vers 20h ?
+C1D1_Examination2_6_2 = Euh… oui ? Je… hum… Je crois avoir quitté le garage vers 20h15…
+C1D1_Examination2_6_3 = Et qu'avez-vous fait ensuite ?
+C1D1_Examination2_6_4 = Je suis rentré chez moi à environ 1h d'ici. J'avais si faim vous savez ! Je n'ai pu mangé qu'après 22h !
+C1D1_Examination2_6_5 = Et qu'avez-vous mangé ?
+C1D1_Examination2_6_6 = Euh… Et bien, c'est à dire que je suis assez pauvre… Donc pâtes au ketchup.
+C1D1_Examination2_6_7 = C'est bon pourtant les pâtes au ketchup.
+C1D1_Examination2_6_8 = Je suis presque sûr que Lucas est un fin gourmet et qu'il ne mangerait pas n'importe quoi.
+
+
+
+
+
+
+
+
 
 C1_Death_1 = Mr. Felix ! Vous faites honte à votre profession.
 C1_Death_2 = Je vous ordonne de quitter les lieux.

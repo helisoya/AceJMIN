@@ -162,4 +162,23 @@ public class Settings
     {
         return self.save;
     }
+
+    /// <summary>
+    /// Change the global case progress
+    /// </summary>
+    /// <param name="newProgress">The new progress</param>
+    public static void SetCaseProgress(int newProgress)
+    {
+        if (self.save.caseProgress < newProgress) self.save.caseProgress = newProgress;
+        self.SaveFile();
+    }
+
+    /// <summary>
+    /// Gets the current case progress
+    /// </summary>
+    /// <returns>The case's progress</returns>
+    public static int GetCaseProgress()
+    {
+        return self.save.caseProgress;
+    }
 }

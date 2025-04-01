@@ -1,0 +1,10 @@
+fadeFg(1;true)
+cameraPosition(Sidekick;true;false)
+fadeFg(0;false)
+
+dialog(MadLaine;MadLaine;false;false;C1D1_Examination2_Loop_1)
+dialog(Felix;_;false;false;C1D1_Examination2_Loop_2)
+dialog(MadLaine;MadLaine;false;false;C1D1_Examination2_Loop_3)
+dialog(Felix;_;false;false;C1D1_Examination2_Loop_4)
+
+load(Case1/Day1/Examination2_Fade)

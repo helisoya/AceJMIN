@@ -1,7 +1,5 @@
 # Cross Examination 1 - Day of the murder
 
-if(examinationProgress = 1) load(Case1/Day1/Examination1_A)
-
 examination Case1/Day1/Courtroom4 Case1/Day1/Examination1_Fail Case1/Day1/Examination1_Loop Case1_Evidence_Notice 5
 	C1D1_Examination1_1 Lucas Lucas Case1/Day1/Examination1_1
 	C1D1_Examination1_2 Lucas Lucas Case1/Day1/Examination1_2
