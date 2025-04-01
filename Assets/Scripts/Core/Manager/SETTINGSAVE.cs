@@ -24,7 +24,7 @@ public class SETTINGSAVE
         valSFX = 0.2f;
         valVOICE = 0.3f;
         fullscreen = true;
-        language = "eng";
+        language = "fra";
         caseProgress = 0;
     }
 }
