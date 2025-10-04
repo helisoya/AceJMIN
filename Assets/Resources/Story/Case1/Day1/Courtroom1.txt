@@ -2,6 +2,10 @@
 
 # Characters setup
 
+fadeFg(1;true)
+
+removeAllCharacters()
+
 addCharacter(Judge;false)
 setCharacterPosition(Judge;Judge)
 
@@ -20,6 +24,8 @@ setCharacterPosition(MadLaine;Sidekick)
 # Start
 
 autosave()
+
+fadeFg(0;false)
 
 hideDialog()
 cameraPosition(Global;true;false)

@@ -147,9 +147,11 @@ public class VNGUI : MonoBehaviour
     /// </summary>
     /// <param name="alpha">The target alpha</param>
     /// <param name="speed">The flash's speed</param>
-    public void FlashTo(float alpha, float speed)
+    /// <param name="immediate">Should the change be immediate ?</param>
+    public void FlashTo(float alpha, float speed, bool immediate = false)
     {
-        flash.FadeTo(alpha, speed);
+        if(immediate) flash.ForceAlphaTo(alpha);
+        else flash.FadeTo(alpha, speed);
     }
 
     /// <summary>
@@ -157,9 +159,11 @@ public class VNGUI : MonoBehaviour
     /// </summary>
     /// <param name="alpha">Alpha target</param>
     /// <param name="speed">Fading speed</param>
-    public void FadeBgTo(float alpha, float speed = 2)
+    /// <param name="immediate">Should the change be immediate ?</param>
+    public void FadeBgTo(float alpha, float speed = 2, bool immediate = false)
     {
-        fadeBg.FadeTo(alpha, speed);
+        if(immediate) fadeBg.ForceAlphaTo(alpha);
+        else fadeBg.FadeTo(alpha, speed);
     }
 
     /// <summary>
@@ -167,9 +171,11 @@ public class VNGUI : MonoBehaviour
     /// </summary>
     /// <param name="alpha">Alpha target</param>
     /// <param name="speed">Fading speed</param>
-    public void FadeFgTo(float alpha, float speed = 2)
+    /// <param name="immediate">Should the change be immediate ?</param>
+    public void FadeFgTo(float alpha, float speed = 2, bool immediate = false)
     {
-        fadeFg.FadeTo(alpha, speed);
+        if(immediate) fadeFg.ForceAlphaTo(alpha);
+        else fadeFg.FadeTo(alpha, speed);
     }
 
     /// <summary>

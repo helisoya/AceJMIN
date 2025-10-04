@@ -2,6 +2,8 @@
 # Antonin was killed : (
 # Setup of initial 
 
+setFG(1)
+
 setCaseName(Case1_Name)
 setCaseDesc(Case1_Sub1)
 
@@ -14,4 +16,4 @@ variable(Case1_Profile_Buendia;0)
 variable(Case1_Profile_Antonin;0)
 variable(Case1_Profile_Lucas;0)
 
-load(Case1/Day1/Courtroom1)
+load(Case1/Day1/Courtroom0)

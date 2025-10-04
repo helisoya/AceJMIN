@@ -688,12 +688,19 @@ public class NovelController : MonoBehaviour
                 break;
 
             case "setCharacterAlpha":
-                // Character - Target - Wait for end ?
+                // Character - Target - Immediate - Wait for end ?
+
+                if (bool.Parse(parameters[2]))
+                {
+                    CharacterManager.instance.SetCharacterAlpha(parameters[0],
+                        float.Parse(parameters[1], System.Globalization.CultureInfo.InvariantCulture));
+                    break;
+                }
 
                 CharacterManager.instance.TransitionCharacterAlpha(parameters[0],
                     float.Parse(parameters[1], System.Globalization.CultureInfo.InvariantCulture));
 
-                if (bool.Parse(parameters[2]))
+                if (bool.Parse(parameters[3]))
                 {
                     yield return new WaitForEndOfFrame();
                     while (CharacterManager.instance.IsCharacterFading(parameters[0]))
@@ -955,6 +962,14 @@ public class NovelController : MonoBehaviour
 
             case "setTestimonyActive":
                 VNGUI.instance.SetTestimonyActive(bool.Parse(parameters[0]));
+                break;
+
+            case "setBG":
+                VNGUI.instance.FadeBgTo(float.Parse(parameters[0], System.Globalization.CultureInfo.InvariantCulture),2,true);
+                break;
+
+            case "setFG":
+                VNGUI.instance.FadeFgTo(float.Parse(parameters[0], System.Globalization.CultureInfo.InvariantCulture),2,true);
                 break;
 
             case "setHealthBarVisible":
