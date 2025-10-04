@@ -67,6 +67,16 @@ public class SaveManager
     /// </summary>
     public void Save(string saveName = "save")
     {
+        // Setup variables in the savefile
+        saveFile.items.Clear();
+        foreach (GAMEFILE.ITEM variable in items)
+        {
+            if (!variable.defaultValue.Equals(variable.value))
+            {
+                saveFile.items.Add(variable);
+            }
+        }
+
         FileManager.SaveJSON(savePath + saveName + ".txt", saveFile);
     }
 
@@ -126,15 +136,6 @@ public class SaveManager
         }
 
         items[index].value = value;
-
-        if (items[index].value != items[index].defaultValue && !saveFile.items.Contains(items[index]))
-        {
-            saveFile.items.Add(items[index]);
-        }
-        else if (items[index].value == items[index].defaultValue && saveFile.items.Contains(items[index]))
-        {
-            saveFile.items.Remove(items[index]);
-        }
     }
 
     /// <summary>
