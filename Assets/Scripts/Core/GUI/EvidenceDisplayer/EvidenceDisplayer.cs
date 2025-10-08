@@ -22,7 +22,7 @@ public class EvidenceDisplayer : MonoBehaviour
     public void Show(Evidence evidence)
     {
 
-        if (evidenceImage != null) evidenceImage.sprite = evidence.GetSprite();
+        if (evidenceImage != null) evidenceImage.sprite = evidence.sprite;
         if (evidenceName != null) evidenceName.SetNewKey(evidence.Name);
         if (evidenceDesc != null) evidenceDesc.SetNewKey(evidence.GetDesc(int.Parse(GameManager.GetSaveManager().GetItem(evidence.ID))));
 

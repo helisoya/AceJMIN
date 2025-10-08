@@ -18,7 +18,7 @@
 		"scope": "ansl",
 		"prefix": "dialog",
 		"body": [
-			"dialog(SPEAKER_ID;CHARACTER_ID;ADDITIVE;AUTOSKIP;TEXT_ID)"
+			"dialog(SPEAKER_ID;CHARACTER_ID;ADDITIVE;AUTOSKIP;TEXT_ID;SFX_NAME)"
 		],
 		"description": "Shows a dialog"
 	},

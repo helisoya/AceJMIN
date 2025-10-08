@@ -1,16 +1,16 @@
 cameraPosition(Defense;true;false)
-dialog(Felix;Felix;false;false;C1D1_Courtroom1_12)
+dialog(Felix;Felix;false;false;C1D1_Courtroom1_12;BlipMale)
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom1_13)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_13;BlipMale)
 
 cameraPosition(Defense;true;false)
-dialog(Felix;Felix;false;false;C1D1_Courtroom1_14)
+dialog(Felix;Felix;false;false;C1D1_Courtroom1_14;BlipMale)
 
 cameraPosition(Sidekick;true;false)
-dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_15)
-dialog(Felix;_;false;false;C1D1_Courtroom1_16)
-dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_17)
-dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_18)
+dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_15;BlipFemale)
+dialog(Felix;_;false;false;C1D1_Courtroom1_16;BlipMale)
+dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_17;BlipFemale)
+dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_18;BlipFemale)
 
 load(Case1/Day1/Courtroom1_Question2)

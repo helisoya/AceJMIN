@@ -1,7 +1,7 @@
 cameraPosition(Defense;true;false)
-dialog(Felix;Felix;false;false;C1D1_Courtroom1_21)
+dialog(Felix;Felix;false;false;C1D1_Courtroom1_21;BlipMale)
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom1_22)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_22;BlipMale)
 
 load(Case1/Day1/Courtroom1_Question3)

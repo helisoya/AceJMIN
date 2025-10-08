@@ -25,14 +25,16 @@ public class TextArchitect
 	Coroutine buildProcess = null;
 
 	TextMeshProUGUI tmpro;
+	private AudioSource source;
 
-	public TextArchitect(TextMeshProUGUI tmpro, string targetText, string preText = "", int charactersPerFrame = 1, float speed = 5f)
+	public TextArchitect(TextMeshProUGUI tmpro, string targetText, AudioSource source, string preText = "", int charactersPerFrame = 1, float speed = 5f)
 	{
 		this.tmpro = tmpro;
 		this.targetText = targetText;
 		this.preText = preText;
 		this.charactersPerFrame = charactersPerFrame;
 		this.speed = Mathf.Clamp(speed, 5f, 300f);
+		this.source = source;
 
 		Initiate();
 	}
@@ -93,6 +95,8 @@ public class TextArchitect
 
 			while (vis < max)
 			{
+				source.Stop();
+				source.Play();
 				//allow skipping by increasing the characters per frame and the speed of occurance.
 				if (skip)
 				{

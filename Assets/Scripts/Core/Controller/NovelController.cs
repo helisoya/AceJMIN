@@ -568,7 +568,7 @@ public class NovelController : MonoBehaviour
 
                 // Speaker - CharacterModel - additive - autoSkip - dialog
                 DialogSystem.instance.OpenAllRequirementsForDialogueSystemVisibility(true);
-                DialogSystem.instance.Say(parameters[4], parameters[0], parameters[1].Equals("_") ? null : parameters[1], bool.Parse(parameters[2]));
+                DialogSystem.instance.Say(parameters[4], parameters[0], parameters[1].Equals("_") ? null : parameters[1], bool.Parse(parameters[2]), parameters.Length > 5 ? parameters[5] : "BlipMale");
 
                 TextArchitect architect = DialogSystem.instance.textArchitect;
 

@@ -2,21 +2,21 @@ hideDialog()
 speechBubble(HoldIt;null)
 cameraPosition(Defense;false;true)
 
-dialog(Felix;Felix;false;false;C1D1_Examination2_5_1)
+dialog(Felix;Felix;false;false;C1D1_Examination2_5_1;BlipMale)
 
 cameraPosition(Witness;false;true)
-dialog(Lucas;Lucas;false;false;C1D1_Examination2_5_2)
-dialog(Lucas;Lucas;false;false;C1D1_Examination2_5_3)
+dialog(Lucas;Lucas;false;false;C1D1_Examination2_5_2;BlipMale)
+dialog(Lucas;Lucas;false;false;C1D1_Examination2_5_3;BlipMale)
 
 cameraPosition(Defense;true;false)
-dialog(Judge;Judge;false;false;C1D1_Examination2_5_4)
+dialog(Judge;Judge;false;false;C1D1_Examination2_5_4;BlipMale)
 
 cameraPosition(Witness;true;false)
-dialog(Lucas;Lucas;false;false;C1D1_Examination2_5_5)
-dialog(Lucas;Lucas;false;false;C1D1_Examination2_5_6)
+dialog(Lucas;Lucas;false;false;C1D1_Examination2_5_5;BlipMale)
+dialog(Lucas;Lucas;false;false;C1D1_Examination2_5_6;BlipMale)
 
 cameraPosition(Sidekick;true;false)
-dialog(MadLaine;MadLaine;false;false;C1D1_Examination2_5_7)
-dialog(Felix;_;false;false;C1D1_Examination2_5_8)
+dialog(MadLaine;MadLaine;false;false;C1D1_Examination2_5_7;BlipFemale)
+dialog(Felix;_;false;false;C1D1_Examination2_5_8;BlipMale)
 
 load(Case1/Day1/Examination2_Fade)

@@ -19,54 +19,54 @@ autosave()
 
 fadeFg(0;false)
 
-dialog(Felix;_;false;false;C1D1_Courtroom0_1)
+dialog(Felix;_;false;false;C1D1_Courtroom0_1;BlipMale)
 
 setCharacterAlpha(MadLaine;1;false;false)
-dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom0_2)
-dialog(Felix;_;false;false;C1D1_Courtroom0_3)
-dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom0_4)
-dialog(Felix;_;false;false;C1D1_Courtroom0_5)
-dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom0_6)
-dialog(Felix;_;false;false;C1D1_Courtroom0_7)
+dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom0_2;BlipFemale)
+dialog(Felix;_;false;false;C1D1_Courtroom0_3;BlipMale)
+dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom0_4;BlipFemale)
+dialog(Felix;_;false;false;C1D1_Courtroom0_5;BlipMale)
+dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom0_6;BlipFemale)
+dialog(Felix;_;false;false;C1D1_Courtroom0_7;BlipMale)
 
 fadeBg(1;true)
 
-dialog(Felix;_;false;false;C1D1_Courtroom0_8)
-dialog(Felix;_;false;false;C1D1_Courtroom0_9)
-dialog(Felix;_;false;false;C1D1_Courtroom0_10)
-dialog(Felix;_;false;false;C1D1_Courtroom0_11)
+dialog(Felix;_;false;false;C1D1_Courtroom0_8;BlipMale)
+dialog(Felix;_;false;false;C1D1_Courtroom0_9;BlipMale)
+dialog(Felix;_;false;false;C1D1_Courtroom0_10;BlipMale)
+dialog(Felix;_;false;false;C1D1_Courtroom0_11;BlipMale)
 
 setCharacterAlpha(MadLaine;0;true;false)
 setCharacterAlpha(Lucas;1;true;false)
 
 fadeBg(0;false)
 
-dialog(Lucas;Lucas;false;false;C1D1_Courtroom0_12)
-dialog(Felix;_;false;false;C1D1_Courtroom0_13)
-dialog(Lucas;Lucas;false;false;C1D1_Courtroom0_14)
+dialog(Lucas;Lucas;false;false;C1D1_Courtroom0_12;BlipMale)
+dialog(Felix;_;false;false;C1D1_Courtroom0_13;BlipMale)
+dialog(Lucas;Lucas;false;false;C1D1_Courtroom0_14;BlipMale)
 
 setCharacterAlpha(Lucas;0;false;true)
 setCharacterAlpha(MadLaine;1;false;false)
 
-dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom0_15)
+dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom0_15;BlipFemale)
 
 setCharacterAlpha(MadLaine;0;false;true)
 setCharacterAlpha(Lucas;1;false;false)
 
-dialog(Lucas;Lucas;false;false;C1D1_Courtroom0_16)
-dialog(Felix;_;false;false;C1D1_Courtroom0_17)
+dialog(Lucas;Lucas;false;false;C1D1_Courtroom0_16;BlipMale)
+dialog(Felix;_;false;false;C1D1_Courtroom0_17;BlipMale)
 
 setCharacterAlpha(Lucas;0;false;true)
 setCharacterAlpha(MadLaine;1;false;false)
 
-dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom0_18)
+dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom0_18;BlipFemale)
 
 setCharacterAlpha(MadLaine;0;false;true)
 setCharacterAlpha(Lucas;1;false;false)
 
-dialog(Lucas;Lucas;false;false;C1D1_Courtroom0_19)
-dialog(Felix;_;false;false;C1D1_Courtroom0_20)
-dialog(Huissier;_;false;false;C1D1_Courtroom0_21)
-dialog(Felix;_;false;false;C1D1_Courtroom0_22)
+dialog(Lucas;Lucas;false;false;C1D1_Courtroom0_19;BlipMale)
+dialog(Felix;_;false;false;C1D1_Courtroom0_20;BlipMale)
+dialog(Huissier;_;false;false;C1D1_Courtroom0_21;BlipMale)
+dialog(Felix;_;false;false;C1D1_Courtroom0_22;BlipMale)
 
 load(Case1/Day1/Courtroom1)

@@ -5,17 +5,17 @@ speechBubble(Objection;null)
 hideDialog()
 
 cameraPosition(Defense;false;true)
-dialog(Felix;Felix;false;false;C1D1_Examination1_Fail_1)
+dialog(Felix;Felix;false;false;C1D1_Examination1_Fail_1;BlipMale)
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Examination1_Fail_2)
+dialog(Judge;Judge;false;false;C1D1_Examination1_Fail_2;BlipMale)
 
 cameraPosition(Defense;true;false)
-dialog(Felix;Felix;false;false;C1D1_Examination1_Fail_3)
+dialog(Felix;Felix;false;false;C1D1_Examination1_Fail_3;BlipMale)
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Examination1_Fail_4)
-dialog(Judge;Judge;false;false;C1D1_Examination1_Fail_5)
+dialog(Judge;Judge;false;false;C1D1_Examination1_Fail_4;BlipMale)
+dialog(Judge;Judge;false;false;C1D1_Examination1_Fail_5;BlipMale)
 
 variable(health;--)
 explodeHealthBarGlow()
@@ -24,7 +24,7 @@ setHealthBarGlow(0)
 wait(1)
 
 cameraPosition(Defense;true;false)
-dialog(Felix;_;false;false;C1D1_Examination1_Fail_6)
+dialog(Felix;_;false;false;C1D1_Examination1_Fail_6;BlipMale)
 
 if(health = 0) load(Case1/Courtroom_Death)
 

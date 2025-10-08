@@ -2,29 +2,29 @@ hideDialog()
 speechBubble(HoldIt;null)
 cameraPosition(Defense;false;true)
 
-dialog(Felix;Felix;false;false;C1D1_Examination1_1_1)
+dialog(Felix;Felix;false;false;C1D1_Examination1_1_1;BlipMale)
 
 cameraPosition(Witness;false;true)
-dialog(Lucas;Lucas;false;false;C1D1_Examination1_1_2)
+dialog(Lucas;Lucas;false;false;C1D1_Examination1_1_2;BlipMale)
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Examination1_1_3)
+dialog(Judge;Judge;false;false;C1D1_Examination1_1_3;BlipMale)
 
 cameraPosition(Witness;true;false)
-dialog(Lucas;Lucas;false;false;C1D1_Examination1_1_4)
+dialog(Lucas;Lucas;false;false;C1D1_Examination1_1_4;BlipMale)
 
 cameraPosition(Prosecution;false;true)
-dialog(Buendia;Buendia;false;false;C1D1_Examination1_1_5)
+dialog(Buendia;Buendia;false;false;C1D1_Examination1_1_5;BlipMale)
 
 cameraPosition(Witness;false;true)
-dialog(Lucas;Lucas;false;false;C1D1_Examination1_1_6)
+dialog(Lucas;Lucas;false;false;C1D1_Examination1_1_6;BlipMale)
 
 hideDialog()
 startAnimation(JudgeHammer;true)
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Examination1_1_7)
+dialog(Judge;Judge;false;false;C1D1_Examination1_1_7;BlipMale)
 
 cameraPosition(Defense;true;false)
-dialog(Felix;_;false;false;C1D1_Examination1_1_8)
+dialog(Felix;_;false;false;C1D1_Examination1_1_8;BlipMale)
 
 load(Case1/Day1/Examination1_Fade)

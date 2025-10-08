@@ -1,5 +1,5 @@
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom1_23)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_23;BlipMale)
 
 choice
 	Choice_Stabed Case1/Day1/Courtroom1_Question3_Stabed

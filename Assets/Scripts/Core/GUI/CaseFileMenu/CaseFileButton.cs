@@ -36,7 +36,7 @@ public class CaseFileButton : MonoBehaviour, ISelectHandler
         parent = menu;
         linkedEvidence = evidence;
         backgroundImg.sprite = evidence != null ? spriteNormal : spriteDisabled;
-        evidenceSprite.sprite = evidence != null ? evidence.GetSprite() : null;
+        evidenceSprite.sprite = evidence != null ? evidence.sprite : null;
         evidenceSprite.color = evidence != null ? Color.white : Color.clear;
         button.interactable = evidence != null;
     }

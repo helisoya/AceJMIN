@@ -1,8 +1,8 @@
 cameraPosition(Sidekick;true;false)
-dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_10)
+dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom1_10;BlipFemale)
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom1_11)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_11;BlipMale)
 
 choice
 	Choice_LucasTastroffe Case1/Day1/Courtroom1_Question1_Lucas

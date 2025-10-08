@@ -47,7 +47,7 @@ public class EvidenceManager
                     }
                     else
                     {
-                        checkSprites = null;
+                        checkSprites =  new string[0];
                     }
                     evidence = new Evidence(split[0], isProfile, checkSprites);
                     evidences.Add(split[0], evidence);
@@ -117,12 +117,20 @@ public class Evidence
     public bool isProfile;
     private string[] checkSprites;
     public string Name { get { return this.ID + "_name"; } }
+    public Sprite sprite { get; private set; }
+    public Sprite[] spritesCheck { get; private set; }
 
     public Evidence(string ID, bool isProfile, string[] checkSprites)
     {
         this.ID = ID;
         this.isProfile = isProfile;
         this.checkSprites = checkSprites;
+        this.sprite = Resources.Load<Sprite>("Evidence/" + ID);
+        spritesCheck = new Sprite[checkSprites.Length];
+        for (int i = 0; i < spritesCheck.Length; i++)
+        {
+            spritesCheck[i] = Resources.Load<Sprite>("Evidence/Check/" + checkSprites[i]);
+        }
     }
 
     /// <summary>
@@ -133,26 +141,6 @@ public class Evidence
     public string GetDesc(int idx)
     {
         return ID + "_desc" + idx.ToString();
-    }
-
-    /// <summary>
-    /// Gets the evidence's sprite
-    /// </summary>
-    /// <returns>The sprite</returns>
-    public Sprite GetSprite()
-    {
-        return Resources.Load<Sprite>("Evidence/" + ID);
-    }
-
-    /// <summary>
-    /// Gets a check sprite
-    /// </summary>
-    /// <param name="idx">The check sprite's index</param>
-    /// <returns>The check sprite</returns>
-    public Sprite GetCheckSprite(int idx)
-    {
-        if (checkSprites == null) return null;
-        return Resources.Load<Sprite>("Evidence/Check/" + checkSprites[idx]);
     }
 
     /// <summary>

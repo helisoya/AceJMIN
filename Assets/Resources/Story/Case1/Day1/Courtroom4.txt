@@ -5,55 +5,55 @@ hideDialog()
 speechBubble(Objection;null)
 cameraPosition(Defense;false;true)
 
-dialog(Felix;Felix;false;false;C1D1_Courtroom4_1)
+dialog(Felix;Felix;false;false;C1D1_Courtroom4_1;BlipMale)
 
 cameraPosition(Witness;false;true)
-dialog(Lucas;Lucas;false;false;C1D1_Courtroom4_2)
+dialog(Lucas;Lucas;false;false;C1D1_Courtroom4_2;BlipMale)
 
 cameraPosition(Defense;false;true)
-dialog(Felix;Felix;false;false;C1D1_Courtroom4_3)
+dialog(Felix;Felix;false;false;C1D1_Courtroom4_3;BlipMale)
 
 cameraPosition(Witness;false;true)
-dialog(Lucas;Lucas;false;false;C1D1_Courtroom4_4)
+dialog(Lucas;Lucas;false;false;C1D1_Courtroom4_4;BlipMale)
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom4_5)
+dialog(Judge;Judge;false;false;C1D1_Courtroom4_5;BlipMale)
 
 cameraPosition(Prosecution;true;false)
-dialog(Buendia;Buendia;false;false;C1D1_Courtroom4_6)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom4_6;BlipMale)
 
 cameraPosition(Defense;true;false)
-dialog(Felix;Felix;false;false;C1D1_Courtroom4_7)
-dialog(Felix;Felix;false;false;C1D1_Courtroom4_8)
+dialog(Felix;Felix;false;false;C1D1_Courtroom4_7;BlipMale)
+dialog(Felix;Felix;false;false;C1D1_Courtroom4_8;BlipMale)
 
 cameraPosition(Witness;false;true)
-dialog(Lucas;Lucas;false;false;C1D1_Courtroom4_9)
-dialog(Lucas;Lucas;false;false;C1D1_Courtroom4_10)
+dialog(Lucas;Lucas;false;false;C1D1_Courtroom4_9;BlipMale)
+dialog(Lucas;Lucas;false;false;C1D1_Courtroom4_10;BlipMale)
 
 cameraPosition(Sidekick;true;false)
-dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom4_11)
-dialog(Felix;_;false;false;C1D1_Courtroom4_12)
+dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom4_11;BlipFemale)
+dialog(Felix;_;false;false;C1D1_Courtroom4_12;BlipMale)
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom4_13)
-dialog(Judge;Judge;false;false;C1D1_Courtroom4_14)
+dialog(Judge;Judge;false;false;C1D1_Courtroom4_13;BlipMale)
+dialog(Judge;Judge;false;false;C1D1_Courtroom4_14;BlipMale)
 
 cameraPosition(Witness;true;false)
-dialog(Lucas;Lucas;false;false;C1D1_Courtroom4_15)
+dialog(Lucas;Lucas;false;false;C1D1_Courtroom4_15;BlipMale)
 
 cameraPosition(Prosecution;false;true)
-dialog(Buendia;Buendia;false;false;C1D1_Courtroom4_16)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom4_16;BlipMale)
 
 cameraPosition(Witness;false;true)
-dialog(Lucas;Lucas;false;false;C1D1_Courtroom4_17)
+dialog(Lucas;Lucas;false;false;C1D1_Courtroom4_17;BlipMale)
 
 cameraPosition(Defense;true;false)
-dialog(Felix;_;false;false;C1D1_Courtroom4_18)
+dialog(Felix;_;false;false;C1D1_Courtroom4_18;BlipMale)
 
 hideDialog()
 startAnimation(JudgeHammer;true)
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom4_19)
+dialog(Judge;Judge;false;false;C1D1_Courtroom4_19;BlipMale)
 
 
 # Testimony 2 - The LED Display
@@ -63,21 +63,20 @@ cameraPosition(Witness;true;false)
 hideDialog()
 fadeFg(0;false)
 
-
 startAnimation(Testimony;true)
 justifyDialog(Center)
-dialog(narrator;_;false;false;C1D1_Testimony2_Name)
+dialog(narrator;_;false;false;C1D1_Testimony2_Name;BlipMale)
 
 setTestimonyActive(true)
 
 justifyDialog(Left)
 
-dialog(Lucas;Lucas;false;false;C1D1_Testimony2_1)
-dialog(Lucas;Lucas;false;false;C1D1_Testimony2_2)
-dialog(Lucas;Lucas;false;false;C1D1_Testimony2_3)
-dialog(Lucas;Lucas;false;false;C1D1_Testimony2_4)
-dialog(Lucas;Lucas;false;false;C1D1_Testimony2_5)
-dialog(Lucas;Lucas;false;false;C1D1_Testimony2_6)
+dialog(Lucas;Lucas;false;false;C1D1_Testimony2_1;BlipMale)
+dialog(Lucas;Lucas;false;false;C1D1_Testimony2_2;BlipMale)
+dialog(Lucas;Lucas;false;false;C1D1_Testimony2_3;BlipMale)
+dialog(Lucas;Lucas;false;false;C1D1_Testimony2_4;BlipMale)
+dialog(Lucas;Lucas;false;false;C1D1_Testimony2_5;BlipMale)
+dialog(Lucas;Lucas;false;false;C1D1_Testimony2_6;BlipMale)
 
 
 # Buandia is happy that Lucas met Antonin that night
@@ -88,23 +87,23 @@ setTestimonyActive(false)
 cameraPosition(Prosecution;true;false)
 fadeFg(0;false)
 
-dialog(Buendia;Buendia;false;false;C1D1_Courtroom4_20)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom4_20;BlipMale)
 
 cameraPosition(Witness;true;false)
-dialog(Lucas;Lucas;false;false;C1D1_Courtroom4_21)
+dialog(Lucas;Lucas;false;false;C1D1_Courtroom4_21;BlipMale)
 
 cameraPosition(Prosecution;true;false)
-dialog(Buendia;Buendia;false;false;C1D1_Courtroom4_22)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom4_22;BlipMale)
 
 cameraPosition(Defense;true;false)
-dialog(Felix;_;false;false;C1D1_Courtroom4_23)
+dialog(Felix;_;false;false;C1D1_Courtroom4_23;BlipMale)
 
 cameraPosition(Sidekick;true;false)
-dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom4_24)
-dialog(Felix;_;false;false;C1D1_Courtroom4_25)
+dialog(MadLaine;MadLaine;false;false;C1D1_Courtroom4_24;BlipFemale)
+dialog(Felix;_;false;false;C1D1_Courtroom4_25;BlipMale)
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom4_26)
+dialog(Judge;Judge;false;false;C1D1_Courtroom4_26;BlipMale)
 
 
 # Cross Examination 2 - The LED Display
@@ -117,7 +116,7 @@ fadeFg(0;false)
 startAnimation(CrossExamination;true)
 
 justifyDialog(Center)
-dialog(narrator;_;false;false;C1D1_Examination2_Name)
+dialog(narrator;_;false;false;C1D1_Examination2_Name;BlipMale)
 justifyDialog(Left)
 
 updateHealthBar()

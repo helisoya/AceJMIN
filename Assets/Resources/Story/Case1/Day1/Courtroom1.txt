@@ -28,6 +28,7 @@ autosave()
 fadeFg(0;false)
 
 hideDialog()
+playSound(Gallery)
 cameraPosition(Global;true;false)
 wait(2)
 
@@ -36,31 +37,31 @@ startAnimation(JudgeHammer;true)
 # People say ready
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom1_1)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_1;BlipMale)
 
 cameraPosition(Prosecution;true;false)
-dialog(Buendia;Buendia;false;false;C1D1_Courtroom1_2)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom1_2;BlipMale)
 
 hideDialog()
 cameraPosition(Defense;false;true)
-dialog(Felix;Felix;false;false;C1D1_Courtroom1_3)
+dialog(Felix;Felix;false;false;C1D1_Courtroom1_3;BlipMale)
 
 # Judge questions Felix's skills
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom1_4)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_4;BlipMale)
 
 cameraPosition(Defense;true;false)
-dialog(Felix;Felix;false;false;C1D1_Courtroom1_5)
+dialog(Felix;Felix;false;false;C1D1_Courtroom1_5;BlipMale)
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom1_6)
-dialog(Judge;Judge;false;false;C1D1_Courtroom1_7)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_6;BlipMale)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_7;BlipMale)
 
 cameraPosition(Defense;true;false)
-dialog(Felix;Felix;false;false;C1D1_Courtroom1_8)
+dialog(Felix;Felix;false;false;C1D1_Courtroom1_8;BlipMale)
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom1_9)
+dialog(Judge;Judge;false;false;C1D1_Courtroom1_9;BlipMale)
 
 load(Case1/Day1/Courtroom1_Question1)

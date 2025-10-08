@@ -163,7 +163,7 @@ public class CaseFileMenu : MonoBehaviour
         int evidenceValue = int.Parse(GameManager.GetSaveManager().GetItem(evidence.ID));
         itemDescText.SetNewKey(evidence.GetDesc(evidenceValue));
         itemNameText.SetNewKey(evidence.Name);
-        itemSprite.sprite = evidence.GetSprite();
+        itemSprite.sprite = evidence.sprite;
 
         checkButton.SetActive(evidence.GetNumberOfChecks() > 0);
     }
@@ -293,7 +293,7 @@ public class CaseFileMenu : MonoBehaviour
         checkModeMarkers[checkModeCurrentIndex].Normal();
         checkModeCurrentIndex = (checkModeCurrentIndex + side + currentItem.GetNumberOfChecks()) % currentItem.GetNumberOfChecks();
         checkModeMarkers[checkModeCurrentIndex].Highlight();
-        checkModeImage.sprite = currentItem.GetCheckSprite(checkModeCurrentIndex);
+        checkModeImage.sprite = currentItem.spritesCheck[checkModeCurrentIndex];
     }
 
     void Update()

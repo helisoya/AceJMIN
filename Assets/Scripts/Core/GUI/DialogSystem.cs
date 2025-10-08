@@ -8,6 +8,7 @@ public class DialogSystem : MonoBehaviour
     public static DialogSystem instance;
 
     [SerializeField] private ELEMENTS elements;
+    [SerializeField] private AudioSource sfxSource;
 
     private string currentSpeakerID;
 
@@ -66,7 +67,7 @@ public class DialogSystem : MonoBehaviour
     /// <summary>
     /// Say something and show it on the speech box.
     /// </summary>
-    public void Say(string speech, string speaker = "", string characterID = null, bool additive = false)
+    public void Say(string speech, string speaker = "", string characterID = null, bool additive = false, string sfxName = "BlipMale")
     {
         StopSpeaking();
 
@@ -76,7 +77,7 @@ public class DialogSystem : MonoBehaviour
 
         }
 
-        speaking = StartCoroutine(Speaking(speech, additive, characterID, speaker));
+        speaking = StartCoroutine(Speaking(speech, additive, characterID, speaker,sfxName));
     }
 
 
@@ -108,7 +109,7 @@ public class DialogSystem : MonoBehaviour
         speechText.maxVisibleCharacters = speech?.Length ?? 0;
     }
 
-    IEnumerator Speaking(string speech, bool additive, string characterID, string speaker = "")
+    IEnumerator Speaking(string speech, bool additive, string characterID, string speaker = "",string sfxName = "BlipMale")
     {
         speechPanel.SetActive(true);
 
@@ -127,7 +128,10 @@ public class DialogSystem : MonoBehaviour
         string additiveSpeech = additive ? speechText.text : "";
         targetSpeech = additiveSpeech + speech;
 
-        textArchitect = new TextArchitect(speechText.GetComponent<TextMeshProUGUI>(), speech, additiveSpeech);
+        sfxSource.Stop();
+        sfxSource.clip = Resources.Load("Audio/SFX/" + sfxName) as AudioClip;
+
+        textArchitect = new TextArchitect(speechText.GetComponent<TextMeshProUGUI>(), speech, sfxSource, additiveSpeech);
 
         speakerNameText.text = DetermineSpeaker(speaker);
         speakerNameText.transform.parent.gameObject.SetActive(speakerNameText.text != "" && speakerNameText.text != "narrator");
