@@ -43,6 +43,10 @@ public class NovelController : MonoBehaviour
     private List<int> examinationPressed;
     private bool nextIsBackward;
 
+
+    [Header("Audio")]
+    [SerializeField] private AudioClip continueDialogSfx;
+
     public void Next()
     {
         next = true;
@@ -593,7 +597,7 @@ public class NovelController : MonoBehaviour
                         yield return new WaitForEndOfFrame();
                     }
                 }
-
+                AudioManager.instance.PlaySFX(continueDialogSfx);
                 waitingForUserToEndDialog = false;
 
                 break;

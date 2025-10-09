@@ -23,6 +23,13 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private LocalizedText descriptionText;
     public bool open { get { return root.activeInHierarchy; } }
 
+
+    [Header("Data")]
+    [SerializeField] private AudioClip openSFX;
+    [SerializeField] private AudioClip closeSFX;
+    [SerializeField] private AudioClip selectSFX;
+
+
     [Header("Control")]
     [SerializeField] private GameObject saveObj;
     [SerializeField] private GameObject loadObj;
@@ -74,6 +81,17 @@ public class PauseMenu : MonoBehaviour
     /// <param name="rowIdx">The row's index</param>
     public void HighlightRow(int rowIdx)
     {
+        HighlightRow(rowIdx, true);
+    }
+
+    /// <summary>
+    /// Highlight a new row
+    /// </summary>
+    /// <param name="rowIdx">The row's index</param>
+    /// <param name="playSound">Should the linked SFX be played ?</param>
+    public void HighlightRow(int rowIdx, bool playSound)
+    {
+        if(playSound) AudioManager.instance.PlaySFX(selectSFX);
         if (currentIdx != rowIdx)
         {
             if (currentIdx != -1) rows[currentIdx].Normal();
@@ -83,15 +101,18 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+
     /// <summary>
     /// Shows the pause menu
     /// </summary>
     /// <param name="isOnSaveButton">True if the cursor starts on the save button. False if it starts on the load button</param>
-    public void Show(bool isOnSaveButton = true)
+    /// <param name="playSound">Should the linked SFX be played ?</param>
+    public void Show(bool isOnSaveButton = true, bool playSound = false)
     {
+        if (playSound) AudioManager.instance.PlaySFX(openSFX);
         ResetValues();
         root.SetActive(true);
-        HighlightRow(isInGame ? 0 : 1);
+        HighlightRow(isInGame ? 0 : 1,false);
         EventSystem.current.SetSelectedGameObject(isOnSaveButton ? saveObj : loadObj);
     }
 
@@ -142,11 +163,15 @@ public class PauseMenu : MonoBehaviour
         Settings.SetFullscreen(value);
     }
 
+
     /// <summary>
     /// Closes the pause menu
     /// </summary>
-    public void Close()
+    /// <param name="playSound">Should the linked SFX be played ?</param>
+    public void Close(bool playSound = false)
     {
+        if (playSound) AudioManager.instance.PlaySFX(closeSFX);
+
         root.SetActive(false);
         if (isInGame && ChoiceScreen.instance.isWaitingForChoiceToBeMade)
         {
@@ -190,7 +215,12 @@ public class PauseMenu : MonoBehaviour
     /// </summary>
     public void ReturnToMainMenu()
     {
-        if (isInGame) SceneManager.LoadScene("MainMenu");
+        
+        if (isInGame)
+        {
+            AudioManager.instance.PlaySFX(selectSFX);
+            SceneManager.LoadScene("MainMenu");
+        } 
     }
 
     void Update()
@@ -199,7 +229,7 @@ public class PauseMenu : MonoBehaviour
 
         if (AJInput.Instance.GetCancelDown())
         {
-            Close();
+            Close(true);
         }
         if (AJInput.Instance.GetReturnToTitleDown() && isInGame)
         {
@@ -212,6 +242,7 @@ public class PauseMenu : MonoBehaviour
             int side = (AJInput.Instance.GetMoveRightDown() ? 1 : 0) - (AJInput.Instance.GetMoveLeftDown() ? 1 : 0);
             if (side != 0)
             {
+                AudioManager.instance.PlaySFX(selectSFX);
                 IncrementResolution(side);
             }
         }

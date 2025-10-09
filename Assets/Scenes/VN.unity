@@ -3065,6 +3065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26fb8b360d7f8d644a4de14b5a110665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  continueDialogSfx: {fileID: 8300000, guid: 804ac361795aba14b80207f4fff28a0f, type: 3}
 --- !u!4 &280569406
 Transform:
   m_ObjectHideFlags: 0
@@ -5238,6 +5239,10 @@ MonoBehaviour:
   scrollbar: {fileID: 694272980}
   confirmRoot: {fileID: 549893236}
   confirmWidget: {fileID: 1872297129}
+  openSFX: {fileID: 8300000, guid: 61d225553380bad4e85fcb4f6988f009, type: 3}
+  closeSFX: {fileID: 8300000, guid: 5ba39f1342368c24092790636bf981bd, type: 3}
+  selectSFX: {fileID: 8300000, guid: 777dde0eaa3085d44bba04b87074c48c, type: 3}
+  cantSFX: {fileID: 8300000, guid: 138661df0f0a23d489dbc31a80cf7386, type: 3}
   objConfirm: {fileID: 944251314}
 --- !u!1 &434560610
 GameObject:
@@ -38050,6 +38055,10 @@ MonoBehaviour:
     normalSprite: {fileID: 1968365750, guid: 6d3578683a0731a43bbcb8916fb32410, type: 3}
     highlightedSprite: {fileID: -1152148493, guid: 6d3578683a0731a43bbcb8916fb32410,
       type: 3}
+  openSFX: {fileID: 8300000, guid: 61d225553380bad4e85fcb4f6988f009, type: 3}
+  swapTypeSFX: {fileID: 8300000, guid: ac045ca53ec270d46961784092462e10, type: 3}
+  selectSFX: {fileID: 8300000, guid: 777dde0eaa3085d44bba04b87074c48c, type: 3}
+  closeSFX: {fileID: 8300000, guid: 5ba39f1342368c24092790636bf981bd, type: 3}
 --- !u!1001 &2120446466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38928,6 +38937,9 @@ MonoBehaviour:
   resolutionText: {fileID: 405969162}
   fullscreenToggle: {fileID: 404851519}
   descriptionText: {fileID: 437901388}
+  openSFX: {fileID: 8300000, guid: 61d225553380bad4e85fcb4f6988f009, type: 3}
+  closeSFX: {fileID: 8300000, guid: 5ba39f1342368c24092790636bf981bd, type: 3}
+  selectSFX: {fileID: 8300000, guid: 777dde0eaa3085d44bba04b87074c48c, type: 3}
   saveObj: {fileID: 1094272878}
   loadObj: {fileID: 1970120290}
   rows:

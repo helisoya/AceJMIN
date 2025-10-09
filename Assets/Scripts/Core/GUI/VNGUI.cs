@@ -316,12 +316,13 @@ public class VNGUI : MonoBehaviour
     /// Event for opening the settings
     /// </summary>
     /// <param name="isOnSaveButton">True if the cursor starts on the save button. False if it starts on the load button</param>
-    public void OpenSettings(bool isOnSaveButton = true)
+    /// <param name="playSound">Should the linked SFX be played ?</param>
+    public void OpenSettings(bool isOnSaveButton = true, bool playSound = false)
     {
         if (!NovelController.instance.isReadyForSaving) return;
 
         ResetCursor();
-        if (!pauseMenu.open) pauseMenu.Show(isOnSaveButton);
+        if (!pauseMenu.open) pauseMenu.Show(isOnSaveButton,playSound);
     }
 
     /// <summary>
@@ -403,7 +404,7 @@ public class VNGUI : MonoBehaviour
 
         if (notInMenu && AJInput.Instance.GetOptionsDown())
         {
-            OpenSettings(true);
+            OpenSettings(true,true);
         }
 
         if (notInMenu && cooldownForAction <= 0 && (AJInput.Instance.GetConfirmDown() || AJInput.Instance.GetMoveRightDown()))

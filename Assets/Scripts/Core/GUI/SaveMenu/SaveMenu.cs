@@ -20,6 +20,12 @@ public class SaveMenu : MonoBehaviour
     [SerializeField] private GameObject confirmRoot;
     [SerializeField] private SaveButton confirmWidget;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip openSFX;
+    [SerializeField] private AudioClip closeSFX;
+    [SerializeField] private AudioClip selectSFX;
+    [SerializeField] private AudioClip cantSFX;
+
     [Header("Event System")]
     [SerializeField] private GameObject objConfirm;
     private int currentButtonIdx;
@@ -37,6 +43,8 @@ public class SaveMenu : MonoBehaviour
     /// <param name="isLoading">Is the menu loading a new save ?</param>
     public void Close(bool isLoading = false)
     {
+        AudioManager.instance.PlaySFX(closeSFX);
+
         root.SetActive(false);
 
         if (isInGame && !isLoading)
@@ -56,6 +64,8 @@ public class SaveMenu : MonoBehaviour
     /// <param name="resetEventSystem">Reset the event system ?</param>
     public void Open(bool isInSavingMode, bool resetEventSystem = true)
     {
+        AudioManager.instance.PlaySFX(openSFX);
+
         this.isInSavingMode = isInSavingMode;
 
         root.SetActive(true);
@@ -100,6 +110,7 @@ public class SaveMenu : MonoBehaviour
 
             if (side != 0)
             {
+                AudioManager.instance.PlaySFX(selectSFX);
                 currentButtonIdx = (currentButtonIdx + side + buttons.Length) % buttons.Length;
                 scrollbar.value = 1.0f - (currentButtonIdx / 10.0f);
                 EventSystem.current.SetSelectedGameObject(buttons[currentButtonIdx].gameObject);
@@ -120,10 +131,12 @@ public class SaveMenu : MonoBehaviour
         {
             // Can't choose this
             // Put Animation here
+            AudioManager.instance.PlaySFX(cantSFX);
         }
         else
         {
             // Can choose
+            AudioManager.instance.PlaySFX(openSFX);
 
             if (isInSavingMode && info == null)
             {
@@ -146,6 +159,7 @@ public class SaveMenu : MonoBehaviour
 
     public void Click_Confirm()
     {
+        AudioManager.instance.PlaySFX(selectSFX);
         confirmRoot.SetActive(false);
         if (isInSavingMode)
         {
@@ -177,6 +191,7 @@ public class SaveMenu : MonoBehaviour
 
     public void Click_Back()
     {
+        AudioManager.instance.PlaySFX(closeSFX);
         confirmRoot.SetActive(false);
 
         currentButtonIdx = currentSlot;

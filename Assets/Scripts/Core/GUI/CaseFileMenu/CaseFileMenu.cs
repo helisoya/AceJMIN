@@ -34,6 +34,12 @@ public class CaseFileMenu : MonoBehaviour
     [SerializeField] private Image checkModeImage;
     [SerializeField] private PauseMenuGraphicObject[] checkModeMarkers;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip openSFX;
+    [SerializeField] private AudioClip swapTypeSFX;
+    [SerializeField] private AudioClip selectSFX;
+    [SerializeField] private AudioClip closeSFX;
+
 
     [Header("Control")]
     private bool isInEvidenceMode;
@@ -74,6 +80,7 @@ public class CaseFileMenu : MonoBehaviour
     /// <param name="canExit">Can the menu be exited ?</param>
     public void Show(bool canPresent, bool canExit)
     {
+        AudioManager.instance.PlaySFX(openSFX);
         root.SetActive(true);
         currentEvidenceIdx = 0;
         currentProfileIdx = 0;
@@ -86,8 +93,11 @@ public class CaseFileMenu : MonoBehaviour
     /// <summary>
     /// Hide the menu
     /// </summary>
-    public void Hide()
+    /// <param name="playSound">Should the linked SFX be played ?</param>
+    public void Hide(bool playSound = false)
     {
+        if (playSound) AudioManager.instance.PlaySFX(closeSFX);
+        
         root.SetActive(false);
         if (ChoiceScreen.instance.isWaitingForChoiceToBeMade)
         {
@@ -98,27 +108,37 @@ public class CaseFileMenu : MonoBehaviour
     /// <summary>
     /// Switch to the evidence view
     /// </summary>
-    public void SwitchToEvidence()
+    /// <param name="playSound">Should the linked SFX be played ?</param>
+    public void SwitchToEvidence(bool playSound = false)
     {
+        if(playSound) AudioManager.instance.PlaySFX(swapTypeSFX);
+
         isInEvidenceMode = true;
         tabNameText.SetNewKey("casefiles_evidence");
         switchButtonText.SetNewKey("casefiles_profiles");
-        SetAvaiableItems(GameManager.GetEvidenceManager().GetAvailableEvidence());
+        List<Evidence> evidences = GameManager.GetEvidenceManager().GetAvailableEvidence();
+        SetAvaiableItems(evidences);
         presentButton.SetActive(canPresent);
-        buttons[currentEvidenceIdx].OnSelect(null);
+        SelectEvidence(evidences[currentEvidenceIdx],false);
+        HighlightButton(currentEvidenceIdx);
     }
 
     /// <summary>
     /// Switch to the profile view
     /// </summary>
-    public void SwitchToProfiles()
+    /// <param name="playSound">Should the linked SFX be played ?</param>
+    public void SwitchToProfiles(bool playSound = false)
     {
+        if (playSound) AudioManager.instance.PlaySFX(swapTypeSFX);
+        
         isInEvidenceMode = false;
         tabNameText.SetNewKey("casefiles_profiles");
         switchButtonText.SetNewKey("casefiles_evidence");
-        SetAvaiableItems(GameManager.GetEvidenceManager().GetAvailableProfiles());
+        List<Evidence> evidences = GameManager.GetEvidenceManager().GetAvailableProfiles();
+        SetAvaiableItems(evidences);
         presentButton.SetActive(false);
-        buttons[currentProfileIdx].OnSelect(null);
+        SelectEvidence(evidences[currentEvidenceIdx],false);
+        HighlightButton(currentEvidenceIdx);
     }
 
     /// <summary>
@@ -157,8 +177,11 @@ public class CaseFileMenu : MonoBehaviour
     /// Displays an evidence's data
     /// </summary>
     /// <param name="evidence">The evidence</param>
-    public void SelectEvidence(Evidence evidence)
+    /// <param name="playSound">Should the linked SFX be played ?</param>
+    public void SelectEvidence(Evidence evidence, bool playSound = true)
     {
+        if(playSound) AudioManager.instance.PlaySFX(selectSFX);
+
         currentItem = evidence;
         int evidenceValue = int.Parse(GameManager.GetSaveManager().GetItem(evidence.ID));
         itemDescText.SetNewKey(evidence.GetDesc(evidenceValue));
@@ -228,8 +251,8 @@ public class CaseFileMenu : MonoBehaviour
     /// </summary>
     public void SwitchTabs()
     {
-        if (isInEvidenceMode) SwitchToProfiles();
-        else SwitchToEvidence();
+        if (isInEvidenceMode) SwitchToProfiles(true);
+        else SwitchToEvidence(true);
     }
 
     /// <summary>
@@ -246,6 +269,7 @@ public class CaseFileMenu : MonoBehaviour
     /// </summary>
     public void HideCheckMode()
     {
+        AudioManager.instance.PlaySFX(closeSFX);
         isInCheckMode = false;
         checkModeRoot.SetActive(false);
         EventSystem.current.SetSelectedGameObject(buttons[currentEvidenceIdx].gameObject);
@@ -256,6 +280,8 @@ public class CaseFileMenu : MonoBehaviour
     /// </summary>
     public void OpenCheckMode()
     {
+        AudioManager.instance.PlaySFX(openSFX);
+
         isInCheckMode = true;
         checkModeRoot.SetActive(true);
         EventSystem.current.SetSelectedGameObject(null);
@@ -290,6 +316,8 @@ public class CaseFileMenu : MonoBehaviour
     /// <param name="side">The increment's side</param>
     public void IncrementCheckModeIndex(int side)
     {
+        if (side != 0) AudioManager.instance.PlaySFX(selectSFX);
+        
         checkModeMarkers[checkModeCurrentIndex].Normal();
         checkModeCurrentIndex = (checkModeCurrentIndex + side + currentItem.GetNumberOfChecks()) % currentItem.GetNumberOfChecks();
         checkModeMarkers[checkModeCurrentIndex].Highlight();
@@ -308,7 +336,7 @@ public class CaseFileMenu : MonoBehaviour
             }
             else if (canExit)
             {
-                Hide();
+                Hide(true);
             }
         }
 

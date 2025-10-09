@@ -27,6 +27,12 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private GameObject nameInputRoot;
     [SerializeField] private TMP_InputField nameInput;
 
+
+    [Header("Audio")]
+    [SerializeField] private AudioClip moveSFX;
+    [SerializeField] private AudioClip selectSFX;
+
+
     private Coroutine fading;
 
     public static MainMenuManager instance;
@@ -45,6 +51,11 @@ public class MainMenuManager : MonoBehaviour
         fade.FadeTo(0);
     }
 
+    public void PlaySelectSFX()
+    {
+        AudioManager.instance.PlaySFX(moveSFX);
+    }
+
     /// <summary>
     /// Sets the currently active button on the main screen
     /// </summary>
@@ -60,6 +71,7 @@ public class MainMenuManager : MonoBehaviour
     public void Event_NewGame()
     {
         if (fading != null) return;
+        AudioManager.instance.PlaySFX(selectSFX);
         caseSelector.Event_Open();
     }
 
@@ -95,7 +107,7 @@ public class MainMenuManager : MonoBehaviour
     public void Event_OpenSettings()
     {
         if (fading != null) return;
-        pauseMenu.Show();
+        pauseMenu.Show(true);
     }
 
     /// <summary>

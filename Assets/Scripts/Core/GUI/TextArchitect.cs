@@ -95,8 +95,8 @@ public class TextArchitect
 
 			while (vis < max)
 			{
-				source.Stop();
-				source.Play();
+				if(!source.isPlaying) source.Play();
+
 				//allow skipping by increasing the characters per frame and the speed of occurance.
 				if (skip)
 				{

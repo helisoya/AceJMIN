@@ -16,6 +16,12 @@ public class CaseSelector : MonoBehaviour
     [SerializeField] private RectTransform casesRoot;
     [SerializeField] private LocalizedText caseTitle;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip moveSFX;
+    [SerializeField] private AudioClip selectSFX;
+    [SerializeField] private AudioClip cancelSFX;
+
+
     [Header("Control")]
     [SerializeField] private GameObject leftButton;
     [SerializeField] private GameObject rightButton;
@@ -42,6 +48,7 @@ public class CaseSelector : MonoBehaviour
     /// </summary>
     public void Event_Close()
     {
+        AudioManager.instance.PlaySFX(cancelSFX);
         root.SetActive(false);
         MainMenuManager.instance.SetActiveMainScreenButton(0);
     }
@@ -51,6 +58,7 @@ public class CaseSelector : MonoBehaviour
     /// </summary>
     public void Event_ChooseCase()
     {
+        AudioManager.instance.PlaySFX(selectSFX);
         GameManager.instance.SetSaveToLoad(null);
         GameManager.instance.SetNextChapter(cases[currentCase].entryPoint);
         GameManager.GetSaveManager().ResetItems();
@@ -64,6 +72,7 @@ public class CaseSelector : MonoBehaviour
     /// <param name="side">The side of the incrementation</param>
     public void IncrementCase(int side)
     {
+        AudioManager.instance.PlaySFX(moveSFX);
         currentCase += side;
 
         casesRoot.anchoredPosition = new Vector2(-500 * currentCase, 0);
