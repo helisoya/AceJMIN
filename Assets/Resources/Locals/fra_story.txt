@@ -47,7 +47,7 @@ General_Evidence_Badge_name = Badge d'avocat
 General_Evidence_Badge_desc0 = Mon badge d'avocat.<br>Il prouve ma profession.
 
 Case1_Evidence_Autopsy_name = Rapport d'autopsie
-Case1_Evidence_Autopsy_desc0 = Victime : Antonin<br>électrocuté<br>mort entre 19h45 et 20h15
+Case1_Evidence_Autopsy_desc0 = Victime : Antonin Portekoi<br>Electrocuté<br>Mort entre 19h45 et 20h15
 
 Case1_Evidence_CrimeScene_name = Photo de la scène de crime
 Case1_Evidence_CrimeScene_desc0 = Une photo de la scène de crime
@@ -62,7 +62,7 @@ Case1_Evidence_Plan_name = Plan
 Case1_Evidence_Plan_desc0 = Plan de la scène du crime
 
 Case1_Evidence_Message_name = Message à Antonin
-Case1_Evidence_Message_desc0 = Message envoyé à Antonin à 19h<br>“Viens réparer notre installation”
+Case1_Evidence_Message_desc0 = Message envoyé à Antonin à 19h15<br>“Viens réparer notre installation”
 
 # -----------------------------------------------------------
 # --------------- Profiles ----------------------------------
@@ -102,7 +102,7 @@ C1D1_Courtroom0_6 = Ils ne vont pas commencer le procès sans toi, tu aurais mê
 C1D1_Courtroom0_7 = Je ne suis pas sûr que ce soit une bonne idée…
 C1D1_Courtroom0_8 = <color=#3A7CA3>(Je m'appelle Félix Vrai et ceci est mon premier procès en tant qu'avocat de la défense.)</color>
 C1D1_Courtroom0_9 = <color=#3A7CA3>(Personne n'a accepté de prendre mon client car la plupart des gens le trouvait trop étrange.)</color>
-C1D1_Courtroom0_10 = <color=#3A7CA3>(Mais moi… J'ai besoin d'argent pour rembourser mon prêt pour des études d'ergonomie que j'ai foiré.)</color>
+C1D1_Courtroom0_10 = <color=#3A7CA3>(Mais moi… J'ai besoin d'argent pour rembourser mon prêt pour des études de création de burgers que j'ai foiré.)</color>
 C1D1_Courtroom0_11 = <color=#3A7CA3>(J'ai donc accepté et Mad Laine, mon associée a dit qu'elle allait m'assister sur cette affaire)</color>
 C1D1_Courtroom0_12 = Je suis fini !!! Si je dois mourir, sauvez au moins Kayou !!!
 C1D1_Courtroom0_13 = Qui est Kayou ?
@@ -142,7 +142,7 @@ C1D1_Courtroom1_12 = Il s'agit de Lucas Tastroffe, mon client.
 C1D1_Courtroom1_13 = Correct. Maintenant, pouvez-vous m'indiquer le nom de la victime ?
 C1D1_Courtroom1_14 = La victime ? C'est euh… [changeSpeaker(null)] <color=#3A7CA3>(Oh non, j'ai complètement oublié ! C'était si important ?)</color>
 C1D1_Courtroom1_15 = Ne me dis pas que tu ne te souviens plus…
-C1D1_Courtroom1_16 = <color=#3A7CA3>(Je n’aurais jamais dû jouer à Monster Hunter jusqu’à 4h du matin…)</color>
+C1D1_Courtroom1_16 = <color=#3A7CA3>(Je n’aurais jamais dû jouer à Monstre Chasse jusqu’à 4h du matin…)</color>
 C1D1_Courtroom1_17 = Tu ferais bien de consulter le dossier de l'affaire avant de répondre en appuyant sur <sprite=21>.
 C1D1_Courtroom1_18 = Tu pourras le consulter ensuite à n'importe quel moment.
 C1D1_Courtroom1_19 = <color=#3A7CA3>(On dirait que j’ai le droit à mes notes)</color>
@@ -178,24 +178,21 @@ C1D1_Courtroom1_26 = Super ! C'est l'heure de la bagarre ! Euh… je veux dire, 
 C1D1_Courtroom1_27 = <color=#3A7CA3>(Cette fille est trop bizarre. Elle me fait peur)</color>
 
 C1D1_Courtroom2_1 = Mr Buandy, veuillez nous rappeler les éléments de ce dossier ?
-C1D1_Courtroom2_2 = La victime a été retrouvée électrocutée dans le garage de l'ENJMIN sur l'un des stands de l'événement <color=red>Faux Règne</color> dont elle est également le responsable.
-C1D1_Courtroom2_3 = Nous avons pris une photo de la scène de crime.
-C1D1_Courtroom2_4 = <color=#3A7CA3><b>Plan</b> ajouté à l'inventaire.</color>
-C1D1_Courtroom2_5 = <color=#3A7CA3><b>Photo de la scène de crime</b> ajoutée à l'inventaire.</color>
-C1D1_Courtroom2_6 = Qu'est ce donc que cet événement... <color=red>Farine</color> ?
-C1D1_Courtroom2_7 = Faux Règne est un festival punk où les participants construisent des choses avec 2 bouts de ficelles et du carton. Il semblerait qu'ils doivent aussi utiliser de l'équipement électronique.
-C1D1_Courtroom2_8 = Nous avons également retrouvé le téléphone de la victime sur place. Le dernier message a été reçu aux alentours de 19h et lui demande de venir sur place.
-C1D1_Courtroom2_9 = <color=#3A7CA3><b>Dernier message d'Antonin</b> ajouté à l'inventaire.</color>
-C1D1_Courtroom2_10 = Le crime a été prémédité alors. 
-C1D1_Courtroom2_11 = L'accusé est la dernière personne à avoir vu la victime en vie.
-C1D1_Courtroom2_12 = Lorsque nous l'avons arrêté, il avait ce papier chiffonné dans sa poche et a essayé de manger cette facture.
-C1D1_Courtroom2_13 = <color=#3A7CA3><b>Notice chiffonnée écrite en chinois</b> ajouté à l'inventaire.</color>
-C1D1_Courtroom2_14 = <color=#3A7CA3><b>Facture</b> ajouté à l'inventaire.</color>
-C1D1_Courtroom2_15 = En effet, tout cela est très suspect. Je déclare l'accusé cou…
-C1D1_Courtroom2_16 = Euh… Je… Ouai… Je veux dire, je ne suis pas censé défendre mon client avant ?
-C1D1_Courtroom2_17 = Ah oui, c'est vrai. Que l'accusation appelle à la barre son premier témoin.
-C1D1_Courtroom2_18 = L'accusation appelle Mr Lucas Tastroffe à la barre.
-C1D1_Courtroom2_19 = <color=#3A7CA3>(Oh non, le faire témoigner va le discréditer complètement…)</color>
+C1D1_Courtroom2_2 = La victime a été retrouvée électrocutée dans le garage de l'ANJMAIN sur l'un des stands de l'événement <color=red>Faux Règne</color> dont elle est également le responsable.
+C1D1_Courtroom2_3 = Qu'est ce donc que cet événement... <color=red>Farine</color> ?
+C1D1_Courtroom2_4 = Faux Règne est un festival punk où les participants construisent des choses avec 2 bouts de ficelles et du carton. Il semblerait qu'ils doivent aussi utiliser de l'équipement électronique.
+C1D1_Courtroom2_5 = Nous avons également retrouvé le téléphone de la victime sur place.
+C1D1_Courtroom2_6 = Le dernier message a été reçu à 19h15 et lui demande de venir sur place.
+C1D1_Courtroom2_7 = <color=#3A7CA3><b>Dernier message d'Antonin</b> ajouté à l'inventaire.</color>
+C1D1_Courtroom2_8 = Le crime a été prémédité alors. 
+C1D1_Courtroom2_9 = L'accusé est la dernière personne à avoir vu la victime en vie.
+C1D1_Courtroom2_10 = Lorsque nous l'avons arrêté, il avait ce papier chiffonné dans sa poche.
+C1D1_Courtroom2_11 = <color=#3A7CA3><b>Notice chiffonnée écrite en chinois</b> ajouté à l'inventaire.</color>
+C1D1_Courtroom2_12 = En effet, tout cela est très suspect. Je déclare l'accusé cou…
+C1D1_Courtroom2_13 = Euh… Je… Ouai… Je veux dire, je ne suis pas censé défendre mon client avant ?
+C1D1_Courtroom2_14 = Ah oui, c'est vrai. Que l'accusation appelle à la barre son premier témoin.
+C1D1_Courtroom2_15 = L'accusation appelle Mr Lucas Tastroffe à la barre.
+C1D1_Courtroom2_16 = <color=#3A7CA3>(Oh non, le faire témoigner va le discréditer complètement…)</color>
 
 C1D1_Courtroom3_1 = Veuillez décliner votre nom et votre profession.
 C1D1_Courtroom3_2 = C'EST PAS MOI, JE VOUS JURE ! LAISSEZ MOI TRANQUILLE ! J'AI RIEN FAIT !
@@ -215,10 +212,10 @@ C1D1_Courtroom3_14 = Bon très bien. Nous allons pouvoir passer au témoignage.
 C1D1_Testimony1_Name = <color=red>-La nuit du meurtre-</color>
 C1D1_Testimony1_1 = Je suis un participant de Faux Règne. Kayou et moi étions en train de monter une installation. On était en charge de l'électronique.
 C1D1_Testimony1_2 = Parce que vous savez, en vrai, je suis programmeur. Kayou m'a dit que ça payait bien et comme j'ai confiance en lui, je l'ai écouté.
-C1D1_Testimony1_3 = J'ai travaillé toute la journée. De 8h à 18h. Heureusement que Kayou était là pour me soutenir et me motiver.
+C1D1_Testimony1_3 = J'ai travaillé toute la journée. Presque 12h d'affilée ! Heureusement que Kayou était là pour me soutenir et me motiver.
 C1D1_Testimony1_4 = C'était vraiment pas facile. Mon équipe voulait que j'utilise des panneaux LED mais j'avais jamais fait ça moi !
 C1D1_Testimony1_5 = J'ai dû me débrouiller. Il n'y avait pas de réseau mais heureusement, une notice était fournie avec le matériel.
-C1D1_Testimony1_6 = Je suis un excellent prog. J'ai réussi à mettre l'image de Kayou sur les panneaux LED !
+C1D1_Testimony1_6 = Je parle uniquement le français mais j'ai réussi à mettre l'image de Kayou sur les panneaux LED !
 
 C1D1_Courtroom3_15 = Un témoignage plein d'affection pour Kayou, je le conçois.
 C1D1_Courtroom3_16 = <color=#3A7CA3>(J’ai du mal à croire qu’une personne imaginant que son galet est vivant puisse être un excellent prog.)</color>
@@ -240,10 +237,10 @@ C1D1_Courtroom3_30 = <color=#3A7CA3>(Oula je ferais mieux de trouver une incohé
 C1D1_Examination1_Name = <color=red>-La nuit du meurtre-</color>
 C1D1_Examination1_1 = <color=green>Je suis un participant de Faux Règne. Kayou et moi étions en train de monter une installation. On était en charge de l'électronique.</color>
 C1D1_Examination1_2 = <color=green>Parce que vous savez, en vrai, je suis programmeur. Kayou m'a dit que ça payait bien et comme j'ai confiance en lui, je l'ai écouté.</color>
-C1D1_Examination1_3 = <color=green>J'ai travaillé toute la journée. De 8h à 18h. Heureusement que Kayou était là pour me soutenir et me motiver.</color>
+C1D1_Examination1_3 = <color=green>J'ai travaillé toute la journée. Presque 12h d'affilée ! Heureusement que Kayou était là pour me soutenir et me motiver.</color>
 C1D1_Examination1_4 = <color=green>C'était vraiment pas facile. Mon équipe voulait que j'utilise des panneaux LED mais j'avais jamais fait ça moi !</color>
 C1D1_Examination1_5 = <color=green>J'ai dû me débrouiller. Il n'y avait pas de réseau mais heureusement, une notice était fournie avec le matériel.</color>
-C1D1_Examination1_6 = <color=green>Je suis un excellent prog. J'ai réussi à mettre l'image de Kayou sur les panneaux LED !</color>
+C1D1_Examination1_6 = <color=green>Je parle uniquement le français mais j'ai réussi à mettre l'image de Kayou sur les panneaux LED !</color>
 
 C1D1_Examination1_1_1 = Quelle genre d'installation était-ce ?
 C1D1_Examination1_1_2 = Un espèce de bulldozer avec lequel le participant doit rouler sur des personnes d'un certain bord politique.
@@ -291,24 +288,26 @@ C1D1_Examination1_5_9 = <color=#3A7CA3>(Il le fait exprès ?)</color>[changeSpea
 C1D1_Examination1_5_10 = Il n'y a aucun réseau dans le garage et je devais être au plus près pour atteindre la perfection de mon œuvre.
 C1D1_Examination1_5_11 = <color=#3A7CA3>(Il aurait pû déplacer les panneaux LED et les remettre après mais je doute qu'il ait l'intelligence suffisante pour le faire)</color>
 
-C1D1_Examination1_6_1 = Pourquoi mettre en priorité l'image Kayou et pas votre projet ?
-C1D1_Examination1_6_2 = Je… hum… Parce qu'il n'y avait que ça…
-C1D1_Examination1_6_3 = C'est à dire ? Vous aviez des graphistes dans votre équipe, je suppose. N'ont-ils rien produit ?
-C1D1_Examination1_6_4 = Si mais… C'est gênant, on pourrait passer à autre chose ?
-C1D1_Examination1_6_5 = Peut-être que Lucas voulait rendre hommage à Kayou et que son équipe l'en a empêché ?
-C1D1_Examination1_6_6 = Cela m'étonnerait, on dirait plutôt qu'il a honte de quelque chose.
+C1D1_Examination1_6_1 = Vous ne parlez pas à minima l'anglais pour les documentations et les forums ?
+C1D1_Examination1_6_2 = Pour quoi faire ? Le français deviendra un jour la langue dominante.
+C1D1_Examination1_6_3 = D'accord… Et pourquoi mettre en priorité l'image de Kayou et pas votre projet ?
+C1D1_Examination1_6_4 = Je… hum… Parce qu'il n'y avait que ça…
+C1D1_Examination1_6_5 = C'est à dire ? Vous aviez des graphistes dans votre équipe, je suppose. N'ont-ils rien produit ?
+C1D1_Examination1_6_6 = Si mais… C'est gênant, on pourrait passer à autre chose ?
+C1D1_Examination1_6_7 = Peut-être que Lucas voulait rendre hommage à Kayou et que son équipe l'en a empêché ?
+C1D1_Examination1_6_8 = Cela m'étonnerait, on dirait plutôt qu'il a honte de quelque chose.
 
 C1D1_Examination1_Loop_1 = N'as-tu rien remarqué d'étrange ?
 C1D1_Examination1_Loop_2 = Non, pourtant, je suis convaincu qu'il cherche à cacher quelque chose.
 C1D1_Examination1_Loop_3 = Continue à le tortu… à l'interroger, il finira bien par lâcher le morceau.
 C1D1_Examination1_Loop_4 = Je vais faire de mon mieux <color=#3A7CA3>(avant qu’il ne se condamne tout seul)</color>
 
-C1D1_Examination1_Fail_1 = Votre honneur ! J'ai trouvé une inconsistence !
-C1D1_Examination1_Fail_2 = Ah bon ? Ou ça ?
-C1D1_Examination1_Fail_3 = Euh... Je... La ?
-C1D1_Examination1_Fail_4 = Mr. Felix... Je sais que c'est votre premier procès, mais un peu de sérieux.
-C1D1_Examination1_Fail_5 = Je vais devoir vous assener une pénalité pour ça.
-C1D1_Examination1_Fail_6 = <color=#3A7CA3>(Oh la la ! Je dois faire vraiment attention avec mes preuves, moi.)</color>
+C1D1_Examination1_Fail_1 = Il y a une contraction, votre Honneur !
+C1D1_Examination1_Fail_2 = Hein ? Où ça ?
+C1D1_Examination1_Fail_3 = Je… Hum… On dirait que je me suis trompé.
+C1D1_Examination1_Fail_4 = Je vais devoir vous administrer une pénalité, Monsieur Vrai.
+C1D1_Examination1_Fail_5 = Ce n'est pas parce qu'il s'agit de votre premier procès que vous devez être incompétent.
+C1D1_Examination1_Fail_6 = <color=#3A7CA3>(Je vais devoir faire mieux.)</color>
 
 C1D1_Courtroom4_1 = Vous n'avez pas pu afficher l'image de Kayou sur ces panneaux LED. À vrai dire, vous n'avez même pas pu faire fonctionner les panneaux.
 C1D1_Courtroom4_2 = Pourquoi dites-vous cela ?
@@ -336,11 +335,11 @@ C1D1_Testimony2_2 = En fait, j'ai essayé et au départ, je pensais que c'était
 C1D1_Testimony2_3 = Puis quelqu'un de mon équipe m'a dit que c'était du chinois. Je me suis rendu compte que je ne parlais pas chinois.
 C1D1_Testimony2_4 = J'ai fait que Allemand LV2, même si je n'ai eu que 7 à mon BAC.
 C1D1_Testimony2_5 = J'ai passé des heures à prier le rocher suprême en espérant une réponse. Et je l'ai eu !
-C1D1_Testimony2_6 = Antonin est venu m'aider vers 20h. Il m'a aidé à réparer les panneaux LED et Kayou a pu avoir son heure de gloire !
+C1D1_Testimony2_6 = Antonin n'était pas censé revenir mais il est revenu m'aider à 19h. Il m'a aidé à réparer les panneaux LED et Kayou a pu avoir son heure de gloire !
 
 C1D1_Courtroom4_20 = Donc vous admettez avoir vu la victime ?
-C1D1_Courtroom4_21 = Oui, il m'a aidé. Sinon les écrans n'auraient jamais fonctionné !
-C1D1_Courtroom4_22 = Pff… C'est presque un aveux de votre culpabilité !
+C1D1_Courtroom4_21 = Oui, il m'a aidé. Sinon les écrans n'auraient jamais fonctionné ! Je croyais qu'il était parti pour de bon mais quelque chose l'a fait revenir.
+C1D1_Courtroom4_22 = Un certain message par exemple ? Pff… C'est presque un aveux de votre culpabilité !
 C1D1_Courtroom4_23 = <color=#3A7CA3>(Oh non, Lucas… Pourquoi ne m'as-tu rien dit ? Je n'aurais pas dû insister… Comment puis-je encore prouver ton innocence ?)</color>
 C1D1_Courtroom4_24 = Je suis si heureuse que l'image de Kayou ait pu être sur ces panneaux !
 C1D1_Courtroom4_25 = Je ne suis pas sûr que cette nouvelle soit réjouissante.
@@ -352,7 +351,7 @@ C1D1_Examination2_2 = <color=green>En fait, j'ai essayé et au départ, je pensa
 C1D1_Examination2_3 = <color=green>Puis quelqu'un de mon équipe m'a dit que c'était du chinois. Je me suis rendu compte que je ne parlais pas chinois.</color>
 C1D1_Examination2_4 = <color=green>J'ai fait que Allemand LV2, même si je n'ai eu que 7 à mon BAC.</color>
 C1D1_Examination2_5 = <color=green>J'ai passé des heures à prier le rocher suprême en espérant une réponse. Et je l'ai eu !</color>
-C1D1_Examination2_6 = <color=green>Antonin est venu m'aider vers 20h. Il m'a aidé à réparer les panneaux LED et Kayou a pu avoir son heure de gloire !</color>
+C1D1_Examination2_6 = <color=green>Antonin n'était pas censé revenir mais il est revenu m'aider à 19h. Il m'a aidé à réparer les panneaux LED et Kayou a pu avoir son heure de gloire !</color>
 
 C1D1_Examination2_Loop_1 = Lucas a bien vu Portekoi avant sa mort… On est cuit si on ne trouve pas de contradictions.
 C1D1_Examination2_Loop_2 = En effet. Il aurait dû me le dire plus tôt.
@@ -401,21 +400,39 @@ C1D1_Examination2_5_6 = L'autre jour, je voulais acheter du K-Colac. Une canette
 C1D1_Examination2_5_7 = Ça a l'air super rentable. Je devrais m'y mettre.
 C1D1_Examination2_5_8 = Je pense qu'il s'agit plutôt d'une coïncidence. Après tout, le rocher suprême ne l'a pas empêché de se retrouver sur le banc des accusés.
 
-C1D1_Examination2_6_1 = Vous êtes sûr que c'était vers 20h ?
-C1D1_Examination2_6_2 = Euh… oui ? Je… hum… Je crois avoir quitté le garage vers 20h15…
-C1D1_Examination2_6_3 = Et qu'avez-vous fait ensuite ?
-C1D1_Examination2_6_4 = Je suis rentré chez moi à environ 1h d'ici. J'avais si faim vous savez ! Je n'ai pu mangé qu'après 22h !
-C1D1_Examination2_6_5 = Et qu'avez-vous mangé ?
-C1D1_Examination2_6_6 = Euh… Et bien, c'est à dire que je suis assez pauvre… Donc pâtes au ketchup.
-C1D1_Examination2_6_7 = C'est bon pourtant les pâtes au ketchup.
-C1D1_Examination2_6_8 = Je suis presque sûr que Lucas est un fin gourmet et qu'il ne mangerait pas n'importe quoi.
+C1D1_Examination2_6_1 = Vous êtes sûr que c'était à 19h précisément ?
+C1D1_Examination2_6_2 = Ma montre sonne toutes les heures. Je me rappelle l'avoir regardée. 
+C1D1_Examination2_6_3 = Je le sais car elle joue la musique d'Ogygie et les cafards. J'avais super faim et je me demandais quand j'allais graillou.
+C1D1_Examination2_6_4 = <color=#3A7CA3>(Je me demande ce que signifie “graillou ?”)</color>[changeSpeaker(Felix)] Et qu’avez-vous fait ensuite ?
+C1D1_Examination2_6_5 = Je suis parti vers 20h. J'avais si faim !
+C1D1_Examination2_6_6 = Et qu'avez-vous mangé ?
+C1D1_Examination2_6_7 = Euh… Et bien, c'est à dire que je suis assez pauvre… Donc pâtes au ketchup.
+C1D1_Examination2_6_8 = C'est immonde les pâtes au ketchup !
+C1D1_Examination2_6_9 = Quand on a peu de moyen, on mange ce qu'on peut…
 
 
-
-
-
-
-
+C1D1_Courtroom5_1 = Portekoi n'est pas réellement vous aider, n'est ce pas ?
+C1D1_Courtroom5_2 = Qu'est ce qui vous fait dire cela ?
+C1D1_Courtroom5_3 = Eclairez-nous Monsieur Vrai. C'est pourtant bien la dernière personne à avoir vu Antonin Portekoi en vie.
+C1D1_Courtroom5_4 = J'ignore pourquoi, mais Monsieur Tastroffe ment. Vous n'avez pas pu voir Antonin car il est revenu bien plus tard, après que vous soyez parti.
+C1D1_Courtroom5_5 = Encore des suppositions ! Nous voulons des preuves Monsieur Vrai.
+C1D1_Courtroom5_6 = Actually, j'y viens. Antonin était bel et bien parti mais un message lui a demandé de revenir.
+C1D1_Courtroom5_7 = Le message a été envoyé à 19h15. Oh ! Effectivement, Monsieur Portekoi n'a pas pû se déplacer avant de recevoir ce texto comme disent les d'jeuns.
+C1D1_Courtroom5_8 = En effet, par conséquent, vous ne pouvez avoir vu Antonin Portekoi à 19h.
+C1D1_Courtroom5_9 = Je… je… PARDONNE MOI KAYOU ! JE N'AI PAS SU HONORER TA GRANDEUR MAIS J'AVAIS SI FAIM !!!
+C1D1_Courtroom5_10 = Qu'est ce que vous racontez ?
+C1D1_Courtroom5_11 = J'ai une alarme sur ma montre à 19h car tous les mercredi entre 19h30 et 20h30 ce sont les réduc à Poti Burgers and CO.
+C1D1_Courtroom5_12 = Des burgers à moitié prix. J'en ai pour une demie heure de marche entre le restaurant et l'ANJEMIN. J'arrive toujours pile poil à l'heure.
+C1D1_Courtroom5_13 = Je comprends, les Potis Burgers sont excellents.
+C1D1_Courtroom5_14 = Et au final, vous avez pu mettre l'image de Kayou sur les écrans ?
+C1D1_Courtroom5_15 = Oui mais en utilisant l'IA… 
+C1D1_Courtroom5_16 = Je ne voulais pas que les premiers et seuls amis que j'ai réussi à faire à Faux Règne me détestent, alors je leur ai fait croire qu'Antonin était venu m'aider…
+C1D1_Courtroom5_17 = L'IA est en effet formidable mais vous en revanche vous êtes pathétique…
+C1D1_Courtroom5_18 = Eh bien… Nous avons seulement établi que Mr Tastroffe n'avait pas d'amis. Je ne peux établir de jugement.
+C1D1_Courtroom5_19 = Attendez Juge Lien. L'accusation aimerait appeler un autre témoin à la barre !
+C1D1_Courtroom5_20 = <color=#3A7CA3>(Qu'est ce qu'il mijote encore ?)</color>
+C1D1_Courtroom5_21 = L'accusation appelle Madame Clélia Stico. Elle a découvert le corps et affirme que Monsieur Tastroffe était la dernière personne à avoir vu Antonin Portekoi. 
+C1D1_Courtroom5_22 = Très bien. Faites venir ce témoin.
 
 
 C1_Death_1 = Mr. Felix ! Vous faites honte à votre profession.

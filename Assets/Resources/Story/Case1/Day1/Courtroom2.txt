@@ -11,74 +11,53 @@ dialog(Judge;Judge;false;false;C1D1_Courtroom2_1;BlipMale)
 
 cameraPosition(Prosecution;true;false)
 dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_2;BlipMale)
-dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_3;BlipMale)
-
-# Unclock new evidence
-
-variable(Case1_Evidence_Plan;0)
-displayEvidence(FULL;Case1_Evidence_Plan)
-dialog(narrator;_;false;false;C1D1_Courtroom2_4;BlipMale)
-clearDisplayedEvidence()
-wait(0.5)
-
-variable(Case1_Evidence_CrimeScene;0)
-displayEvidence(FULL;Case1_Evidence_CrimeScene)
-dialog(narrator;_;false;false;C1D1_Courtroom2_5;BlipMale)
-clearDisplayedEvidence()
-
-# Buendia explains the situation further
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom2_6;BlipMale)
+dialog(Judge;Judge;false;false;C1D1_Courtroom2_3;BlipMale)
 
 cameraPosition(Prosecution;true;false)
-dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_7;BlipMale)
-dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_8;BlipMale)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_4;BlipMale)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_5;BlipMale)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_6;BlipMale)
 
 # Phone Message unlock
 
 variable(Case1_Evidence_Message;0)
 displayEvidence(FULL;Case1_Evidence_Message)
-dialog(narrator;_;false;false;C1D1_Courtroom2_9;BlipMale)
+dialog(narrator;_;false;false;C1D1_Courtroom2_7;BlipMale)
 clearDisplayedEvidence()
 
 # Why Lucas was arrested
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom2_10;BlipMale)
+dialog(Judge;Judge;false;false;C1D1_Courtroom2_8;BlipMale)
 
 cameraPosition(Prosecution;true;false)
-dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_11;BlipMale)
-dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_12;BlipMale)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_9;BlipMale)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_10;BlipMale)
 
 variable(Case1_Evidence_Notice;0)
 displayEvidence(FULL;Case1_Evidence_Notice)
-dialog(narrator;_;false;false;C1D1_Courtroom2_13;BlipMale)
-clearDisplayedEvidence()
-wait(0.5)
-
-variable(Case1_Evidence_Bill;0)
-displayEvidence(FULL;Case1_Evidence_Bill)
-dialog(narrator;_;false;false;C1D1_Courtroom2_14;BlipMale)
+dialog(narrator;_;false;false;C1D1_Courtroom2_11;BlipMale)
 clearDisplayedEvidence()
 
 # Judge goes for the insta kill
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom2_15;BlipMale)
+dialog(Judge;Judge;false;false;C1D1_Courtroom2_12;BlipMale)
 
 speechBubble(Objection;null)
 
 cameraPosition(Defense;true;false)
-dialog(Felix;Felix;false;false;C1D1_Courtroom2_16;BlipMale)
+dialog(Felix;Felix;false;false;C1D1_Courtroom2_13;BlipMale)
 
 cameraPosition(Judge;true;false)
-dialog(Judge;Judge;false;false;C1D1_Courtroom2_17;BlipMale)
+dialog(Judge;Judge;false;false;C1D1_Courtroom2_14;BlipMale)
 
 cameraPosition(Prosecution;true;false)
-dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_18;BlipMale)
+dialog(Buendia;Buendia;false;false;C1D1_Courtroom2_15;BlipMale)
 
 cameraPosition(Defense;true;false)
-dialog(Felix;Felix;false;false;C1D1_Courtroom2_19;BlipMale)
+dialog(Felix;Felix;false;false;C1D1_Courtroom2_16;BlipMale)
 
 load(Case1/Day1/Courtroom3)

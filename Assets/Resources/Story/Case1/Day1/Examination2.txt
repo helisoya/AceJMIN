@@ -1,6 +1,6 @@
 # Cross Examination 1 - Day of the murder
 
-examination Case1/Day1/Courtroom5 Case1/Day1/Examination2_Fail Case1/Day1/Examination2_Loop Case1_Evidence_Bill 5
+examination Case1/Day1/Courtroom5 Case1/Day1/Examination2_Fail Case1/Day1/Examination2_Loop Case1_Evidence_Message 5
 	C1D1_Examination2_1 Lucas Lucas Case1/Day1/Examination2_1
 	C1D1_Examination2_2 Lucas Lucas Case1/Day1/Examination2_2
 	C1D1_Examination2_3 Lucas Lucas Case1/Day1/Examination2_3
